@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="shortcut icon", href="./img/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="./libs/css/vendor.min.css")
+    link(rel="stylesheet", href="./css/style.css")
+    title БалтЛифт
+  body
+    .main-wrapper.js-main-wrapper
+
+    //- Header  adapted = true
+    header.header
+      .header-top
+        .container
+          .content
+            a.logo(href="")
+              img(src="./img/logo.png", alt="")
+            a.tel(href="tel:+7 (812) 719-80-98")
+              img(src="./img/phone.png", alt="")
+              span +7 (812) 719-80-98
+            span.burger-icon.js-burger-icon
+              img(src="./img/burger.png", alt="")
+      nav.header-nav
+        .rails
+          .item1.go-item
+          .item2.go-item
+          .item3.go-item
+          .item4.go-item
+        .container
+          .nav-links-wrapper.js-burger-menu
+            .nav-links
+              .drop-link.js-drop-link
+                span Лифтовое оборудование
+                img(src="./img/arrow-down.svg", alt="")
+                .drop-down-links-wrapper.js-drop-down-links
+                  .drop-down-links
+                    a(href="#").drop-down-link drop-item
+                    a(href="#").drop-down-link drop-item
+                    a(href="#").drop-down-link drop-item
+                    a(href="#").drop-down-link drop-item
+                    a(href="#").drop-down-link drop-item
+
+              a(href="") Парковочные системы
+              a(href="") Портфолио
+              a(href="") Инвестиции
+              a(href="") О компании
+              a(href="") Контакты
+              a.tel(href="tel:+7 (812) 719-80-98")
+                img(src="./img/phone-white.png", alt="")
+                span +7 (812) 719-80-98
+
+    //- Slider  adapted = true
+    section.slider
+      .slider-wrapper.js-slider-header
+        .slide.slide-1
+          .container
+            .row
+              .col-xl-7.offset-xl-1.col-lg-9.offset-lg-1
+                .slide-content
+                  img(src="./img/line.png", alt="").line
+                  .text
+                    h1 Проходная кабина
+                    p.desc.
+                      Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения
+                    a(href="").btn-more.js-btn-more Узнать больше
+        .slide.slide-1
+          .container
+            .row
+              .col-xl-7.offset-xl-1.col-lg-9.offset-lg-1
+                .slide-content
+                  img(src="./img/line.png", alt="").line
+                  .text
+                    h1 Проходная кабина
+                    p.desc.
+                      Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения
+                    a(href="").btn-more.js-btn-more Узнать больше
+      .slider-btns
+        button.btn-prev.js-btn-prev
+          img(src="./img/slider-arrow.png", alt="")
+        button.btn-next.js-btn-next
+          img(src="./img/slider-arrow.png", alt="")
+
+    //- Offer  adapted = true
+    section.offer
+      .container
+        .row
+          .col-xl-8.offset-xl-2
+            .text
+              h2 МЫ ПРЕДЛАГАЕМ
+              p.desc.
+                Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения
+        .second-slider.js-second-slider
+          .slide
+            img(src="./img/offer-1.jpg", alt="")
+            p.title Предпроектные работы и проектирование
+            p.desc.
+              Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения
+          .slide
+            img(src="./img/offer-2.jpg", alt="")
+            p.title Предпроектные работы и проектирование
+            p.desc.
+              Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения
+          .slide
+            img(src="./img/offer-3.jpg", alt="")
+            p.title Предпроектные работы и проектирование
+            p.desc.
+              Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения
+          .slide
+            img(src="./img/offer-1.jpg", alt="")
+            p.title Предпроектные работы и проектирование
+            p.desc.
+              Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения
+        .second-slider-btns
+          button.second-slider-prev-btn
+            img(src="./img/white-btn.png", alt="")
+          button.second-slider-next-btn
+            img(src="./img/white-btn.png", alt="")
+
+    //- Standarts  adapted = true
+    section.standarts
+      img(src="./img/bg-1.png", alt="").bg-elem-1
+      img(src="./img/bg-2.png", alt="").bg-elem-2
+      .container
+        h2 СТАНДАРТЫ КАЧЕСТВА
+        .standart
+          .row
+            .col-xl-4.col-lg-4.col-md-5.col-sm-9
+              .img.orange.border-left
+                img(src="./img/standart-1.jpg", alt="")
+            .col-xl-4.col-lg-5.col-md-7.col-sm-12
+              p.text.
+                Мы ценим время наших клиентов и делаем все, чтобы сотрудничество с нами было максимально удобным. Мы компания полного цикла с профессиональным подходом к организации всего процесса установки лифта.
+        .standart
+          .row
+            .col-xl-4.offset-xl-4.col-lg-5.offset-lg-3.col-md-7.offset-md-0.order
+              p.text.
+                С 2004 года на территории Санкт-Петербурга и СЗФО мы успешно реализовали множество проектов, от самых простых до элитных. Помогаем сделать дома совершеннее и комфортнее. Устанавливая лифты – делаем любой этаж доступным!
+            .col-xl-4.col-lg-4.col-md-5.col-sm-9
+              .img.border-right
+                img(src="./img/standart-2.jpg", alt="")
+      .standart-wrapper
+        .container.standart-container
+          .standart
+            .row
+              .col-xl-4.col-lg-4.col-md-5.col-sm-9
+                .img.orange.border-left
+                  img(src="./img/standart-3.jpg", alt="")
+              .col-xl-4.col-lg-5.col-md-7
+                p.text.
+                  Сотрудники компании имеют большой опыт работы с объектами любой степени сложности и готовы начать работу на любой стадии установки лифта, начиная с предпроектных работ и экспертизы и заканчивая вводом в эксплуатацию и сдачу надзорным органам.
+
+
+      //-  
+
+            
+    //- Feedback  adapted = true
+    section.feedback
+      .container
+        .row.align-items-end
+          .col-xl-8.offset-xl-2.col-lg-10.offset-lg-1
+            form(action="")
+              p.text.
+                Приглашаем к сотрудничеству проектные организации, архитектурные бюро и дизайн студии.Сотрудничать с нами надежно, удобно и выгодно.
+              .inputs
+                input(type="text", placeholder="Имя").input
+                input(type="text", placeholder="E-mail").input
+                input(type="text", placeholder="Телефон").input
+              textarea(name="", placeholder="Сообщение").input
+              .checkbox
+                input#check(type="checkbox") 
+                label(for="check") #[span Принимаю пользовательское] #[a(href="#") соглашение о конфиденциальности]
+              .btn
+                button(type="submit") Отпавить
+          .right-btns
+            button.mess
+              img(src="./img/mess.png", alt="")
+            button.call
+              img(src="./img/phone-white.png", alt="")
+
+        
+    //- Footer  adapted = true
+    footer.footer
+      .map
+        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A54c5956579afa5f4c56e8bf75addd4b165abdc0ba00a04ef83cd23a8ceb0680a&amp;source=constructor", frameborder="0")
+      .contacts
+        .text
+          h3 КОНТАКТЫ
+          p.
+            Работаем с 2004г. #[br]
+            Официальный дистрибьютор IGV в Санкт-Петербурге. #[br]
+            Поставка, монтаж, наладка и техническое обслуживание лифтов и эскалаторов.191187, г.Санкт-Петербург, Гагаринская ул., д.6
+          .tels
+            .wrap
+              a(href="tel:+") 8 (812) 628-01-08
+              a(href="tel:+") 8 (812) 628-01-08
+            .wrap
+              a(href="tel:+") 8 (812) 628-01-08
+              a(href="tel:+") 8 (812) 628-01-08
+          a(href="#", title="title").mail baltlift@inbox.ru
+
+
+    //- popup  adapted = true
+    .popup-wrapper.js-popup
+      .popup-body
+        form(action="").popup-form
+          span.close.js-close
+            img(src="./img/close.png", alt="")
+          p.title Заказать звонок менеджера
+          p.text.
+            Закажите обратный звонок и наш менеджер перезвонит вам в течение #[span 12 минут]  или мы предоставим скидку 10%!
+          input(type="text", placeholder="Введите ваш номер телефона").input
+          p.placeholder 25 знаков доступно для ввода
+          .bottom
+            .checkbox
+              input#check2(type="checkbox") 
+              label(for="check2") #[a(href="#") Соглашение концединциальности]
+            button Отпавить
+
+
+  script(src="./libs/js/vendor.min.js")
+  script(src="./js/index.js")
+  
