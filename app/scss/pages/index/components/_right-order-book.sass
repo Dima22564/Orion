@@ -1,0 +1,86 @@
+.index
+  .right-panel
+    max-width: 24%
+    width: 100%
+    +media-b(1130)
+      max-width: 40%
+    +media-b(960)
+      max-width: 69%
+      margin-left: 8px
+    +media-b(685)
+      max-width: 60%  
+    +media-b(515)
+      max-width: 100%  
+      margin: 8px 0 0 0
+    .order-book
+      box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+      border-radius: 4px
+      background: $white
+      .heading
+        font-weight: 600
+        padding: 8px 
+        letter-spacing: 1px
+        text-transform: uppercase 
+        margin-bottom: 13px
+      .titles
+        display: flex
+        align-items: center
+        margin-bottom: 11px
+        .title
+          width: 25%
+          text-align: center
+          color: $black
+      .orders
+        .order
+          display: flex
+          align-items: center
+          position: relative
+          .progress-light
+            position: absolute
+            width: 33%
+            height: 100%
+            top: 0
+            left: 0
+            &.l-green
+              background: rgba(22, 184, 98, 0.03)
+            &.d-green
+              background: rgba(22, 184, 98, 0.4)
+              width: 20%
+            &.l-red
+              background: rgba(245, 69, 98, 0.03)
+            &.d-red
+              background: rgba(245, 69, 98, 0.4)
+              width: 20%
+          .cell
+            width: 25%
+            text-align: center
+            padding: 6px 0
+            position: relative
+            &.exch
+              max-height: 24px
+              .arrow
+                opacity: 0.4
+                width: 14px
+                height: 14px
+                margin-left: -2px
+              img
+                &:not(:last-child)
+                  margin-right: 2px
+            &.emp
+              color: $black
+            &.green
+              color: #16b862
+              background: rgba(22, 184, 98, 0.12)
+            &.red
+              color: #f54562
+              background: rgba(245, 69, 98, 0.12)
+        .last-price
+          display: flex
+          align-items: center
+          padding: 6px 12px 6px 6px
+          background: rgba(20, 16, 41, 0.02)
+          justify-content: space-between
+          margin: 5px 0 5px 13px
+          .cell
+            color: $black
+

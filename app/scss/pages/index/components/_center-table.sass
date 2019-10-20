@@ -3,6 +3,13 @@
     max-width: 58%
     width: 100%
     margin: 0 8px
+    +media-b(1130)
+      max-width: 69%  
+      margin: 0 0 8px 8px  
+    +media-b(960)
+      max-width: 100%  
+      margin: 8px 0 0 0 
+      order: 5 
     .image
       box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
@@ -14,6 +21,8 @@
       box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
       background: $white
+      +media-b(685)
+        overflow-x: scroll
       .drop-menu-currecy-select-1
         border-radius: 4px
         border: none !important
@@ -39,6 +48,9 @@
         display: flex
         align-items: center
         justify-content: space-between
+        & > div
+          +media-b(685)
+            margin-right: 16px
         .big-toggler
           background-color: rgba(20, 16, 41, 0.02)
           padding: 2px
@@ -79,3 +91,62 @@
           .sep
             margin: 0 5px
             color: $l-gray
+      &-content
+        .titles
+          display: flex
+          align-items: center
+          padding: 0 12px
+          margin-bottom: 12px
+          .title
+            width: 15.3%
+            color: $black
+            display: flex
+            align-items: center
+            cursor: pointer
+            +media-b(600)
+              flex-shrink: 0
+              width: 22%
+            +media-b(420)
+              width: 32%
+            &.short
+              width: 8%
+              +media-b(600)
+                width: 12%
+              +media-b(420)
+                width: 20%
+            img
+              opacity: 0.4
+              transform: rotate(90deg)
+              width: 13px
+              height: 13px
+        .lines
+          padding-bottom: 10px
+          .line
+            display: flex
+            align-items: center
+            padding: 6px 12px
+            cursor: pointer
+            transition: all 0.3s
+            &:hover
+              background: rgba(20, 16, 41, 0.02)
+            .cell
+              width: 15.3%
+              +media-b(600)
+                flex-shrink: 0
+                width: 22%
+              +media-b(420)
+                width: 32%
+              &.short
+                width: 8%
+                +media-b(600)
+                  width: 12%
+                +media-b(420)
+                  width: 20%
+              &.emp
+                color: $black
+              &.filled
+                color: #ffaa00
+              &.open
+                color: #16b862
+              &.cancel
+                color: #f54562
