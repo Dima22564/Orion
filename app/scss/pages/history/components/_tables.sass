@@ -1,0 +1,163 @@
+.history
+  h1
+    margin-bottom: 23px
+  .my-row
+    +lg-one(justify-content, center)
+  .history-table
+    box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    padding: 16px 16px 0 16px
+    border-radius: 4px
+    background: $white
+    width: 49.5%
+    +lg-one(width, 65%)
+    +md-one(width, 100%)
+    &:not(:last-child)
+      margin-right: 8px
+      +lg-one(margin, 0 0 8px 0)
+    .table-wrapper
+      padding-bottom: 16px
+      +media-b(601)
+        overflow-x: scroll
+    .heading
+      margin-bottom: 16px
+      font-weight: 600
+      font-size: 20px
+      line-height: 28px
+      color: $black
+    .top
+      display: flex
+      align-items: center
+      margin-bottom: 16px
+      +media-b(1020)
+        justify-content: space-between
+      +lg-one(justify-content, initial)
+      & > div
+        &:not(:last-child)
+          margin-right: 16px
+          +media-b(1020)
+            margin-right: 0
+          +lg-one(margin-right, 6px)
+      .status
+        .drop-menu-currecy-select-1
+          text-transform: initial
+          color: $d-gray !important
+      .drop-menu-currecy-select-1
+        border-radius: 4px
+        border: none !important
+        background-color: rgba(20, 16, 41, 0.02) !important
+        text-transform: uppercase
+        font-size: 14px
+        line-height: 16px
+        color: $black !important
+        width: initial !important
+        font-family: 'Montserrat', sans-serif
+        position: relative
+        font-weight: 500
+        margin: 0
+        padding: 7px 13px 6px 8px
+        .custom-icon
+          right: 3px
+          width: 16px
+          height: 16px
+          background-size: contain
+          top: 5px
+        &.ui-selectmenu-button-open
+          .custom-icon
+            transform: rotate(270deg) !important
+      .date
+        display: flex
+        align-items: center
+        .hr
+          margin: 0 2px
+        input
+          opacity: 0
+          position: absolute
+          z-index: -555
+        label
+          padding: 6px 8px
+          background-color: rgba(20, 16, 41, 0.02)
+          border-radius: 4px
+          display: flex
+          align-items: center
+          cursor: pointer
+          color: $black
+          font-size: 14px
+          line-height: 16px
+          img
+            margin-left: 12px
+    .table-content
+      .titles
+        display: flex
+        align-items: center
+        padding: 0 12px
+        margin-bottom: 26px
+        .title
+          width: 32.5%
+          color: $black
+          display: flex
+          align-items: center
+          cursor: pointer
+          font-size: 14px
+          line-height: 24px
+          +media-b(601)
+            flex-shrink: 0
+            width: 46%
+          +media-b(400)
+            width: 71%
+          &.status
+            width: 15%
+          &.short
+            width: 20%
+            +media-b(601)
+              width: 40%
+            
+          img
+            opacity: 0.4
+            transform: rotate(90deg)
+            width: 18px
+            height: 18px
+      .lines
+        padding-bottom: 10px
+        margin-right: -16px
+        padding-right: 16px
+        .line
+          display: flex
+          align-items: center
+          padding: 6px 12px
+          cursor: pointer
+          transition: all 0.3s
+          font-size: 14px
+          line-height: 24px
+          &:hover
+            background: rgba(20, 16, 41, 0.02)
+          .cell
+            width: 32.5%
+            +media-b(601)
+              flex-shrink: 0
+              width: 46%
+            +media-b(400)
+              width: 71%
+            &.status
+              width: 15%
+            &.btc
+              display: flex
+              align-items: center
+              img
+                margin-right: 12px
+            &.short
+              width: 20%
+              +media-b(601)
+                width: 40%
+              // +media-b(600)
+              //   width: 12%
+              // +media-b(420)
+              //   width: 20%
+            &.emp
+              color: $black
+            &.filled
+              color: #ffaa00
+            &.open
+              color: #16b862
+            &.cancel
+              color: #f54562
+

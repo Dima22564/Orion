@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap")
+    link(rel="stylesheet", href="./libs/css/vendor.min.css")
+    link(rel="stylesheet", href="./css/style.css")
+    title Orion History
+  body
+    .history
+      .my-container
+        h1 Transaction History
+        .my-row
+          .history-table
+            p.heading Deposit History
+            .table-wrapper
+              .top
+                .date
+                  .date-1.js-date-1
+                    input#date-1(type="date", name="")
+                    label(for="date-1")
+                      span.js-out 25.03.2000
+                      img(src="./img/calendar.png", alt="")
+                  span.hr -
+                  .date-1.js-date-2
+                    input#date-2(type="date", name="")
+                    label(for="date-2")
+                      span.js-out 25.03.2000
+                      img(src="./img/calendar.png", alt="")
+                .all
+                  select(name="").currency-select-1
+                    option(value="") BTC
+                    option(value="") BTC
+                .all.status
+                  select(name="").currency-select-1
+                    option(value="") Any Status
+                    option(value="") Any Status
+              .table-content
+                .titles
+                  .title
+                    span Date
+                    img(src="./img/arrow-down.svg", alt="")
+                  .title.short
+                    span.short Asset
+                    img(src="./img/arrow-down.svg", alt="")
+                  .title
+                    span Amount
+                    img(src="./img/arrow-down.svg", alt="")
+                  .title.status
+                    span Status
+                    img(src="./img/arrow-down.svg", alt="")
+
+                .lines
+                  .line
+                    span.cell 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell 0.00448236
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell 09.09.2019 12:42:41
+                    .cell.short.emp.btc 
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell 0.00448236
+                    span.cell.cancel.status Cancelled
+                  .line
+                    span.cell 09.09.2019 12:42:41
+                    .cell.short.emp.btc 
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell 0.00448236
+                    span.cell.open.status Opened
+
+        
+          .history-table
+            p.heading Withdraw History
+            .table-wrapper
+              .top
+                .date
+                  .date-1.js-date-1
+                    input#date-1(type="date", name="")
+                    label(for="date-1")
+                      span.js-out 25.03.2000
+                      img(src="./img/calendar.png", alt="")
+                  span.hr -
+                  .date-1.js-date-2
+                    input#date-2(type="date", name="")
+                    label(for="date-2")
+                      span.js-out 25.03.2000
+                      img(src="./img/calendar.png", alt="")
+                .all
+                  select(name="").currency-select-1
+                    option(value="") BTC
+                    option(value="") BTC
+                .all.status
+                  select(name="").currency-select-1
+                    option(value="") Any Status
+                    option(value="") Any Status
+              .table-content
+                .titles
+                  .title
+                    span Date
+                    img(src="./img/arrow-down.svg", alt="")
+                  .title.short
+                    span.short Asset
+                    img(src="./img/arrow-down.svg", alt="")
+                  .title
+                    span Amount
+                    img(src="./img/arrow-down.svg", alt="")
+                  .title.status
+                    span Status
+                    img(src="./img/arrow-down.svg", alt="")
+
+                .lines
+                  .line
+                    span.cell 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell 0.00448236
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell 09.09.2019 12:42:41
+                    .cell.short.emp.btc 
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell 0.00448236
+                    span.cell.cancel.status Cancelled
+                  .line
+                    span.cell 09.09.2019 12:42:41
+                    .cell.short.emp.btc 
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell 0.00448236
+                    span.cell.open.status Opened
+
+        
+
+
+  script(src="./libs/js/vendor.min.js")
+  script(src="./js/index.js")
