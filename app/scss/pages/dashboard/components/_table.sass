@@ -1,0 +1,99 @@
+.dashboard
+  .wrapper
+    .wallets-table
+      box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+      border-radius: 4px
+      background: $white
+      padding: 22px
+      +media-b(910)
+        overflow-x: scroll
+      +media-b(455)
+        padding: 16px
+      .titles
+        display: flex
+        align-items: center
+        padding: 0 12px
+        margin-bottom: 12px
+        .title
+          width: 14.5%
+          color: $black
+          display: flex
+          align-items: center
+          cursor: pointer
+          font-size: 14px
+          line-height: 16px
+          +media-b(910)
+            flex-shrink: 0
+            width: 22.5%
+          +media-b(622)
+            width: 29.5%
+          +media-b(512)
+            width: 57%
+          &.actions
+            width: 42%
+            justify-content: flex-end
+            +media-b(910)
+              width: 50%
+            +media-b(622)
+              width: 78%
+            +media-b(512)
+              width: 155%
+          img
+            opacity: 0.4
+            transform: rotate(90deg)
+            width: 17px
+            height: 17px
+      .lines
+        padding-bottom: 10px
+        .line
+          display: flex
+          align-items: center
+          padding: 6px 12px
+          cursor: pointer
+          transition: all 0.3s
+          .cell
+            width: 14.5%
+            font-size: 14px
+            line-height: 24px
+            +media-b(910)
+              width: 22.5%
+              flex-shrink: 0
+            +media-b(622)
+              width: 29.5%
+            +media-b(512)
+              width: 57%
+            &.actions
+              width: 42%
+              display: flex
+              align-items: center
+              +media-b(910)
+                width: 50%
+              +media-b(622)
+                width: 85%
+              +media-b(512)
+                width: 170%
+              button
+                padding: 8px 16px
+                background: rgba(20, 16, 41, 0.02)
+                border-radius: 2px
+                border: none
+                font-size: 14px
+                line-height: 20px
+                cursor: pointer
+                transition: all 0.3s
+                color: $black
+                &:hover
+                  background: rgba(20, 16, 41, 0.06)                  
+                span
+                  margin-left: 10px
+                &.withdraw
+                  img
+                    transform: rotate(180deg)
+                &:not(:last-child)
+                  margin-right: 6px
+            &.coins
+              display: flex
+              align-items: center
+              color: $black
+              img
+                margin-right: 12px

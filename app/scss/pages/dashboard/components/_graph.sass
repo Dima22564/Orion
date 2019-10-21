@@ -1,0 +1,55 @@
+.dashboard
+  .graph
+    box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    border-radius: 4px
+    background: $white
+    padding: 24px
+    width: 24%
+    +media-b(1192)
+      order: 5
+      width: 33%
+    +media-b(910)
+      width: 50%
+    +media-b(640)
+      width: 70%
+    +media-b(490)
+      width: 100%
+    h2
+      margin-bottom: 32px
+    .graph-container
+      width: 250px
+      height: 250px
+      font-weight: 700 !important
+      font-family: 'Montserrat', sans-serif !important
+      transform: translateX(-10px)
+      margin: auto
+      +media-b(1192)
+        transform: translateX(0)
+      +media-b(490)
+        width: 220px
+        height: 220px
+    .coins
+      margin-top: 36px
+      .coin
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 8px 0
+        .left
+          display: flex
+          align-items: center
+          img
+            width: 20px
+            height: 20px
+            margin-right: 18px
+          .name
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: 1px
+            font-weight: 600
+            text-transform: uppercase
+            color: $black
+        .num
+          font-size: 14px
+          line-height: 24px
+          color: $black

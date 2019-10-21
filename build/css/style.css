@@ -42,6 +42,10 @@ body {
   padding: 30px 0;
 }
 
+.dashboard {
+  padding: 30px 0;
+}
+
 h1 {
   font-size: 36px;
   line-height: 36px;
@@ -51,11 +55,10 @@ h1 {
 }
 
 h2 {
-  font-size: 70px;
-  text-transform: uppercase;
-  line-height: 71px;
-  color: #f58c1e;
-  font-weight: 900;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(20, 16, 41, 0.8);
+  font-weight: 600;
 }
 
 h3 {
@@ -1093,6 +1096,350 @@ a:active {
   color: #f54562;
 }
 
+.dashboard .wrapper {
+  width: 75%;
+  margin-left: 8px;
+}
+
+.dashboard .wrapper .wallets {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 8px;
+}
+
+.dashboard .wrapper .wallets .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dashboard .wrapper .wallets .top .add {
+  background: rgba(20, 16, 41, 0.02);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(20, 16, 41, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard .wrapper .wallets .top .add:hover {
+  background: rgba(20, 16, 41, 0.06);
+}
+
+.dashboard .wrapper .wallets .top .add img {
+  margin-right: 12px;
+}
+
+.dashboard .wrapper .wallets .crypto-wallets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet {
+  width: 32.5%;
+  padding: 16px;
+  border-radius: 2px;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet.btc {
+  background: rgba(247, 147, 26, 0.03);
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet.btc:hover {
+  background: rgba(247, 147, 26, 0.1);
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet.eth {
+  background: rgba(136, 0, 255, 0.03);
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet.eth:hover {
+  background: rgba(136, 0, 255, 0.1);
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet.dash {
+  background: rgba(0, 187, 255, 0.03);
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet.dash:hover {
+  background: rgba(0, 187, 255, 0.1);
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 28px;
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet .money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet .money .num {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet .money .currency {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 700;
+  color: rgba(20, 16, 41, 0.8);
+  text-transform: uppercase;
+}
+
+.dashboard .wrapper .wallets .crypto-wallets .wallet .currency-2 {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.dashboard .wrapper .wallets-table {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 22px;
+}
+
+.dashboard .wrapper .wallets-table .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: 12px;
+}
+
+.dashboard .wrapper .wallets-table .titles .title {
+  width: 14.5%;
+  color: rgba(20, 16, 41, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.dashboard .wrapper .wallets-table .titles .title.actions {
+  width: 42%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.dashboard .wrapper .wallets-table .titles .title img {
+  opacity: 0.4;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 17px;
+  height: 17px;
+}
+
+.dashboard .wrapper .wallets-table .lines {
+  padding-bottom: 10px;
+}
+
+.dashboard .wrapper .wallets-table .lines .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell {
+  width: 14.5%;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.actions {
+  width: 42%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.actions button {
+  padding: 8px 16px;
+  background: rgba(20, 16, 41, 0.02);
+  border-radius: 2px;
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.actions button:hover {
+  background: rgba(20, 16, 41, 0.06);
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.actions button span {
+  margin-left: 10px;
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.actions button.withdraw img {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.actions button:not(:last-child) {
+  margin-right: 6px;
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.coins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.dashboard .wrapper .wallets-table .lines .line .cell.coins img {
+  margin-right: 12px;
+}
+
+.dashboard .graph {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 24px;
+  width: 24%;
+}
+
+.dashboard .graph h2 {
+  margin-bottom: 32px;
+}
+
+.dashboard .graph .graph-container {
+  width: 250px;
+  height: 250px;
+  font-weight: 700 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  -webkit-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  transform: translateX(-10px);
+  margin: auto;
+}
+
+.dashboard .graph .coins {
+  margin-top: 36px;
+}
+
+.dashboard .graph .coins .coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.dashboard .graph .coins .coin .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dashboard .graph .coins .coin .left img {
+  width: 20px;
+  height: 20px;
+  margin-right: 18px;
+}
+
+.dashboard .graph .coins .coin .left .name {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.dashboard .graph .coins .coin .num {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(20, 16, 41, 0.8);
+}
+
 @media (min-width: 576px) {
   .my-container {
     max-width: 100%;
@@ -1114,6 +1461,32 @@ a:active {
 @media (min-width: 1200px) {
   .my-container {
     max-width: 1200px;
+  }
+}
+
+@media (max-width: 1192px) {
+  .dashboard .my-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .dashboard .wrapper {
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  .dashboard .graph {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 33%;
+  }
+
+  .dashboard .graph .graph-container {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -1189,6 +1562,46 @@ a:active {
   }
 }
 
+@media (max-width: 910px) {
+  .dashboard .wrapper .wallets .crypto-wallets {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .dashboard .wrapper .wallets .crypto-wallets .wallet {
+    width: 48%;
+    margin: 0 4px 8px 4px;
+  }
+
+  .dashboard .wrapper .wallets-table {
+    overflow-x: scroll;
+  }
+
+  .dashboard .wrapper .wallets-table .titles .title {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 22.5%;
+  }
+
+  .dashboard .wrapper .wallets-table .titles .title.actions {
+    width: 50%;
+  }
+
+  .dashboard .wrapper .wallets-table .lines .line .cell {
+    width: 22.5%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+
+  .dashboard .wrapper .wallets-table .lines .line .cell.actions {
+    width: 50%;
+  }
+
+  .dashboard .graph {
+    width: 50%;
+  }
+}
+
 @media (max-width: 768px) {
   .history .history-table {
     width: 100%;
@@ -1210,6 +1623,42 @@ a:active {
 
   .index .right-panel {
     max-width: 60%;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard .graph {
+    width: 70%;
+  }
+}
+
+@media (max-width: 622px) {
+  .dashboard .wrapper .wallets-table .titles .title {
+    width: 29.5%;
+  }
+
+  .dashboard .wrapper .wallets-table .titles .title.actions {
+    width: 78%;
+  }
+
+  .dashboard .wrapper .wallets-table .lines .line .cell {
+    width: 29.5%;
+  }
+
+  .dashboard .wrapper .wallets-table .lines .line .cell.actions {
+    width: 85%;
+  }
+}
+
+@media (max-width: 620px) {
+  .dashboard .wrapper .wallets .crypto-wallets {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .dashboard .wrapper .wallets .crypto-wallets .wallet {
+    width: 70%;
   }
 }
 
@@ -1261,13 +1710,6 @@ a:active {
   }
 }
 
-@media (max-width: 576px) {
-  h2 {
-    font-size: 42px;
-    line-height: 52px;
-  }
-}
-
 @media (max-width: 515px) {
   .index .left-panel {
     max-width: 100%;
@@ -1276,6 +1718,49 @@ a:active {
   .index .right-panel {
     max-width: 100%;
     margin: 8px 0 0 0;
+  }
+}
+
+@media (max-width: 512px) {
+  .dashboard .wrapper .wallets-table .titles .title {
+    width: 57%;
+  }
+
+  .dashboard .wrapper .wallets-table .titles .title.actions {
+    width: 155%;
+  }
+
+  .dashboard .wrapper .wallets-table .lines .line .cell {
+    width: 57%;
+  }
+
+  .dashboard .wrapper .wallets-table .lines .line .cell.actions {
+    width: 170%;
+  }
+}
+
+@media (max-width: 490px) {
+  .dashboard .graph {
+    width: 100%;
+  }
+
+  .dashboard .graph .graph-container {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 455px) {
+  .dashboard .wrapper .wallets {
+    padding: 16px;
+  }
+
+  .dashboard .wrapper .wallets .crypto-wallets .wallet {
+    width: 100%;
+  }
+
+  .dashboard .wrapper .wallets-table {
+    padding: 16px;
   }
 }
 
@@ -1304,5 +1789,22 @@ a:active {
 
   .history .history-table .table-content .lines .line .cell {
     width: 71%;
+  }
+}
+
+@media (max-width: 370px) {
+  .dashboard .wrapper .wallets .crypto-wallets .wallet .money {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .dashboard .wrapper .wallets .crypto-wallets .wallet .money .currency {
+    line-height: 0;
   }
 }

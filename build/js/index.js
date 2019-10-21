@@ -25,6 +25,10 @@ $(document).ready(function () {
 
   date('.js-date-1');
   date('.js-date-2');
+  date('.js-date-3');
+  date('.js-date-4');
+  date('.js-date-5');
+  date('.js-date-6');
   $(".currency-select-1").selectmenu({
     classes: {
       "ui-selectmenu-button-closed": "drop-menu-currecy-select-1",

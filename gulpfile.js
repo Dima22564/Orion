@@ -110,7 +110,7 @@ gulp.task('pug', function () {
 });
 
 gulp.task('concatJs', function () {
-    return gulp.src([src + '/libs/js/jquery.min.js', src + '/libs/js/jquery-ui.min.js', src + '/libs/js/slick.min.js', src + '/libs/js/wow.js', src + '/libs/js/swiper.min.js',])
+    return gulp.src([src + '/libs/js/jquery.min.js', src + '/libs/js/jquery-ui.min.js',  src + '/libs/js/core.js', src + '/libs/js/charts.js', src + '/libs/js/animated.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('vendor.js'))
         .pipe(rename({
