@@ -1,0 +1,138 @@
+.js-add-wallet-2
+  // display: block
+.add-wallet-2
+  max-width: 472px
+  background: $white
+  padding: 40px
+  border-radius: 4px
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 32px 48px rgba(20, 16, 41, 0.12), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+  width: 100%
+  +media-b(500)
+    padding: 16px
+    margin: 0 16px
+  +media-b(910)
+    height: calc(100vh - 60px)
+    overflow-y: scroll
+  .methods
+    .tab-titles
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 24px
+      +media-b(430)
+        flex-direction: column
+      button
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: $d-gray
+        padding: 14px 24px
+        border-radius: 2px
+        transition: all 0.3s
+        border: none
+        cursor: pointer
+        background: rgba(20, 16, 41, 0.02)
+        +media-b(430)
+          width: 100%
+          margin-bottom: 8px
+        &.active
+          color: #00bbff
+          background: rgba(0, 187, 255, 0.03)
+          &:hover
+            background: rgba(0, 187, 255, 0.06)            
+        &:hover
+          background: rgba(20, 16, 41, 0.06)
+          cursor: pointer
+    .tabs
+      .tab
+        display: none
+      .tab-metamask
+        display: block
+        .desc
+          margin-bottom: 31px
+          font-size: 16px
+          line-height: 28px
+        .connect
+          background-color: rgba(20, 16, 41, 0.02)
+          padding: 16px
+          border-radius: 2px
+          margin-bottom: 16px
+          .subtitle
+            font-size: 16px
+            line-height: 24px
+            font-weight: 600
+            color: $black
+            margin-bottom: 8px
+          .allow
+            font-size: 14px
+            line-height: 20px
+        .recommend
+          padding: 16px
+          color: #16b862
+          font-size: 14px
+          line-height: 20px
+          background: rgba(22, 184, 98, 0.03)
+          margin-bottom: 40px
+      .tab-key
+        .private-key
+          display: flex
+          align-items: flex-start
+          flex-direction: column
+          span
+            font-size: 13px
+            line-height: 16px
+            color: $l-gray
+            margin: 0 0 7px 16px
+          input
+            background-color: rgba(20, 16, 41, 0.02);
+            padding: 12px 16px
+            border-radius: 2px;
+            border: none
+            font-size: 16px
+            line-height: 24px
+            color: $black
+            width: 100%
+
+  .btns
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 40px
+    +media-b(430)
+      flex-direction: column
+    .back
+      border: none
+      padding: 12px 24px
+      background: rgba(20, 16, 41, 0.02)
+      cursor: pointer
+      border-radius: 2px
+      color: $black
+      font-size: 16px
+      line-height: 24px
+      font-weight: 600
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: all 0.3s
+      +media-b(430)
+        width: 100%
+        margin-bottom: 8px
+      &:hover
+        background: rgba(20, 16, 41, 0.06)
+      img
+        margin-right: 20px
+        transform: rotate(180deg)
+    .connect
+      @extend .back
+      background-image: linear-gradient(135deg, #00ffaa 0%, #00bbff 53%, #4579f5 100%)
+      color: $white
+      box-shadow: 0 8px 12px rgba(0, 187, 255, 0.24), 0 2px 4px -1px rgba(10, 70, 82, 0.12), 0 0 1px rgba(0, 187, 255, 0.24)
+      &:hover
+        background-image: linear-gradient(135deg, #00ffaa 0%, #00bbff 53%, #4579f5 100%)
+      img
+        margin-right: 20px
+        transform: rotate(0)
+
+
+
+

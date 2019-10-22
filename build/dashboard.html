@@ -32,7 +32,7 @@
                         <div class="wallets">
                             <div class="top">
                                 <h2>Wallets</h2>
-                                <button class="add"><img src="./img/add.png" alt><span>Add Wallet</span></button>
+                                <button class="add js-add-wallet"><img src="./img/add.png" alt><span>Add Wallet</span></button>
                             </div>
                             <div class="crypto-wallets">
                                 <div class="wallet eth">
@@ -87,6 +87,72 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper js-add-wallet-1">
+            <div class="popup-body">
+                <div class="add-wallet-1">
+                    <div class="popup-top">
+                        <p class="title">Add Wallet</p>
+                        <div class="steps"><span class="active">1</span><span>2</span></div><img class="close js-close" src="./img/close.png" alt>
+                    </div>
+                    <div class="choose-wallet">
+                        <div class="item js-next-step"><img class="icon" src="./img/big-eth.png" alt>
+                            <div class="text">
+                                <p class="name">Ethereum</p>
+                                <p class="desc">Ethereum is the solution</p>
+                            </div><img class="next" src="./img/arrow-down.svg" alt>
+                        </div>
+                        <div class="item js-next-step"><img class="icon" src="./img/wanchain.png" alt>
+                            <div class="text">
+                                <p class="name">Wanchain</p>
+                                <p class="desc">Wanchain team has attended</p>
+                            </div><img class="next" src="./img/arrow-down.svg" alt>
+                        </div>
+                        <div class="item js-next-step"><img class="icon" src="./img/waves.png" alt>
+                            <div class="text">
+                                <p class="name">Waves</p>
+                                <p class="desc">Revolutionizing the world</p>
+                            </div><img class="next" src="./img/arrow-down.svg" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper js-add-wallet-2">
+            <div class="popup-body">
+                <div class="add-wallet-2">
+                    <div class="popup-top">
+                        <p class="title">Add Wallet</p>
+                        <div class="steps"><span>1</span><span class="active">2</span></div><img class="close js-close" src="./img/close.png" alt>
+                    </div>
+                    <div class="methods">
+                        <div class="tab-titles">
+                            <button class="active js-tab-btn" data-tab="metamask">Metamask</button>
+                            <button class="js-tab-btn" data-tab="key">Private Key</button>
+                            <button class="js-tab-btn" data-tab="seed">Seed</button>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab-metamask tab">
+                                <p class="desc">Trade tokens on the Ethereum blockchain using the MetaMask browser extension.</p>
+                                <div class="connect">
+                                    <p class="subtitle">Connect to MetaMask</p>
+                                    <p class="allow">Allow Orion to connect to MetaMask to begin.</p>
+                                </div>
+                                <p class="recommend">This is a recommended trading method. All transaction signing is done within the MetaMask extension, and private keys are never sent to the browser.</p>
+                            </div>
+                            <div class="tab-key tab">
+                                <div class="private-key"><span>Enter private key</span>
+                                    <input name type="password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="back js-go-back-to-1"><img src="./img/arrow-down.svg" alt><span>Go back</span></button>
+                        <button class="connect"><img src="./img/fox.png" alt><span>Connect</span></button>
                     </div>
                 </div>
             </div>
