@@ -29,7 +29,7 @@
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 16px 24px rgba(20, 16, 41, 0.12), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     z-index: 50
     height: 100%
-    margin: -30px 0
+    margin: -15px 0
     padding-bottom: 30px
     transition: all 0.3s
     overflow-y: scroll
@@ -37,7 +37,8 @@
     transform: translateX(0)
     +media-b(1200)
       transform: translateX(-300%)
-      position: absolute
+      position: fixed
+      margin: 0
     +media-b(1600)
       max-height: 100vh
       overflow-y: scroll

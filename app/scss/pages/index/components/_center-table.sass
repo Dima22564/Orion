@@ -3,26 +3,30 @@
     max-width: 58%
     width: 100%
     margin: 0 8px
-    height: 100vh
+    height: calc(100vh - 30px)
     overflow-y: scroll
     padding: 1px
     // margin: -1px
+    box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    border-radius: 4px
     +media-b(1130)
       max-width: 69%  
       margin: 0 0 8px 8px  
+      height: 50vh
     +media-b(960)
       max-width: 100%  
       margin: 8px 0 0 0 
       order: 5 
+      height: calc(50vh - 30px)
+    +media-b(767)
+      height: initial
     .image
-      box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
       background: $white
       margin-bottom: 8px
       img
         width: 100% 
     .table
-      box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
       background: $white
       +media-b(685)
