@@ -20,7 +20,6 @@
       background-color: rgba(20, 16, 41, 0.12)
       border-radius: 2px
   &-wrapper
-    // position: absolute
     min-height: 100vh
     left: 0
     top: 0
@@ -34,13 +33,12 @@
     padding-bottom: 30px
     transition: all 0.3s
     overflow-y: scroll
-        
+    flex-shrink: 0
     transform: translateX(0)
     +media-b(1200)
       transform: translateX(-300%)
+      position: absolute
     +media-b(1600)
-      // position: absolute
-      // margin: 0
       max-height: 100vh
       overflow-y: scroll
       overflow-x: hidden

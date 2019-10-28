@@ -121,4 +121,15 @@ $(document).ready(function () {
       }
     }
   });
+  $(window).on('resize', function (e) {
+    if (screen.width > 1200) {
+      $('.js-sidebar-wrapper').css({
+        transform: 'translateX(0)'
+      });
+    } else if (screen.width < 1200) {
+      $('.js-sidebar-wrapper').css({
+        transform: 'translateX(-300%)'
+      });
+    }
+  });
 });
