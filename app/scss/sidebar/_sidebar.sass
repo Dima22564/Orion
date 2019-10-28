@@ -21,6 +21,7 @@
       border-radius: 2px
   &-wrapper
     // position: absolute
+    min-height: 100vh
     left: 0
     top: 0
     max-width: 310px
@@ -32,17 +33,24 @@
     margin: -30px 0
     padding-bottom: 30px
     transition: all 0.3s
+    overflow-y: scroll
+        
+    transform: translateX(0)
     +media-b(1200)
       transform: translateX(-300%)
     +media-b(1600)
-      position: absolute
-      margin: 0
+      // position: absolute
+      // margin: 0
       max-height: 100vh
       overflow-y: scroll
       overflow-x: hidden
       max-width: 72px
       &:hover
         max-width: 310px
+        position: absolute
+        margin: 0
+        top: 0
+        left: 0
         nav
           align-items: flex-start
         .dark-mode

@@ -39,6 +39,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
 }
 
 .history {
@@ -46,6 +47,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
 }
 
 .dashboard {
@@ -53,6 +55,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
 }
 
 .wallet-page {
@@ -60,6 +63,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
 }
 
 h1 {
@@ -2037,6 +2041,7 @@ a:active {
 }
 
 .sidebar-wrapper {
+  min-height: 100vh;
   left: 0;
   top: 0;
   max-width: 310px;
@@ -2051,6 +2056,10 @@ a:active {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  overflow-y: scroll;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .sidebar-content .logo {
@@ -2266,16 +2275,8 @@ a:active {
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .my-container {
-    margin-right: 0;
-  }
-}
-
 @media (max-width: 1600px) {
   .sidebar-wrapper {
-    position: absolute;
-    margin: 0;
     max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -2284,6 +2285,10 @@ a:active {
 
   .sidebar-wrapper:hover {
     max-width: 310px;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
   }
 
   .sidebar-wrapper:hover nav {
@@ -2415,12 +2420,6 @@ a:active {
 
   .sidebar-content .add-wallet span {
     display: none;
-  }
-}
-
-@media (max-width: 1240px) {
-  .my-container {
-    margin-right: 0;
   }
 }
 
