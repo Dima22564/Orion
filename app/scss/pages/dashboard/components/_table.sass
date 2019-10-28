@@ -5,10 +5,15 @@
       border-radius: 4px
       background: $white
       padding: 22px
+      height: calc(50vh - 10px)
+      overflow-y: scroll
       +media-b(910)
         overflow-x: scroll
       +media-b(455)
         padding: 16px
+      +media-b(1200)
+        height: initial
+        overflow-y: visible
       .titles
         display: flex
         align-items: center

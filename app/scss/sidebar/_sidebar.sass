@@ -65,6 +65,7 @@
           border-radius: 0
           width: 100%
           justify-content: flex-start
+          // color: #a19fa9
           &.active
             &::before
               opacity: 1
@@ -136,6 +137,7 @@
       display: flex
       align-items: center
       transition: all 0.3s
+      color: #a19fa9 !important
       +media-b(1600)
         justify-content: center
         width: 48px
@@ -147,7 +149,7 @@
       &:hover
         background: rgba(20, 16, 41, 0.02)
       &.active
-        color: $blue
+        color: $blue !important
         background: rgba(0, 187, 255, 0.03)
         &::before
           content: ''

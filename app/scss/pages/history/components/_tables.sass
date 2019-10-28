@@ -9,7 +9,13 @@
     border-radius: 4px
     background: $white
     width: 49.5%
+    height: calc(84vh - 30px)
+    overflow-y: scroll
     +lg-one(width, 100%)
+    +lg
+      width: 100%
+      height: initial
+      overflow-y: visible
     // +md-one(width, 100%)
     &:not(:last-child)
       margin-right: 8px

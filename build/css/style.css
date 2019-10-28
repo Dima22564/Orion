@@ -65,8 +65,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100vh);
-  overflow: hidden;
   padding: 15px 0;
 }
 
@@ -346,7 +344,7 @@ a:active {
 
 .index .left-panel {
   height: calc(100vh - 30px);
-  overflow-y: scroll;
+  overflow-y: auto;
   margin: -1px;
   padding: 1px;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
@@ -556,7 +554,7 @@ a:active {
   width: 100%;
   margin: 0 8px;
   height: calc(100vh - 30px);
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 1px;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
@@ -782,7 +780,7 @@ a:active {
   max-width: 24%;
   width: 100%;
   height: calc(100vh - 30px);
-  overflow-y: scroll;
+  overflow-y: auto;
   margin: -1px;
   padding: 1px;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
@@ -921,6 +919,8 @@ a:active {
   border-radius: 4px;
   background: #ffffff;
   width: 49.5%;
+  height: calc(84vh - 30px);
+  overflow-y: scroll;
 }
 
 .history .history-table:not(:last-child) {
@@ -1148,6 +1148,8 @@ a:active {
   background: #ffffff;
   padding: 24px;
   margin-bottom: 8px;
+  height: calc(50vh - 30px);
+  overflow-y: scroll;
 }
 
 .dashboard .wrapper .wallets .top {
@@ -1286,6 +1288,8 @@ a:active {
   border-radius: 4px;
   background: #ffffff;
   padding: 22px;
+  height: calc(50vh - 10px);
+  overflow-y: scroll;
 }
 
 .dashboard .wrapper .wallets-table .titles {
@@ -1419,6 +1423,8 @@ a:active {
   background: #ffffff;
   padding: 24px;
   width: 24%;
+  height: calc(100vh - 30px);
+  overflow-y: scroll;
 }
 
 .dashboard .graph h2 {
@@ -2161,6 +2167,7 @@ a:active {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  color: #a19fa9 !important;
 }
 
 .sidebar-content .nav-link:not(:last-child) {
@@ -2172,7 +2179,7 @@ a:active {
 }
 
 .sidebar-content .nav-link.active {
-  color: #00bbff;
+  color: #00bbff !important;
   background: rgba(0, 187, 255, 0.03);
 }
 
@@ -2439,8 +2446,28 @@ a:active {
 }
 
 @media (max-width: 1200px) {
+  .dashboard {
+    overflow: visible;
+    height: initial;
+  }
+
   .my-container {
     margin-right: auto;
+  }
+
+  .dashboard .wrapper .wallets {
+    height: initial;
+    overflow-y: visible;
+  }
+
+  .dashboard .wrapper .wallets-table {
+    height: initial;
+    overflow-y: visible;
+  }
+
+  .dashboard .graph {
+    height: initial;
+    overflow-y: visible;
   }
 
   .sidebar-line {
@@ -2545,6 +2572,12 @@ a:active {
     width: 100%;
   }
 
+  .history .history-table {
+    width: 100%;
+    height: initial;
+    overflow-y: visible;
+  }
+
   .history .history-table:not(:last-child) {
     margin: 0 0 8px 0;
   }
@@ -2557,6 +2590,13 @@ a:active {
 
   .history .history-table .top > div:not(:last-child) {
     margin-right: 6px;
+  }
+}
+
+@media (max-width: 991px) {
+  .history {
+    overflow: visible;
+    height: initial;
   }
 }
 
@@ -2655,21 +2695,6 @@ a:active {
     height: initial;
   }
 
-  .history {
-    overflow: visible;
-    height: initial;
-  }
-
-  .dashboard {
-    overflow: visible;
-    height: initial;
-  }
-
-  .wallet-page {
-    overflow: visible;
-    height: initial;
-  }
-
   .index .left-panel {
     height: initial;
   }
@@ -2681,6 +2706,11 @@ a:active {
   .index .right-panel {
     height: initial;
     max-height: initial;
+  }
+
+  .dashboard .graph {
+    height: initial;
+    overflow-y: visible;
   }
 }
 

@@ -14,8 +14,13 @@
       background: $white
       padding: 24px
       margin-bottom: 8px
+      height: calc(50vh - 30px)
+      overflow-y: scroll
       +media-b(455)
         padding: 16px
+      +media-b(1200)
+        height: initial
+        overflow-y: visible
       .top
         display: flex
         align-items: center

@@ -5,11 +5,19 @@
     background: $white
     padding: 24px
     width: 24%
+    height: calc(100vh - 30px)
+    overflow-y: scroll
     +media-b(1192)
       order: 5
       width: 33%
+    +media-b(1200)
+      height: initial
+      overflow-y: visible
     +media-b(910)
       width: 50%
+    +media-b(767)
+      height: initial
+      overflow-y: visible
     +media-b(640)
       width: 70%
     +media-b(490)
