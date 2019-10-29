@@ -22,7 +22,7 @@
   &-wrapper
     min-height: 100vh
     left: 0
-    top: 0
+    // top: 0
     max-width: 310px
     width: 100%
     background: $white
@@ -32,7 +32,7 @@
     margin: -15px 0
     padding-bottom: 30px
     transition: all 0.3s
-    overflow-y: scroll
+    overflow-y: auto
     flex-shrink: 0
     transform: translateX(0)
     +media-b(1200)
@@ -41,12 +41,11 @@
       margin: 0
     +media-b(1600)
       max-height: 100vh
-      overflow-y: scroll
       overflow-x: hidden
       max-width: 72px
-      &:hover
+      &.open
         max-width: 310px
-        position: absolute
+        // position: absolute
         margin: 0
         top: 0
         left: 0

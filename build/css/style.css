@@ -148,6 +148,30 @@ a:active {
   outline: none !important;
 }
 
+.ui-selectmenu-menu ul {
+  border-radius: 4px;
+}
+
+.ui-selectmenu-menu .ui-menu-item:not(:last-child) {
+  border-bottom: 1px solid rgba(20, 16, 41, 0.2) !important;
+}
+
+.ui-selectmenu-menu .ui-menu-item-wrapper {
+  background: rgba(20, 16, 41, 0.02) !important;
+  color: rgba(20, 16, 41, 0.8) !important;
+  border: 1px solid transparent !important;
+  padding: 7px 15px !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ui-selectmenu-menu .ui-menu-item-wrapper:hover {
+  background: rgba(20, 16, 41, 0.06) !important;
+}
+
 .my-container {
   margin: 0 0 0 auto;
   padding: 0 30px;
@@ -347,8 +371,6 @@ a:active {
   overflow-y: auto;
   margin: -1px;
   padding: 1px;
-  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
-  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   border-radius: 4px;
 }
 
@@ -2069,7 +2091,6 @@ a:active {
 .sidebar-wrapper {
   min-height: 100vh;
   left: 0;
-  top: 0;
   max-width: 310px;
   width: 100%;
   background: #ffffff;
@@ -2082,7 +2103,7 @@ a:active {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  overflow-y: scroll;
+  overflow-y: auto;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-transform: translateX(0);
@@ -2300,26 +2321,24 @@ a:active {
 @media (max-width: 1600px) {
   .sidebar-wrapper {
     max-height: 100vh;
-    overflow-y: scroll;
     overflow-x: hidden;
     max-width: 72px;
   }
 
-  .sidebar-wrapper:hover {
+  .sidebar-wrapper.open {
     max-width: 310px;
-    position: absolute;
     margin: 0;
     top: 0;
     left: 0;
   }
 
-  .sidebar-wrapper:hover nav {
+  .sidebar-wrapper.open nav {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
 
-  .sidebar-wrapper:hover .dark-mode {
+  .sidebar-wrapper.open .dark-mode {
     width: 100%;
     height: initial;
     padding: 14px 30px;
@@ -2328,11 +2347,11 @@ a:active {
     justify-content: flex-start;
   }
 
-  .sidebar-wrapper:hover .dark-mode .text {
+  .sidebar-wrapper.open .dark-mode .text {
     display: block;
   }
 
-  .sidebar-wrapper:hover .nav-link {
+  .sidebar-wrapper.open .nav-link {
     height: initial;
     padding: 14px 30px;
     border-radius: 0;
@@ -2342,15 +2361,15 @@ a:active {
     justify-content: flex-start;
   }
 
-  .sidebar-wrapper:hover .nav-link.active::before {
+  .sidebar-wrapper.open .nav-link.active::before {
     opacity: 1;
   }
 
-  .sidebar-wrapper:hover .nav-link .text {
+  .sidebar-wrapper.open .nav-link .text {
     display: block;
   }
 
-  .sidebar-wrapper:hover .coin {
+  .sidebar-wrapper.open .coin {
     width: 100% !important;
     height: initial !important;
     padding: 14px 30px !important;
@@ -2359,11 +2378,11 @@ a:active {
     justify-content: flex-start !important;
   }
 
-  .sidebar-wrapper:hover .coin .text {
+  .sidebar-wrapper.open .coin .text {
     display: block !important;
   }
 
-  .sidebar-wrapper:hover .add-wallet {
+  .sidebar-wrapper.open .add-wallet {
     padding: 14px 30px !important;
     width: 100% !important;
     height: initial !important;
@@ -2372,7 +2391,7 @@ a:active {
     justify-content: flex-start !important;
   }
 
-  .sidebar-wrapper:hover .add-wallet span {
+  .sidebar-wrapper.open .add-wallet span {
     display: block !important;
   }
 
