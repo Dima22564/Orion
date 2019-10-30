@@ -152,26 +152,32 @@ $(document).ready(function () {
 
 
   $('.js-sidebar-wrapper').hover(function(e){
-    $(this).css({
-      position: 'absolute'
-    })
-    $('body').css({
-      paddingLeft: '72px'
-    })
-    setTimeout(function(){
-      $('.js-sidebar-wrapper').addClass('open')
-
-    }, 350)
-  }, function(e){
-    $(this).removeClass('open')
-    setTimeout(function(){
-      $('.js-sidebar-wrapper').css({
-        position: 'initial'
+    if(screen.width < 1600){
+      $(this).css({
+        position: 'absolute'
       })
       $('body').css({
-        paddingLeft: '0'
+        paddingLeft: '72px'
       })
+      setTimeout(function(){
+        $('.js-sidebar-wrapper').addClass('open')
+  
+      }, 350)
 
-    }, 350)
+    }
+  }, function(e){
+    if(screen.width < 1600){
+      $(this).removeClass('open')
+      setTimeout(function(){
+        $('.js-sidebar-wrapper').css({
+          position: 'initial'
+        })
+        $('body').css({
+          paddingLeft: '0'
+        })
+  
+      }, 350)
+
+    }
   })
 });
