@@ -569,6 +569,7 @@ a:active {
   border-radius: 2px;
   border: none;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .index .center-panel {
@@ -2621,7 +2622,7 @@ a:active {
   }
 
   .index .right-panel .order-book .orders {
-    max-height: 244px;
+    max-height: 246px;
     overflow-y: auto;
   }
 }
