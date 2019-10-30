@@ -90,6 +90,9 @@ $(document).ready(function () {
     if (screen.width < 1200) {
       $(this).css('transform', 'translateX(-300%)');
       $('.js-sidebar-wrapper').css('transform', 'translateX(0)');
+      $('.js-sidebar-wrapper').css({
+        position: 'absolute'
+      });
     }
   });
   $('.js-sidebar-wrapper').hover(function () {
@@ -133,7 +136,7 @@ $(document).ready(function () {
     }
   });
   $('.js-sidebar-wrapper').hover(function (e) {
-    if (screen.width < 1600) {
+    if (screen.width < 1600 && screen.width > 1200) {
       $(this).css({
         position: 'absolute'
       });
@@ -145,7 +148,7 @@ $(document).ready(function () {
       }, 350);
     }
   }, function (e) {
-    if (screen.width < 1600) {
+    if (screen.width < 1600 && screen.width > 1200) {
       $(this).removeClass('open');
       setTimeout(function () {
         $('.js-sidebar-wrapper').css({
@@ -155,6 +158,17 @@ $(document).ready(function () {
           paddingLeft: '0'
         });
       }, 350);
+    }
+  });
+  $(window).on('resize', function (e) {
+    if (screen.width < 1200) {
+      $('.js-sidebar-wrapper').css({
+        position: 'absolute'
+      });
+    } else if (screen.width > 1200) {
+      $('.js-sidebar-wrapper').css({
+        position: 'initial'
+      });
     }
   });
 });
