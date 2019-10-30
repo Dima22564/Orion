@@ -576,7 +576,6 @@ a:active {
   width: 100%;
   margin: 0 8px;
   height: calc(100vh - 30px);
-  overflow-y: auto;
   padding: 1px;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
@@ -587,6 +586,8 @@ a:active {
   border-radius: 4px;
   background: #ffffff;
   margin-bottom: 8px;
+  max-height: 40vh;
+  overflow-y: auto;
 }
 
 .index .center-panel .image img {
@@ -716,6 +717,11 @@ a:active {
   color: rgba(20, 16, 41, 0.4);
 }
 
+.index .center-panel .table-content {
+  max-height: 43vh;
+  overflow-y: auto;
+}
+
 .index .center-panel .table-content .titles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,7 +808,6 @@ a:active {
   max-width: 24%;
   width: 100%;
   height: calc(100vh - 30px);
-  overflow-y: auto;
   margin: -1px;
   padding: 1px;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
@@ -813,6 +818,8 @@ a:active {
 .index .right-panel .order-book {
   border-radius: 4px;
   background: #ffffff;
+  margin-bottom: 15px;
+  max-height: 50vh;
 }
 
 .index .right-panel .order-book .heading {
@@ -837,6 +844,11 @@ a:active {
   width: 25%;
   text-align: center;
   color: rgba(20, 16, 41, 0.8);
+}
+
+.index .right-panel .order-book .orders {
+  max-height: 36vh;
+  overflow-y: auto;
 }
 
 .index .right-panel .order-book .orders .order {
@@ -2106,6 +2118,7 @@ a:active {
   overflow-y: auto;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  top: 0;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
@@ -2561,10 +2574,55 @@ a:active {
   }
 
   .index .right-panel {
-    max-width: 40%;
+    max-width: 29%;
     margin-top: 0;
     height: initial;
     max-height: calc(50vh);
+  }
+}
+
+@media (max-width: 1080px) {
+  .index {
+    overflow: visible;
+    height: initial;
+  }
+
+  .index .left-panel {
+    height: auto;
+  }
+
+  .index .center-panel {
+    max-height: initial;
+    height: auto;
+  }
+
+  .index .center-panel .image {
+    max-height: initial;
+  }
+
+  .index .center-panel .table-content {
+    max-height: 300px;
+  }
+
+  .index .my-row {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .index .right-panel {
+    max-width: 29%;
+    margin-top: 0;
+    max-height: initial;
+  }
+
+  .index .right-panel .order-book {
+    max-height: initial;
+  }
+
+  .index .right-panel .order-book .orders {
+    max-height: 244px;
+    overflow-y: auto;
   }
 }
 
@@ -2626,7 +2684,6 @@ a:active {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
     order: 5;
-    height: calc(50vh - 30px);
   }
 
   .index .right-panel {
@@ -2709,11 +2766,6 @@ a:active {
 }
 
 @media (max-width: 767px) {
-  .index {
-    overflow: visible;
-    height: initial;
-  }
-
   .index .left-panel {
     height: initial;
   }

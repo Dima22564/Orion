@@ -157,7 +157,7 @@ $(document).ready(function () {
   $('.js-sidebar-wrapper').hover(function(e){
     if(screen.width < 1600 && screen.width > 1200){
       $(this).css({
-        position: 'absolute'
+        position: 'fixed'
       })
       $('body').css({
         paddingLeft: '72px'
@@ -165,7 +165,7 @@ $(document).ready(function () {
       setTimeout(function(){
         $('.js-sidebar-wrapper').addClass('open')
   
-      }, 350)
+      }, 100)
 
     }
   }, function(e){
