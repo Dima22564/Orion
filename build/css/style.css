@@ -587,7 +587,7 @@ a:active {
   border-radius: 4px;
   background: #ffffff;
   margin-bottom: 8px;
-  max-height: 40vh;
+  max-height: calc(50vh - 30px);
   overflow-y: auto;
 }
 
@@ -719,7 +719,7 @@ a:active {
 }
 
 .index .center-panel .table-content {
-  max-height: 43vh;
+  max-height: calc(50vh - 77px);
   overflow-y: auto;
 }
 
@@ -820,7 +820,7 @@ a:active {
   border-radius: 4px;
   background: #ffffff;
   margin-bottom: 15px;
-  max-height: 50vh;
+  max-height: calc(100vh - 60px);
 }
 
 .index .right-panel .order-book .heading {
@@ -848,7 +848,7 @@ a:active {
 }
 
 .index .right-panel .order-book .orders {
-  max-height: 36vh;
+  max-height: calc(100vh - 103px);
   overflow-y: auto;
 }
 
@@ -2556,6 +2556,11 @@ a:active {
 }
 
 @media (max-width: 1130px) {
+  .index {
+    overflow: visible;
+    height: initial;
+  }
+
   .index .left-panel {
     max-width: 29%;
   }
@@ -2570,29 +2575,33 @@ a:active {
 
   .index .center-panel {
     max-width: 69%;
-    margin: 0 0 8px 8px;
-    height: 50vh;
   }
 
   .index .right-panel {
-    max-width: 29%;
+    max-width: 100%;
     margin-top: 0;
     height: initial;
-    max-height: calc(50vh);
+    max-height: initial;
+    margin-top: 8px;
+  }
+
+  .index .right-panel .order-book {
+    max-height: initial;
+  }
+
+  .index .right-panel .order-book .orders {
+    max-height: 246px;
+    overflow-y: auto;
   }
 }
 
 @media (max-width: 1080px) {
-  .index {
-    overflow: visible;
-    height: initial;
-  }
-
   .index .left-panel {
     height: auto;
   }
 
   .index .center-panel {
+    margin: 0 0 8px 8px;
     max-height: initial;
     height: auto;
   }
@@ -2612,18 +2621,8 @@ a:active {
   }
 
   .index .right-panel {
-    max-width: 29%;
     margin-top: 0;
     max-height: initial;
-  }
-
-  .index .right-panel .order-book {
-    max-height: initial;
-  }
-
-  .index .right-panel .order-book .orders {
-    max-height: 246px;
-    overflow-y: auto;
   }
 }
 
@@ -2690,6 +2689,10 @@ a:active {
   .index .right-panel {
     max-width: 70%;
     margin: 0 0 0 8px;
+  }
+
+  .index .right-panel .order-book .orders {
+    max-height: 532px;
   }
 }
 

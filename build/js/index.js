@@ -91,7 +91,7 @@ $(document).ready(function () {
       $(this).css('transform', 'translateX(-300%)');
       $('.js-sidebar-wrapper').css('transform', 'translateX(0)');
       $('.js-sidebar-wrapper').css({
-        position: 'absolute'
+        position: 'fixed'
       });
     }
   });
@@ -118,7 +118,6 @@ $(document).ready(function () {
       e.stopPropagation();
 
       if ($(e.target).hasClass('js-sidebar-wrapper') == false) {
-        console.log(e.target);
         $('.js-sidebar-wrapper').css('transform', 'translateX(-300%)');
         $('.js-sidebar-line').css('transform', 'translateX(0)');
       }
