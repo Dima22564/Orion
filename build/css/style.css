@@ -2986,6 +2986,8 @@ a:active {
 
   .index .right-panel .order-book .orders .order .cell.exch img {
     width: 20px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     height: 20px;
   }
 
