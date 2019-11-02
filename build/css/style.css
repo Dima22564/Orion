@@ -1068,11 +1068,6 @@ a:active {
   align-items: center;
 }
 
-.index .right-panel .order-book .orders .order .cell.exch img {
-  width: 20px;
-  height: 20px;
-}
-
 .index .right-panel .order-book .orders .order .cell.exch .arrow {
   opacity: 0.4;
   width: 14px;
@@ -2977,6 +2972,11 @@ a:active {
 
   .index .right-panel .order-book .orders .order .cell.exch {
     padding: 0;
+  }
+
+  .index .right-panel .order-book .orders .order .cell.exch img {
+    width: 20px;
+    height: 20px;
   }
 
   .top-menu {
