@@ -12,6 +12,29 @@
     <body>
         <div class="top-menu">
             <div class="links"><a class="logo" href><img src="./img/logo.png" alt></a><a class="nav-link active" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-2 icon"></span></a><a class="nav-link" href><span class="icon-link-3 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a></div>
+            <div class="add">+</div>
+        </div>
+        <div class="index-nav">
+            <div class="index-nav-item active js-index-nav" data-nav="pair">
+                <div class="icon"><span class="icon-link-1"></span></div>
+                <div class="text">Pair</div>
+            </div>
+            <div class="index-nav-item js-index-nav" data-nav="exchange">
+                <div class="icon"><span class="icon-link-1"></span></div>
+                <div class="text">Exchange</div>
+            </div>
+            <div class="index-nav-item js-index-nav" data-nav="chart">
+                <div class="icon"><span class="icon-link-1"></span></div>
+                <div class="text">Chart</div>
+            </div>
+            <div class="index-nav-item js-index-nav" data-nav="history">
+                <div class="icon"><span class="icon-link-1"></span></div>
+                <div class="text">History</div>
+            </div>
+            <div class="index-nav-item js-index-nav" data-nav="orderbook">
+                <div class="icon"><span class="icon-link-1"></span></div>
+                <div class="text">Orderbook</div>
+            </div>
         </div>
         <div class="index">
             <div class="sidebar-line js-sidebar-line">
@@ -33,8 +56,8 @@
             </div>
             <div class="my-container">
                 <div class="my-row">
-                    <div class="left-panel">
-                        <div class="common-info">
+                    <div class="left-panel js-panel active">
+                        <div class="common-info js-panel-item js-pair">
                             <div class="top">
                                 <div class="star"><img src="./img/star.png" alt><span>Pair</span></div>
                                 <select class="currecy-select" name>
@@ -65,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="buy-sell">
+                        <div class="buy-sell js-panel-item js-exchange">
                             <div class="top">
                                 <button class="active">Buy</button>
                                 <button>Sell</button>
@@ -89,9 +112,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="center-panel">
-                        <div class="image"><img src="./img/graph.jpg" alt></div>
-                        <div class="table">
+                    <div class="center-panel js-panel">
+                        <div class="image js-chart js-panel-item"><img src="./img/graph.jpg" alt></div>
+                        <div class="table js-history js-panel-item">
                             <div class="top">
                                 <div class="big-toggler"><span class="active">Orders</span><span>History</span></div>
                                 <div class="date">
@@ -158,180 +181,182 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right-panel">
-                        <div class="order-book">
-                            <p class="heading">Order Book</p>
-                            <div class="titles"><span class="title">Price</span><span class="title">Amount</span><span class="title">Total</span><span class="title">Exch</span></div>
-                            <div class="orders">
-                                <div class="order"><span class="progress-light l-green" style="width:41%;"></span><span class="progress-light d-green" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell green">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                    <div class="right-panel js-panel">
+                        <div class="js-panel-item js-orderbook">
+                            <div class="order-book">
+                                <p class="heading">Order Book</p>
+                                <div class="titles"><span class="title">Price</span><span class="title">Amount</span><span class="title">Total</span><span class="title">Exch</span></div>
+                                <div class="orders">
+                                    <div class="order"><span class="progress-light l-green" style="width:41%;"></span><span class="progress-light d-green" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell green">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green" style="width:20%;"></span><span class="progress-light d-green" style="width:2%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green" style="width:15%;"></span><span class="progress-light d-green" style="width:10%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green" style="width:85%;"></span><span class="progress-light d-green" style="width:6%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green" style="width:90%;"></span><span class="progress-light d-green" style="width:1%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:15%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:18%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:7%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:16.5%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:3.5%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:9%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
                                 </div>
-                                <div class="order"><span class="progress-light l-green" style="width:20%;"></span><span class="progress-light d-green" style="width:2%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green" style="width:15%;"></span><span class="progress-light d-green" style="width:10%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green" style="width:85%;"></span><span class="progress-light d-green" style="width:6%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green" style="width:90%;"></span><span class="progress-light d-green" style="width:1%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:15%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:18%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:7%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:16.5%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:3.5%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:9%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
+                                <div class="last-price"><span class="cell">0,0174</span><span class="last">Last Price</span></div>
                             </div>
-                            <div class="last-price"><span class="cell">0,0174</span><span class="last">Last Price</span></div>
-                        </div>
-                        <div class="order-book">
-                            <div class="orders">
-                                <div class="order"><span class="progress-light l-red" style="width:27%;"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red" style="width:30%;"></span><span class="progress-light d-red" style="width:7%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red" style="width:80%;"></span><span class="progress-light d-red" style="width:10%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red" style="width:45%;"></span><span class="progress-light d-red" style="width:15%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red" style="width:95%;"></span><span class="progress-light d-red" style="width:1%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:3%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:18%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:9.2%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:4%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                </div>
-                                <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                    <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="order-book">
+                                <div class="orders">
+                                    <div class="order"><span class="progress-light l-red" style="width:27%;"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red" style="width:30%;"></span><span class="progress-light d-red" style="width:7%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red" style="width:80%;"></span><span class="progress-light d-red" style="width:10%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red" style="width:45%;"></span><span class="progress-light d-red" style="width:15%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red" style="width:95%;"></span><span class="progress-light d-red" style="width:1%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:3%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:18%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:9.2%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:4%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
+                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
+                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

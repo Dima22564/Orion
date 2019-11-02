@@ -1,7 +1,9 @@
 .my-container
-  margin: 0 auto 0 auto
+  margin: 0 auto
   padding: 0 30px
   width: 100%
+  +media-b(1130)
+    padding: 0 16px
 .my-row
   display: flex
   flex-wrap: wrap
@@ -19,8 +21,5 @@
     max-width: calc(100%)
     
 @media (min-width:1200px) 
-  .my-container 
-    // max-width: 1130px
-    margin-right: auto
     
   

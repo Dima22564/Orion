@@ -140,4 +140,13 @@ $(document).ready(function () {
     //   })
     // }
   });
+  $('.js-index-nav').click(function (e) {
+    var attr = $(this).attr('data-nav');
+    $('.js-index-nav').removeClass('active');
+    $(this).addClass('active');
+    $('.js-panel').removeClass('active');
+    $('.js-panel-item').hide();
+    $(".js-".concat(attr)).parents('.js-panel').addClass('active');
+    $(".js-".concat(attr)).show();
+  });
 });

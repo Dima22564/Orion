@@ -11,27 +11,26 @@
     padding: 1px
     box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     border-radius: 4px
-    // +media-b(1130)
-    //   max-width: 100%
+    +media-b(1130)
+      height: initial
+    // +media-b(1080)
+    //   // max-width: 29%
     //   margin-top: 0
+    //   max-height: initial
+    // +media-b(960)
+    //   max-width: 70%
+    //   margin: 0 0 0 8px
+    // +media-b(767)
     //   height: initial
     //   max-height: initial
-    //   margin-top: 8px
-    +media-b(1080)
-      // max-width: 29%
-      margin-top: 0
-      max-height: initial
-    +media-b(960)
-      max-width: 70%
-      margin: 0 0 0 8px
-    +media-b(767)
-      height: initial
-      max-height: initial
-    +media-b(685)
-      max-width: 60%  
-    +media-b(515)
-      max-width: 100%  
-      margin: 8px 0 0 0
+    // +media-b(685)
+    //   max-width: 60%  
+    // +media-b(515)
+    //   max-width: 100%  
+    //   margin: 8px 0 0 0
+    .js-orderbook
+      +media-b(1130)
+        display: none
     .order-book
       border-radius: 4px
       background: $white
@@ -40,6 +39,7 @@
         margin-bottom: 15px
       +media-b(1130)
         max-height: initial
+        // display: none
       .heading
         font-weight: 600
         padding: 8px 

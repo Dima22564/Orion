@@ -12,7 +12,8 @@
     display: flex
     align-items: center
     justify-content: center
-    +media-b(1200)
+    +media-b(1130)
+      display: none
     .line
       width: 4px
       height: 270px
@@ -35,6 +36,8 @@
     top: 0
     left: 0
     transform: translateX(-300%)
+    +media-b(1130)
+      display: none
     &.open
      max-width: 310px
      // position: absolute

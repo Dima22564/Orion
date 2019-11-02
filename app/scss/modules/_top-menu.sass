@@ -3,14 +3,38 @@
   background: $white
   width: 100%
   display: flex
-  align-items: center
+  // align-items: center
+  justify-content: space-between
+  margin-bottom: 16px
+  display: none
+  +media-b(1130)
+    display: flex
+    justify-content: space-around
   .links
     padding: 6px 0
     display: flex
     align-items: center
     width: 100%
+    justify-content: space-around
+    +sm-one(justify-content, space-between)
   .logo
     margin-right: 28px
+    padding-left: 12px  
+    +sm-one(margin-right, 17px)
+    img
+      width: 19px
+  .add
+    display: flex
+    justify-content: center
+    align-items: center
+    box-shadow: 0 8px 12px 0 rgba(0, 187, 255, 0.24), 0 2px 4px -1px rgba(10, 70, 82, 0.12), 0 0 1px 0 rgba(0, 187, 255, 0.24)
+    background-image: linear-gradient(117deg, #00ffaa, #00bbff 53%, #4579f5)
+    cursor: pointer
+    padding: 17px 41px
+    color: $white
+    font-size: 40px
+    margin-left: 15px
+    +sm-one(padding, 17px 30px)
   .nav-link
     width: 36px
     height: 36px
@@ -18,7 +42,7 @@
     display: flex
     align-items: center
     justify-content: center
-    font-size: 22px
+    font-size: 15px
     color: rgba(20, 16, 41, 0.4)
     &.active
       background: rgba(0, 187, 255, 0.03)

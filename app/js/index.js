@@ -157,4 +157,15 @@ $(document).ready(function () {
     //   })
     // }
   })
+
+  $('.js-index-nav').click(function(e){
+    var attr = $(this).attr('data-nav')
+    $('.js-index-nav').removeClass('active')
+    $(this).addClass('active')
+    $('.js-panel').removeClass('active')
+    $('.js-panel-item').hide()
+    $(`.js-${attr}`).parents('.js-panel').addClass('active');
+    $(`.js-${attr}`).show()
+
+  })
 });
