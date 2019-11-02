@@ -1053,6 +1053,11 @@ a:active {
   max-height: 24px;
 }
 
+.index .right-panel .order-book .orders .order .cell.exch img {
+  width: 20px;
+  height: 20px;
+}
+
 .index .right-panel .order-book .orders .order .cell.exch .arrow {
   opacity: 0.4;
   width: 14px;
@@ -2923,9 +2928,40 @@ a:active {
     max-height: initial;
   }
 
+  .index .right-panel .order-book .heading {
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  .index .right-panel .order-book .titles {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .index .right-panel .order-book .last-price {
+    padding: 12px 16px;
+    font-size: 14px;
+    margin: 8px 0 8px 13px;
+  }
+
+  .index .right-panel .order-book .last-price .cell {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
   .index .right-panel .order-book .orders {
-    max-height: 246px;
+    max-height: 41vh;
     overflow-y: auto;
+  }
+
+  .index .right-panel .order-book .orders .order .cell {
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .index .right-panel .order-book .orders .order .cell.exch {
+    padding: 0;
   }
 
   .top-menu {
@@ -3011,12 +3047,6 @@ a:active {
   .history {
     overflow: visible;
     height: initial;
-  }
-}
-
-@media (max-width: 960px) {
-  .index .right-panel .order-book .orders {
-    max-height: 532px;
   }
 }
 
@@ -3218,6 +3248,10 @@ a:active {
 
   .index .left-panel .buy-sell .main-content .btns button {
     width: 24%;
+  }
+
+  .index .right-panel .order-book .orders {
+    max-height: 19.5vh;
   }
 
   .top-menu .links {
