@@ -3,7 +3,7 @@
     +media-b(1080)
       align-items: flex-start
   .right-panel
-    max-width: 24%
+    max-width: 22%
     width: 100%
     height: calc(100vh - 30px)
     // overflow-y: auto
@@ -35,8 +35,9 @@
     .order-book
       border-radius: 4px
       background: $white
-      margin-bottom: 15px
       max-height: calc(100vh - 60px)
+      &:last-child
+        margin-bottom: 15px
       +media-b(1130)
         max-height: initial
       .heading
@@ -53,8 +54,17 @@
           width: 25%
           text-align: center
           color: $black
+      .last-price
+        display: flex
+        align-items: center
+        padding: 6px 12px 6px 6px
+        background: rgba(20, 16, 41, 0.02)
+        justify-content: space-between
+        margin: 5px 0 5px 13px
+        .cell
+          color: $black
       .orders
-        max-height: calc(100vh - 103px) 
+        max-height: calc(50vh - 69px) 
         overflow-y: auto
         +media-b(1130)
           max-height: 246px 
@@ -105,13 +115,5 @@
             &.red
               color: #f54562
               background: rgba(245, 69, 98, 0.12)
-        .last-price
-          display: flex
-          align-items: center
-          padding: 6px 12px 6px 6px
-          background: rgba(20, 16, 41, 0.02)
-          justify-content: space-between
-          margin: 5px 0 5px 13px
-          .cell
-            color: $black
+        
 

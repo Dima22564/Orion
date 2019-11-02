@@ -187,7 +187,7 @@ a:active {
 }
 
 .index .left-panel {
-  max-width: 16.33333%;
+  max-width: 18.33333%;
   width: 100%;
 }
 
@@ -436,7 +436,7 @@ a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 25px;
 }
 
 .index .left-panel .buy-sell .main-content .big-toggler span {
@@ -587,7 +587,7 @@ a:active {
   border-radius: 4px;
   background: #ffffff;
   margin-bottom: 8px;
-  max-height: calc(50vh - 30px);
+  max-height: calc(60vh - 30px);
   overflow-y: auto;
 }
 
@@ -719,7 +719,7 @@ a:active {
 }
 
 .index .center-panel .table-content {
-  max-height: calc(50vh - 77px);
+  max-height: calc(40vh - 77px);
   overflow-y: auto;
 }
 
@@ -806,7 +806,7 @@ a:active {
 }
 
 .index .right-panel {
-  max-width: 24%;
+  max-width: 22%;
   width: 100%;
   height: calc(100vh - 30px);
   margin: -1px;
@@ -819,8 +819,11 @@ a:active {
 .index .right-panel .order-book {
   border-radius: 4px;
   background: #ffffff;
-  margin-bottom: 15px;
   max-height: calc(100vh - 60px);
+}
+
+.index .right-panel .order-book:last-child {
+  margin-bottom: 15px;
 }
 
 .index .right-panel .order-book .heading {
@@ -847,8 +850,27 @@ a:active {
   color: rgba(20, 16, 41, 0.8);
 }
 
+.index .right-panel .order-book .last-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 12px 6px 6px;
+  background: rgba(20, 16, 41, 0.02);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 5px 0 5px 13px;
+}
+
+.index .right-panel .order-book .last-price .cell {
+  color: rgba(20, 16, 41, 0.8);
+}
+
 .index .right-panel .order-book .orders {
-  max-height: calc(100vh - 103px);
+  max-height: calc(50vh - 69px);
   overflow-y: auto;
 }
 
@@ -922,25 +944,6 @@ a:active {
 .index .right-panel .order-book .orders .order .cell.red {
   color: #f54562;
   background: rgba(245, 69, 98, 0.12);
-}
-
-.index .right-panel .order-book .orders .last-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 6px 12px 6px 6px;
-  background: rgba(20, 16, 41, 0.02);
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 5px 0 5px 13px;
-}
-
-.index .right-panel .order-book .orders .last-price .cell {
-  color: rgba(20, 16, 41, 0.8);
 }
 
 .history h1 {
