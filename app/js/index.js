@@ -169,37 +169,38 @@ $(document).ready(function () {
 
   })
 
-  // var activeEl = ''
-  // var attr = ''
+  var activeEl = ''
+  var attr = ''
   $(window).on('resize', function(e){
     // $('.js-panel-item').hide();
-    // $('.js-index-nav').each(function(ind, el){
-    //   if($(el).hasClass('active')){
-    //     attr = $(el).attr('data-nav')
-    //     activeEl = $(`.js-${attr}`).parents('.js-panel')
-    //     // console.log(activeEl)
-    //     console.log(activeEl)
-    //     return {
-    //       activeEl,
-    //       attr
-    //     }
+    $('.js-index-nav').each(function(ind, el){
+      if($(el).hasClass('active')){
+        attr = $(el).attr('data-nav')
+        activeEl = $(`.js-${attr}`).parents('.js-panel')
+        // console.log(activeEl)
+        console.log(activeEl)
+        return {
+          activeEl,
+          attr
+        }
 
-    //   }
-    // })
+      }
+    })
     
     // console.log(attr)
-    if(screen.width >= 1130){
+    if(screen.width > 1130){
       $('.js-panel').removeClass('active')
       $('.js-panel-item').show();
     }
-    // if(screen.width < 1130){
-    //   // $(activeEl).addClass('active')
-    //   // $(`.js-${attr}`).show()
+    else if(screen.width < 1130){
+      $('.js-panel-item').hide();
+      $(activeEl).addClass('active')
+      $(`.js-${attr}`).show()
       
-    // }
+    }
     })
 
-  if(screen.width >= 1130){
+  if(screen.width > 1130){
     $('.js-panel').removeClass('active')
     $('.js-panel-item').show();
   }

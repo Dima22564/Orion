@@ -299,7 +299,7 @@ a:active {
 }
 
 .index .common-info .price .last-price .value .dollars {
-  line-height: 17px;
+  line-height: 21px;
   font-weight: 600;
 }
 
@@ -325,6 +325,10 @@ a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.index .common-info .price .change .value img {
+  margin-bottom: 4px;
 }
 
 .index .common-info .price .change .value .emp {
@@ -978,7 +982,7 @@ a:active {
 }
 
 .index .right-panel .order-book .titles .title {
-  width: 29.666%;
+  width: 27.666%;
   text-align: center;
   color: rgba(20, 16, 41, 0.8);
 }
@@ -1049,7 +1053,7 @@ a:active {
 }
 
 .index .right-panel .order-book .orders .order .cell {
-  width: 29.666%;
+  width: 27.666%;
   text-align: center;
   padding: 6px 0;
   position: relative;
@@ -2811,6 +2815,10 @@ a:active {
 
   .index .common-info .price .last-price .value .emp {
     font-size: 24px;
+  }
+
+  .index .common-info .price .last-price .value .dollars {
+    line-height: 15px;
   }
 
   .index .common-info .price .change .title {

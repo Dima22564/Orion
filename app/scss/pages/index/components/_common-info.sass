@@ -77,8 +77,10 @@
             +media-b(1130)
               font-size: 24px
           .dollars
-            line-height: 17px
+            line-height: 21px
             font-weight: 600
+            +media-b(1130)
+              line-height: 15px
       .change
         display: flex
         flex-direction: column
@@ -90,6 +92,8 @@
         .value
           display: flex
           align-items: center
+          img
+            margin-bottom: 4px
           .emp
             color: $black
             font-size: 16px
