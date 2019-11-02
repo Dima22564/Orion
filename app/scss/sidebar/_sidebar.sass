@@ -1,6 +1,5 @@
 .sidebar
   &-line
-    display: none
     width: 25px
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
     background: $white
@@ -10,10 +9,10 @@
     height: 100%
     top: 0
     left: 0
+    display: flex
+    align-items: center
+    justify-content: center
     +media-b(1200)
-      display: flex
-      align-items: center
-      justify-content: center
     .line
       width: 4px
       height: 270px
@@ -21,71 +20,72 @@
       border-radius: 2px
   &-wrapper
     min-height: 100vh
-    left: 0
-    // top: 0
-    max-width: 310px
+    max-width: 72px
     width: 100%
     background: $white
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 16px 24px rgba(20, 16, 41, 0.12), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     z-index: 50
-    height: 100%
-    margin: -15px 0
-    padding-bottom: 30px
     transition: all 0.3s
     overflow-y: auto
     flex-shrink: 0
     top: 0
     transform: translateX(0)
+    position: fixed
+    height: 100%
+    top: 0
+    left: 0
+    transform: translateX(-300%)
+    &.open
+     max-width: 310px
+     // position: absolute
+     margin: 0
+     top: 0
+     left: 0
+     nav
+       align-items: flex-start
+     .dark-mode
+       width: 100%
+       height: initial
+       padding: 14px 30px
+       justify-content: flex-start
+       .text
+         display: block
+     .nav-link
+       height: initial
+       padding: 14px 30px
+       border-radius: 0
+       width: 100%
+       justify-content: flex-start
+       // color: #a19fa9
+       &.active
+         &::before
+           opacity: 1
+       .text
+         display: block
+     .coin
+       width: 100% !important
+       height: initial !important
+       padding: 14px 30px !important
+       justify-content: flex-start !important
+       .text
+         display: block !important
+         m
+     .add-wallet
+       padding: 14px 30px !important
+       width: 100% !important
+       height: initial !important
+       justify-content: flex-start !important
+       span
+         display: block !important
     +media-b(1200)
-      transform: translateX(-300%)
-      position: fixed
-      margin: 0
+      // transform: translateX(-300%)
+      // position: fixed
+      // margin: 0
     +media-b(1600)
-      max-height: 100vh
-      overflow-x: hidden
-      max-width: 72px
-      &.open
-        max-width: 310px
-        // position: absolute
-        margin: 0
-        top: 0
-        left: 0
-        nav
-          align-items: flex-start
-        .dark-mode
-          width: 100%
-          height: initial
-          padding: 14px 30px
-          justify-content: flex-start
-          .text
-            display: block
-        .nav-link
-          height: initial
-          padding: 14px 30px
-          border-radius: 0
-          width: 100%
-          justify-content: flex-start
-          // color: #a19fa9
-          &.active
-            &::before
-              opacity: 1
-          .text
-            display: block
-        .coin
-          width: 100% !important
-          height: initial !important
-          padding: 14px 30px !important
-          justify-content: flex-start !important
-          .text
-            display: block !important
-            m
-        .add-wallet
-          padding: 14px 30px !important
-          width: 100% !important
-          height: initial !important
-          justify-content: flex-start !important
-          span
-            display: block !important
+      // max-height: 100vh
+      // overflow-x: hidden
+      // max-width: 72px
+     
   &-content
     .logo
       display: inline-flex
@@ -108,19 +108,26 @@
       padding: 14px 30px
       cursor: pointer
       transition: all 0.3s
+      width: 48px
+      height: 48px
+      padding: 0
+      justify-content: center
+      margin-left: auto
+      margin-right: auto
       +media-b(1600)
-        width: 48px
-        height: 48px
-        padding: 0
-        justify-content: center
-        margin-left: auto
-        margin-right: auto
+        // width: 48px
+        // height: 48px
+        // padding: 0
+        // justify-content: center
+        // margin-left: auto
+        // margin-right: auto
       .text
         margin-left: 27px
         flex-shrink: 0
         transition-delay: 0.3s
+        display: none
         +media-b(1600)
-          display: none
+          // display: none
       &:hover
         background: rgba(20, 16, 41, 0.02)
     nav
@@ -128,8 +135,9 @@
       display: flex
       flex-direction: column
       margin-bottom: 90px
+      align-items: center
       +media-b(1600)
-        align-items: center
+        // align-items: center
     .nav-link
       padding: 14px 30px
       position: relative
@@ -138,12 +146,17 @@
       align-items: center
       transition: all 0.3s
       color: #a19fa9 !important
+      justify-content: center
+      width: 48px
+      height: 48px
+      border-radius: 50%
+      padding: 0
       +media-b(1600)
-        justify-content: center
-        width: 48px
-        height: 48px
-        border-radius: 50%
-        padding: 0
+        // justify-content: center
+        // width: 48px
+        // height: 48px
+        // border-radius: 50%
+        // padding: 0
       &:not(:last-child)
         margin-bottom: 5px
       &:hover
@@ -161,12 +174,14 @@
           display: block
           position: absolute  
           transition: all 0.3s
+          opacity: 0
           +media-b(1600)
-            opacity: 0
+            // opacity: 0
       .text
         margin-left: 27px
+        display: none
         +media-b(1600)
-          display: none
+          // display: none
 
     .aside-coins
       margin-bottom: 32px
@@ -179,13 +194,19 @@
         display: flex
         align-items: center
         transition: all 0.3s
+        width: 48px
+        height: 48px
+        padding: 0
+        justify-content: center
+        margin-left: auto
+        margin-right: auto
         +media-b(1600)
-          width: 48px
-          height: 48px
-          padding: 0
-          justify-content: center
-          margin-left: auto
-          margin-right: auto
+          // width: 48px
+          // height: 48px
+          // padding: 0
+          // justify-content: center
+          // margin-left: auto
+          // margin-right: auto
         &:not(:last-child)
           margin-bottom: 5px
         &:hover
@@ -214,16 +235,22 @@
       justify-content: flex-start
       // justify-content: flex-start
       transition: all 0.3s
+      width: 48px
+      height: 48px
+      padding: 0
+      justify-content: center
+      margin: auto
       +media-b(1600)
-        width: 48px
-        height: 48px
-        padding: 0
-        justify-content: center
-        margin: auto
+        // width: 48px
+        // height: 48px
+        // padding: 0
+        // justify-content: center
+        // margin: auto
       img
         transform: rotate(45deg)
       span
         margin-left: 27px
         flex-shrink: 0
+        display: none
         +media-b(1600)
-          display: none
+          // display: none

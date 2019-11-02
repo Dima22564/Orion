@@ -98,101 +98,77 @@ $(document).ready(function () {
 
   $('.js-sidebar-line').hover(function(e){
     if(screen.width < 1200){
-      $(this).css('transform', 'translateX(-300%)')
-      $('.js-sidebar-wrapper').css('transform', 'translateX(0)')
-      $('.js-sidebar-wrapper').css({
-        position: 'fixed'
-      })
-
+      
     }
+    $(this).css('transform', 'translateX(-300%)')
+    $('.js-sidebar-wrapper').css('transform', 'translateX(0)')
+    $('.js-sidebar-wrapper').css({
+      position: 'fixed'
+    })
   })
   $('.js-sidebar-wrapper').hover(function(){
     if(screen.width < 1200){
-      $(this).css('transform', 'translateX(0)')
-      $('.js-sidebar-line').css('transform', 'translateX(-300%)')
-
+      
     }
+    $(this).css('transform', 'translateX(0)')
+    $('.js-sidebar-line').css('transform', 'translateX(-300%)')
   }, function(){
     if(screen.width < 1200){
-      $(this).css('transform', 'translateX(-300%)')
-      $('.js-sidebar-line').css('transform', 'translateX(0)')
-
+      
     }
+    $(this).css('transform', 'translateX(-300%)')
+    $('.js-sidebar-line').css('transform', 'translateX(0)')
   })
 
   $('.js-sidebar-line').click(function(e){
     if(screen.width < 1200){
-      e.stopPropagation()
-      $(this).css('transform', 'translateX(-300%)')
-      $('.js-sidebar-wrapper').css('transform', 'translateX(0)')
-
+      
     }
+    e.stopPropagation()
+    $(this).css('transform', 'translateX(-300%)')
+    $('.js-sidebar-wrapper').css('transform', 'translateX(0)')
   })
 
   $('body').click(function(e){
     if(screen.width < 1200){
-      e.stopPropagation()
-      if($(e.target).hasClass('js-sidebar-wrapper') == false){
-        $('.js-sidebar-wrapper').css('transform', 'translateX(-300%)')
-        $('.js-sidebar-line').css('transform', 'translateX(0)')
-      }
+    }
+    e.stopPropagation()
+    if($(e.target).hasClass('js-sidebar-wrapper') == false){
+      $('.js-sidebar-wrapper').css('transform', 'translateX(-300%)')
+      $('.js-sidebar-line').css('transform', 'translateX(0)')
     }
   })
 
   $(window).on('resize', function(e){
-    if(screen.width > 1200){
-      $('.js-sidebar-wrapper').css({
-        transform: 'translateX(0)'
-      })
-    }
-    else if(screen.width < 1200){
-      $('.js-sidebar-wrapper').css({
-        transform: 'translateX(-300%)'
-      })
-    }
+    // if(screen.width > 1200){
+    //   $('.js-sidebar-wrapper').css({
+    //     transform: 'translateX(0)'
+    //   })
+    // }
+    // else if(screen.width < 1200){
+    //   $('.js-sidebar-wrapper').css({
+    //     transform: 'translateX(-300%)'
+    //   })
+    // }
   })
 
 
   $('.js-sidebar-wrapper').hover(function(e){
-    if(screen.width < 1600 && screen.width > 1200){
-      $(this).css({
-        position: 'fixed'
-      })
-      $('body').css({
-        paddingLeft: '72px'
-      })
-      setTimeout(function(){
-        $('.js-sidebar-wrapper').addClass('open')
-  
-      }, 100)
-
-    }
+    $('.js-sidebar-wrapper').addClass('open')
   }, function(e){
-    if(screen.width < 1600 && screen.width > 1200){
-      $(this).removeClass('open')
-      setTimeout(function(){
-        $('.js-sidebar-wrapper').css({
-          position: 'initial'
-        })
-        $('body').css({
-          paddingLeft: '0'
-        })
-  
-      }, 350)
-
-    }
+    $(this).removeClass('open')
   })
 
   $(window).on('resize', function(e){
-    if(screen.width < 1200){
-      $('.js-sidebar-wrapper').css({
-        position: 'absolute'
-      })
-    }
-    else if(screen.width > 1200){
-      $('.js-sidebar-wrapper').css({
-        position: 'initial'
-      })
-    }
+    // if(screen.width < 1200){
+    //   $('.js-sidebar-wrapper').css({
+    //     position: 'absolute'
+    //   })
+    // }
+    // else if(screen.width > 1200){
+    //   $('.js-sidebar-wrapper').css({
+    //     position: 'initial'
+    //   })
+    // }
   })
 });
