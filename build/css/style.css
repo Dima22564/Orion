@@ -332,6 +332,7 @@ a:active {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  margin-left: 5px;
 }
 
 .index .common-info .price .change .value .emp span {
