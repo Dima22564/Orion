@@ -42,9 +42,12 @@
           font-size: 14px
           line-height: 24px
         .title
-          width: 25%
+          width: 29.666%
           text-align: center
           color: $black
+          &.exch
+            width: 11%
+            text-align: left
       .last-price
         display: flex
         align-items: center
@@ -90,7 +93,7 @@
               background: rgba(245, 69, 98, 0.4)
               width: 20%
           .cell
-            width: 25%
+            width: 29.666%
             text-align: center
             padding: 6px 0
             position: relative
@@ -99,7 +102,11 @@
               font-size: 14px
               line-height: 24px
             &.exch
+              width: 11%
+              justify-content: flex-start
               max-height: 24px
+              display: flex
+              align-items: center
               +media-b(1130)
                 padding: 0
               img

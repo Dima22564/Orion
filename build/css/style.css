@@ -977,9 +977,14 @@ a:active {
 }
 
 .index .right-panel .order-book .titles .title {
-  width: 25%;
+  width: 29.666%;
   text-align: center;
   color: rgba(20, 16, 41, 0.8);
+}
+
+.index .right-panel .order-book .titles .title.exch {
+  width: 11%;
+  text-align: left;
 }
 
 .index .right-panel .order-book .last-price {
@@ -1043,14 +1048,24 @@ a:active {
 }
 
 .index .right-panel .order-book .orders .order .cell {
-  width: 25%;
+  width: 29.666%;
   text-align: center;
   padding: 6px 0;
   position: relative;
 }
 
 .index .right-panel .order-book .orders .order .cell.exch {
+  width: 11%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   max-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .index .right-panel .order-book .orders .order .cell.exch img {

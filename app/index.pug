@@ -16,7 +16,7 @@ html(lang="en")
       include ./pug/sidebar.pug
       .my-container
         .my-row
-          .left-panel.js-panel
+          .left-panel.js-panel.active
             .common-info.js-panel-item.js-pair
               .top
                 .star
@@ -725,7 +725,7 @@ html(lang="en")
                   span.title Price
                   span.title Amount
                   span.title Total
-                  span.title Exch
+                  span.title.exch Exch
                 .orders
                   .order
                     span.progress-light.l-green(style={width: '41%'})
