@@ -982,7 +982,7 @@ a:active {
 }
 
 .index .right-panel .order-book .titles .title {
-  width: 27.666%;
+  width: 26.666%;
   text-align: center;
   color: rgba(20, 16, 41, 0.8);
 }
@@ -1053,7 +1053,7 @@ a:active {
 }
 
 .index .right-panel .order-book .orders .order .cell {
-  width: 27.666%;
+  width: 26.666%;
   text-align: center;
   padding: 6px 0;
   position: relative;
@@ -2244,6 +2244,7 @@ a:active {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 16px;
+  padding-left: 16px;
   display: none;
 }
 
@@ -3285,11 +3286,12 @@ a:active {
   }
 
   .top-menu .logo {
-    margin-right: 17px;
+    margin-right: 7px;
   }
 
   .top-menu .add {
-    padding: 17px 30px;
+    padding: 17px 20px;
+    margin-left: 0;
   }
 }
 

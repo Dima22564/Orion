@@ -6,6 +6,7 @@
   // align-items: center
   justify-content: space-between
   margin-bottom: 16px
+  padding-left: 16px
   display: none
   +media-b(1130)
     display: flex
@@ -20,9 +21,10 @@
   .logo
     margin-right: 28px
     padding-left: 12px  
-    +sm-one(margin-right, 17px)
+    +sm-one(margin-right, 7px)
     img
       width: 19px
+    
   .add
     display: flex
     justify-content: center
@@ -34,7 +36,9 @@
     color: $white
     font-size: 40px
     margin-left: 15px
-    +sm-one(padding, 17px 30px)
+    +sm
+      padding: 17px 20px
+      margin-left: 0
   .nav-link
     width: 36px
     height: 36px
