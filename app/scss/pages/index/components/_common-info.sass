@@ -14,17 +14,19 @@
     width: 100%
     +media-b(1130)
       // max-width: 29%    
-    +media-b(685)
-      max-width: 38%  
-    +media-b(515)
-      max-width: 100%  
+    // +media-b(685)
+    //   max-width: 38%  
+    // +media-b(515)
+    //   max-width: 100%  
   .common-info
     box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
     border-radius: 4px
     padding: 8px
     margin-bottom: 8px
     +media-b(1130)
-      padding: 5px
+      padding: 19px
+      width: 50%
+    +sm-one(width, 100%)
     .top
       display: flex
       justify-content: space-between
@@ -35,6 +37,8 @@
         font-weight: 600
         text-transform: uppercase
         letter-spacing: 1px
+        +media-b(1130)
+          font-size: 14px
         img
           margin-right: 6px
       .drop-menu-currecy-select
@@ -58,12 +62,15 @@
       display: flex
       align-items: flex-start
       justify-content: space-between
-      margin-bottom: 28px
+      margin-bottom: 23px
       .last-price
         display: flex
         flex-direction: column
         .title 
           color: $l-gray
+          margin-bottom: 5px
+          +media-b(1130)
+            font-size: 13px
         .value
           display: flex
           align-items: flex-end
@@ -72,13 +79,20 @@
             font-size: 16px
             line-height: 24px
             font-weight: 700
+            margin-right: 4px
+            +media-b(1130)
+              font-size: 24px
           .dollars
-            line-height: 21px
+            line-height: 17px
+            font-weight: 600
       .change
         display: flex
         flex-direction: column
         .title 
           color: $l-gray
+          margin-bottom: 5px
+          +media-b(1130)
+            font-size: 13px
         .value
           display: flex
           align-items: center
@@ -87,27 +101,52 @@
             font-size: 16px
             line-height: 24px
             font-weight: 700
+            +media-b(1130)
+              margin-left: 8px
+              font-size: 24px
+            
             span 
               font-size: 10px
               color: $d-gray
           .dollars
-            line-height: 21px
+            line-height: 17px
+            font-weight: 600
     .table
+      +sm
+        display: flex
+        width: 100%
+        justify-content: space-between
       .line
         display: flex
         align-items: center
         justify-content: space-between
         width: 100%
+        +sm
+          flex-direction: column
+          align-items: flex-start
+          width: 25%
         &:not(:last-child)
           margin-bottom: 9px
+          +sm-one(margin-bottom, 0)
         .title
           color: $l-gray
           line-height: 24px
+          +media-b(1130)
+            font-size: 13px
+            margin-bottom: 8px
         .value
           font-size: 14px
           line-height: 24px
           color: $black
+          +sm-one(line-height, 14px)
+          +media-b(1130)
+            font-size: 16px
+            display: flex
+            flex-direction: column
           .small
             font-size: 10px
             color: $d-gray
+            +media-b(1130)
+              font-size: 14px
+              margin-top: 4px
           

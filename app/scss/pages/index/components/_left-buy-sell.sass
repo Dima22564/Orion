@@ -9,13 +9,15 @@
       // height: 50vh
     +media-b(1130)
       height: auto
-    +media-b(767)
-      height: initial
+      display: flex
+      justify-content: center
     .buy-sell
       box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
       +media-b(1130)
         display: none
+        width: 50%
+      +sm-one(width, 100%)
       .top
         display: flex
         align-items: center
@@ -30,6 +32,10 @@
           background: $white
           cursor: pointer
           color: $d-gray
+          font-weight: 600
+          +media-b(1130)
+            padding: 12px 0
+            font-size: 16px
           &.active
             background-color: rgba(0, 187, 255, 0.03)
             color: $blue
@@ -45,7 +51,10 @@
             left: 0
             background: rgba(20, 16, 41, 0.06)
       .main-content
-        padding: 0 8px 8px 8px    
+        padding: 0 8px 8px 8px   
+        display: flex
+        flex-direction: column
+        // align-items: center 
         .big-toggler
           background-color: rgba(20, 16, 41, 0.02)
           padding: 2px
@@ -59,6 +68,9 @@
             color: $black
             padding: 4px
             cursor: pointer
+            +media-b(1130)
+              padding: 8px
+              font-size: 14px
             &.active
               box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
               border-radius: 2px
@@ -72,6 +84,9 @@
           .placeholder
             color: $l-gray
             margin: 0 0 3px 12px
+            +media-b(1130)
+              font-size: 13px
+              margin-bottom: 8px
           input
             width: 100%
             background-color: rgba(20, 16, 41, 0.02)
@@ -82,14 +97,19 @@
             font-size: 14px
             line-height: 24px
             color: $black
+            +media-b(1130)
+              padding: 12px 16px
+              padding-right: 46px
           .currency
             position: absolute
             right: 12px 
             top: 20px
-            color: $black
+            color: $d-gray
             font-size: 14px
             line-height: 24px
             text-transform: uppercase
+            +media-b(1130)
+              top: 32px
           .available
             margin-top: 4px
             padding: 0 12px
@@ -98,6 +118,9 @@
             justify-content: space-between
             width: 100%
             color: $l-gray
+            +media-b(1130)
+              font-size: 13px
+              margin-top: 8px
         .btns
           display: flex
           align-items: center
@@ -116,6 +139,8 @@
             border-radius: 2px
             cursor: pointer
             transition: all 0.3s
+            +sm
+              width: 24%
             &:hover
               background: rgba(20, 16, 41, 0.07)              
             &:active
@@ -135,6 +160,13 @@
           border: none
           cursor: pointer 
           margin-bottom: 5px
+          // font-weight: 600
+          +media-b(1130)
+            margin-top: 56px
+            border-radius: 24px
+            padding: 12px 24px
+            width: initial
+            align-self: flex-end
 
 
 

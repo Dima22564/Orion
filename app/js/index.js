@@ -168,4 +168,11 @@ $(document).ready(function () {
     $(`.js-${attr}`).show()
 
   })
+
+  $(window).on('resize', function(e){
+    if(screen.width >= 1130){
+      $('.js-panel').removeClass('active')
+      $('.js-panel-item').show();
+    }
+  })
 });

@@ -149,4 +149,10 @@ $(document).ready(function () {
     $(".js-".concat(attr)).parents('.js-panel').addClass('active');
     $(".js-".concat(attr)).show();
   });
+  $(window).on('resize', function (e) {
+    if (screen.width >= 1130) {
+      $('.js-panel').removeClass('active');
+      $('.js-panel-item').show();
+    }
+  });
 });

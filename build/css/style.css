@@ -263,7 +263,7 @@ a:active {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 
 .index .common-info .price .last-price {
@@ -278,6 +278,7 @@ a:active {
 
 .index .common-info .price .last-price .title {
   color: rgba(20, 16, 41, 0.4);
+  margin-bottom: 5px;
 }
 
 .index .common-info .price .last-price .value {
@@ -294,10 +295,12 @@ a:active {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  margin-right: 4px;
 }
 
 .index .common-info .price .last-price .value .dollars {
-  line-height: 21px;
+  line-height: 17px;
+  font-weight: 600;
 }
 
 .index .common-info .price .change {
@@ -312,6 +315,7 @@ a:active {
 
 .index .common-info .price .change .title {
   color: rgba(20, 16, 41, 0.4);
+  margin-bottom: 5px;
 }
 
 .index .common-info .price .change .value {
@@ -336,7 +340,8 @@ a:active {
 }
 
 .index .common-info .price .change .value .dollars {
-  line-height: 21px;
+  line-height: 17px;
+  font-weight: 600;
 }
 
 .index .common-info .table .line {
@@ -406,6 +411,7 @@ a:active {
   background: #ffffff;
   cursor: pointer;
   color: rgba(20, 16, 41, 0.6);
+  font-weight: 600;
 }
 
 .index .left-panel .buy-sell .top button.active {
@@ -430,6 +436,13 @@ a:active {
 
 .index .left-panel .buy-sell .main-content {
   padding: 0 8px 8px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .index .left-panel .buy-sell .main-content .big-toggler {
@@ -496,7 +509,7 @@ a:active {
   position: absolute;
   right: 12px;
   top: 20px;
-  color: rgba(20, 16, 41, 0.8);
+  color: rgba(20, 16, 41, 0.6);
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -599,6 +612,7 @@ a:active {
 
 .index .center-panel .image img {
   width: 100%;
+  height: 100%;
 }
 
 .index .center-panel .table {
@@ -634,17 +648,24 @@ a:active {
 
 .index .center-panel .table .top {
   padding: 8px 8px 0 8px;
-  margin-bottom: 22px;
+  margin-bottom: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.index .center-panel .table .top > div {
+  margin-bottom: 16px;
+  margin-right: 10px;
 }
 
 .index .center-panel .table .top .big-toggler {
@@ -673,6 +694,20 @@ a:active {
   background: #ffffff;
 }
 
+.index .center-panel .table .top .all {
+  margin-left: 10px;
+}
+
+.index .center-panel .table .top .currency-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
 .index .center-panel .table .top .date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,7 +718,10 @@ a:active {
 }
 
 .index .center-panel .table .top .date .hr {
-  margin: 0 2px;
+  margin: 0 4px;
+  width: 15px;
+  height: 1px;
+  background: rgba(20, 16, 41, 0.4);
 }
 
 .index .center-panel .table .top .date input {
@@ -756,6 +794,14 @@ a:active {
   width: 8%;
 }
 
+.index .center-panel .table-content .titles .title.status {
+  width: 11.3%;
+}
+
+.index .center-panel .table-content .titles .title.time {
+  width: 19.5%;
+}
+
 .index .center-panel .table-content .titles .title img {
   opacity: 0.4;
   -webkit-transform: rotate(90deg);
@@ -769,7 +815,11 @@ a:active {
   padding-bottom: 10px;
 }
 
-.index .center-panel .table-content .lines .line {
+.index .center-panel .table-content .lines .line:not(:last-child) .line-small {
+  margin-bottom: 32px;
+}
+
+.index .center-panel .table-content .lines .line-big {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,31 +833,107 @@ a:active {
   transition: all 0.3s;
 }
 
-.index .center-panel .table-content .lines .line:hover {
+.index .center-panel .table-content .lines .line-big:hover {
   background: rgba(20, 16, 41, 0.02);
 }
 
-.index .center-panel .table-content .lines .line .cell {
+.index .center-panel .table-content .lines .line-big .cell {
   width: 15.3%;
 }
 
-.index .center-panel .table-content .lines .line .cell.short {
+.index .center-panel .table-content .lines .line-big .cell.status {
+  width: 11.3%;
+}
+
+.index .center-panel .table-content .lines .line-big .cell.short {
   width: 8%;
 }
 
-.index .center-panel .table-content .lines .line .cell.emp {
+.index .center-panel .table-content .lines .line-big .cell.time {
+  width: 19.5%;
+}
+
+.index .center-panel .table-content .lines .line-big .cell.emp {
   color: rgba(20, 16, 41, 0.8);
 }
 
-.index .center-panel .table-content .lines .line .cell.filled {
+.index .center-panel .table-content .lines .line-big .cell.filled {
   color: #ffaa00;
 }
 
-.index .center-panel .table-content .lines .line .cell.open {
+.index .center-panel .table-content .lines .line-big .cell.open {
   color: #16b862;
 }
 
-.index .center-panel .table-content .lines .line .cell.cancel {
+.index .center-panel .table-content .lines .line-big .cell.cancel {
+  color: #f54562;
+}
+
+.index .center-panel .table-content .lines .line-small {
+  padding: 6px 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: none;
+}
+
+.index .center-panel .table-content .lines .line-small .cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.index .center-panel .table-content .lines .line-small .cell-top {
+  margin-bottom: 16px;
+}
+
+.index .center-panel .table-content .lines .line-small .cell .data {
+  width: 30%;
+  color: rgba(20, 16, 41, 0.8);
+  font-size: 16px;
+}
+
+.index .center-panel .table-content .lines .line-small .cell .data-eth {
+  width: 40%;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.index .center-panel .table-content .lines .line-small .cell .status {
+  width: 30%;
+  text-align: right;
+}
+
+.index .center-panel .table-content .lines .line-small .cell .sub-title {
+  width: 30%;
+  color: rgba(20, 16, 41, 0.8);
+}
+
+.index .center-panel .table-content .lines .line-small .cell .data-text {
+  width: 40%;
+  font-size: 14px;
+}
+
+.index .center-panel .table-content .lines .line-small .cell .date {
+  text-align: right !important;
+  width: 30% !important;
+}
+
+.index .center-panel .table-content .lines .line-small .cell .filled {
+  color: #ffaa00;
+}
+
+.index .center-panel .table-content .lines .line-small .cell .open {
+  color: #16b862;
+}
+
+.index .center-panel .table-content .lines .line-small .cell .cancel {
   color: #f54562;
 }
 
@@ -2655,15 +2781,103 @@ a:active {
   }
 
   .index .common-info {
-    padding: 5px;
+    padding: 19px;
+    width: 50%;
+  }
+
+  .index .common-info .top .star {
+    font-size: 14px;
+  }
+
+  .index .common-info .price .last-price .title {
+    font-size: 13px;
+  }
+
+  .index .common-info .price .last-price .value .emp {
+    font-size: 24px;
+  }
+
+  .index .common-info .price .change .title {
+    font-size: 13px;
+  }
+
+  .index .common-info .price .change .value .emp {
+    margin-left: 8px;
+    font-size: 24px;
+  }
+
+  .index .common-info .table .line .title {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .index .common-info .table .line .value {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .index .common-info .table .line .value .small {
+    font-size: 14px;
+    margin-top: 4px;
   }
 
   .index .left-panel {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .index .left-panel .buy-sell {
     display: none;
+    width: 50%;
+  }
+
+  .index .left-panel .buy-sell .top button {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  .index .left-panel .buy-sell .main-content .big-toggler span {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount .placeholder {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount input {
+    padding: 12px 16px;
+    padding-right: 46px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount .currency {
+    top: 32px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount .available {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .index .left-panel .buy-sell .main-content .buy {
+    margin-top: 56px;
+    border-radius: 24px;
+    padding: 12px 24px;
+    width: initial;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 
   .index .center-panel {
@@ -2673,11 +2887,28 @@ a:active {
   .index .center-panel .image {
     max-height: initial;
     display: none;
+    height: 472px;
   }
 
   .index .center-panel .table {
     max-height: initial;
     display: none;
+  }
+
+  .index .center-panel .table .top .big-toggler {
+    padding: 4px;
+  }
+
+  .index .center-panel .table .top .big-toggler span {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 24px;
+  }
+
+  .index .center-panel .table .top .date label {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 6px 10px;
   }
 
   .index .right-panel {
@@ -2863,23 +3094,9 @@ a:active {
 }
 
 @media (max-width: 767px) {
-  .index .left-panel {
-    height: initial;
-  }
-
   .dashboard .graph {
     height: initial;
     overflow-y: visible;
-  }
-}
-
-@media (max-width: 685px) {
-  .index .left-panel {
-    max-width: 38%;
-  }
-
-  .index .center-panel .table .top > div {
-    margin-right: 16px;
   }
 }
 
@@ -2961,29 +3178,48 @@ a:active {
   }
 }
 
-@media (max-width: 600px) {
-  .index .center-panel .table-content .titles .title {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 22%;
-  }
-
-  .index .center-panel .table-content .titles .title.short {
-    width: 12%;
-  }
-
-  .index .center-panel .table-content .lines .line .cell {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 22%;
-  }
-
-  .index .center-panel .table-content .lines .line .cell.short {
-    width: 12%;
-  }
-}
-
 @media (max-width: 576px) {
+  .index .common-info {
+    width: 100%;
+  }
+
+  .index .common-info .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .index .common-info .table .line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 25%;
+  }
+
+  .index .common-info .table .line:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .index .common-info .table .line .value {
+    line-height: 14px;
+  }
+
+  .index .left-panel .buy-sell {
+    width: 100%;
+  }
+
+  .index .left-panel .buy-sell .main-content .btns button {
+    width: 24%;
+  }
+
   .top-menu .links {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -2999,9 +3235,76 @@ a:active {
   }
 }
 
-@media (max-width: 515px) {
-  .index .left-panel {
-    max-width: 100%;
+@media (max-width: 535px) {
+  .index .center-panel .table .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .index .center-panel .table .top > div {
+    width: 100%;
+  }
+
+  .index .center-panel .table .top .big-toggler {
+    margin-right: 0;
+  }
+
+  .index .center-panel .table .top .big-toggler span {
+    width: 50%;
+  }
+
+  .index .center-panel .table .top .all {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .index .center-panel .table .top .all .drop-menu-currecy-select-1 {
+    width: 100% !important;
+  }
+
+  .index .center-panel .table .top .currency-all {
+    margin-left: 0;
+  }
+
+  .index .center-panel .table .top .date {
+    width: 100%;
+    margin-right: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .index .center-panel .table .top .date .date-1 {
+    width: 48%;
+  }
+
+  .index .center-panel .table .top .date .date-2 {
+    width: 48%;
+  }
+
+  .index .center-panel .table .top .date label img {
+    margin-left: auto;
+  }
+
+  .index .center-panel .table-content {
+    max-height: 55vh;
+  }
+
+  .index .center-panel .table-content .titles {
+    display: none;
+  }
+
+  .index .center-panel .table-content .lines .line-big {
+    display: none;
+  }
+
+  .index .center-panel .table-content .lines .line-small {
+    display: block;
   }
 }
 
@@ -3114,24 +3417,6 @@ a:active {
   .add-wallet-2 .btns .connect {
     width: 100%;
     margin-bottom: 8px;
-  }
-}
-
-@media (max-width: 420px) {
-  .index .center-panel .table-content .titles .title {
-    width: 32%;
-  }
-
-  .index .center-panel .table-content .titles .title.short {
-    width: 20%;
-  }
-
-  .index .center-panel .table-content .lines .line .cell {
-    width: 32%;
-  }
-
-  .index .center-panel .table-content .lines .line .cell.short {
-    width: 20%;
   }
 }
 

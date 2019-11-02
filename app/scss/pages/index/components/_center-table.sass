@@ -11,18 +11,6 @@
     border-radius: 4px
     +media-b(1130)
       height: initial
-      // max-width: 69%  
-    // +media-b(1080)
-    //   margin: 0 0 8px 8px  
-    //   max-height: initial
-    //   height: auto
-    // +media-b(960)
-    //   max-width: 100%  
-    //   margin: 8px 0 0 0 
-    //   order: 5 
-    //   // height: calc(50vh - 30px)
-    // +media-b(767)
-    //   height: initial
     .image
       border-radius: 4px
       background: $white
@@ -32,8 +20,10 @@
       +media-b(1130)
         max-height: initial
         display: none
+        height: 472px
       img
         width: 100% 
+        height: 100%
     .table
       border-radius: 4px
       background: $white
@@ -61,34 +51,77 @@
             transform: rotate(270deg) !important
       .top
         padding: 8px 8px 0 8px
-        margin-bottom: 22px
+        margin-bottom: 6px
         display: flex
         align-items: center
-        justify-content: space-between
+        justify-content: flex-start
         position: relative
+        flex-wrap: wrap
+        +media-b(535)
+          flex-direction: column
+          align-items: flex-start
         & > div
-          +media-b(685)
-            margin-right: 16px
+          margin-bottom: 16px
+          margin-right: 10px
+          +media-b(535)
+            width: 100%
         .big-toggler
           background-color: rgba(20, 16, 41, 0.02)
           padding: 2px
           border-radius: 2px
           display: flex
           align-items: center
+          +media-b(1130)
+            padding: 4px
+          +media-b(535)
+            // width: 100%
+            margin-right: 0
           span
             text-align: center
             color: $black
             padding: 6px 23px
             cursor: pointer
+            +media-b(1130)
+              font-size: 14px
+              line-height: 16px
+              padding: 8px 24px
+            +media-b(535)
+              width: 50%
             &.active
               box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
               border-radius: 2px
               background: $white
+        .all
+          margin-left: 10px
+          +media-b(535)
+            margin-right: 0
+            width: 100%
+            .drop-menu-currecy-select-1
+              width: 100% !important
+        .currency-all
+          display: flex
+          align-items: center
+          margin-left: 10px
+          +media-b(535)
+            margin-left: 0
         .date
           display: flex
           align-items: center
+          +media-b(535)
+            width: 100%
+            margin-right: 0
+            justify-content: space-between
+          .date-1
+            +media-b(535)
+              width: 48%
+          .date-2
+            +media-b(535)
+              width: 48%
           .hr
-            margin: 0 2px
+            margin: 0 4px
+            width: 15px
+            height: 1px
+            background: $l-gray
           input
             opacity: 0
             position: absolute
@@ -101,8 +134,14 @@
             align-items: center
             cursor: pointer
             color: $black
+            +media-b(1130)
+              font-size: 14px
+              line-height: 16px
+              padding: 6px 10px
             img
               margin-left: 12px
+              +media-b(535)
+                margin-left: auto
         .currency
           display: flex
           align-items: center
@@ -114,28 +153,27 @@
         overflow-y: auto
         +media-b(1080)
           max-height: 300px
+        +media-b(535)
+          max-height: 55vh
         .titles
           display: flex
           align-items: center
           padding: 0 12px
           margin-bottom: 12px
+          +media-b(535)
+            display: none
           .title
             width: 15.3%
             color: $black
             display: flex
             align-items: center
             cursor: pointer
-            +media-b(600)
-              flex-shrink: 0
-              width: 22%
-            +media-b(420)
-              width: 32%
             &.short
               width: 8%
-              +media-b(600)
-                width: 12%
-              +media-b(420)
-                width: 20%
+            &.status
+              width: 11.3%
+            &.time
+              width: 19.5% 
             img
               opacity: 0.4
               transform: rotate(90deg)
@@ -144,31 +182,72 @@
         .lines
           padding-bottom: 10px
           .line
-            display: flex
-            align-items: center
-            padding: 6px 12px
-            cursor: pointer
-            transition: all 0.3s
-            &:hover
-              background: rgba(20, 16, 41, 0.02)
-            .cell
-              width: 15.3%
-              +media-b(600)
-                flex-shrink: 0
-                width: 22%
-              +media-b(420)
-                width: 32%
-              &.short
-                width: 8%
-                +media-b(600)
-                  width: 12%
-                +media-b(420)
-                  width: 20%
-              &.emp
-                color: $black
-              &.filled
-                color: #ffaa00
-              &.open
-                color: #16b862
-              &.cancel
-                color: #f54562
+            &:not(:last-child)
+              .line-small
+                margin-bottom: 32px
+            &-big
+              display: flex
+              align-items: center
+              padding: 6px 12px
+              cursor: pointer
+              transition: all 0.3s
+              +media-b(535)
+                display: none
+              &:hover
+                background: rgba(20, 16, 41, 0.02)
+              .cell
+                width: 15.3%
+                &.status
+                  width: 11.3%
+                &.short
+                  width: 8%
+                &.time
+                  width: 19.5%
+                &.emp
+                  color: $black
+                &.filled
+                  color: #ffaa00
+                &.open
+                  color: #16b862
+                &.cancel
+                  color: #f54562
+            &-small
+              padding: 6px 12px
+              cursor: pointer
+              transition: all 0.3s
+              display: none
+              +media-b(535)
+                display: block
+              .cell
+                display: flex
+                align-items: center
+                margin-bottom: 2px
+                font-size: 14px
+                line-height: 24px
+                &-top
+                  margin-bottom: 16px
+                .data
+                  width: 30%
+                  color: $h-d-gray
+                  font-size: 16px
+                .data-eth
+                  width: 40%
+                  color: $h-d-gray
+                .status
+                  width: 30%
+                  text-align: right
+                .sub-title
+                  width: 30%
+                  color: $h-d-gray
+                .data-text
+                  width: 40%
+                  font-size: 14px
+                .date
+                  text-align: right !important
+                  width: 30% !important
+                .filled
+                  color: #ffaa00
+                .open
+                  color: #16b862
+                .cancel
+                  color: #f54562
