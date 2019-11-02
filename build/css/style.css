@@ -2080,6 +2080,60 @@ a:active {
   transform: rotate(0);
 }
 
+.top-menu {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+  background: #ffffff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.top-menu .links {
+  padding: 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.top-menu .logo {
+  margin-right: 28px;
+}
+
+.top-menu .nav-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 22px;
+  color: rgba(20, 16, 41, 0.4);
+}
+
+.top-menu .nav-link.active {
+  background: rgba(0, 187, 255, 0.03);
+  color: #00bbff;
+}
+
+.top-menu .nav-link:not(:last-child) {
+  margin-right: 6px;
+}
+
 .sidebar-line {
   width: 25px;
   -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
@@ -2243,9 +2297,6 @@ a:active {
   margin-bottom: 52px;
   padding: 14px 30px;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
   width: 48px;
   height: 48px;
   padding: 0;
@@ -2260,9 +2311,6 @@ a:active {
   margin-left: 27px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s;
   display: none;
 }
 
@@ -2295,9 +2343,6 @@ a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
   color: #a19fa9 !important;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2330,9 +2375,6 @@ a:active {
   top: 0;
   display: block;
   position: absolute;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
   opacity: 0;
 }
 
@@ -2357,9 +2399,6 @@ a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
   width: 48px;
   height: 48px;
   padding: 0;
@@ -2410,9 +2449,6 @@ a:active {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
   width: 48px;
   height: 48px;
   padding: 0;
@@ -2518,24 +2554,8 @@ a:active {
     height: initial;
   }
 
-  .index .left-panel {
-    max-width: 29%;
-  }
-
   .index .common-info {
     padding: 5px;
-  }
-
-  .index .center-panel {
-    max-width: 69%;
-  }
-
-  .index .right-panel {
-    max-width: 100%;
-    margin-top: 0;
-    height: initial;
-    max-height: initial;
-    margin-top: 8px;
   }
 
   .index .right-panel .order-book {

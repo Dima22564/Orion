@@ -1,0 +1,27 @@
+.top-menu
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+  background: $white
+  width: 100%
+  display: flex
+  align-items: center
+  .links
+    padding: 6px 0
+    display: flex
+    align-items: center
+    width: 100%
+  .logo
+    margin-right: 28px
+  .nav-link
+    width: 36px
+    height: 36px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 22px
+    color: rgba(20, 16, 41, 0.4)
+    &.active
+      background: rgba(0, 187, 255, 0.03)
+      color: $blue
+    &:not(:last-child)
+      margin-right: 6px

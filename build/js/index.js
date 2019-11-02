@@ -87,8 +87,6 @@ $(document).ready(function () {
     $('.tabs').find(".tab-".concat(attr)).show();
   });
   $('.js-sidebar-line').hover(function (e) {
-    if (screen.width < 1200) {}
-
     $(this).css('transform', 'translateX(-300%)');
     $('.js-sidebar-wrapper').css('transform', 'translateX(0)');
     $('.js-sidebar-wrapper').css({
@@ -96,26 +94,18 @@ $(document).ready(function () {
     });
   });
   $('.js-sidebar-wrapper').hover(function () {
-    if (screen.width < 1200) {}
-
     $(this).css('transform', 'translateX(0)');
     $('.js-sidebar-line').css('transform', 'translateX(-300%)');
   }, function () {
-    if (screen.width < 1200) {}
-
     $(this).css('transform', 'translateX(-300%)');
     $('.js-sidebar-line').css('transform', 'translateX(0)');
   });
   $('.js-sidebar-line').click(function (e) {
-    if (screen.width < 1200) {}
-
     e.stopPropagation();
     $(this).css('transform', 'translateX(-300%)');
     $('.js-sidebar-wrapper').css('transform', 'translateX(0)');
   });
   $('body').click(function (e) {
-    if (screen.width < 1200) {}
-
     e.stopPropagation();
 
     if ($(e.target).hasClass('js-sidebar-wrapper') == false) {
