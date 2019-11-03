@@ -236,4 +236,43 @@ $(document).ready(function () {
       }
     ]
   })
+
+  $('.js-pair-link').click(function(e){
+    if($(this).hasClass('active')){
+      $(this).removeClass('active')
+      $('.js-pair-drop').hide()
+      $('.js-wrapper-pair').hide()
+      $('.index .left-panel').css({
+        overflowY: 'auto'
+      })
+      $('body').css({
+        overflow: 'initial'
+      })
+
+    }
+    else{
+      $(this).addClass('active')
+      $('.js-pair-drop').show()
+      $('.js-wrapper-pair').show()
+      $('.index .left-panel').css({
+        overflowY: 'initial'
+      })
+      $('body').css({
+        overflow: 'hidden'
+      })
+    }
+  })
+
+  $('.js-wrapper-pair').click(function(e){
+      $(this).hide()
+      $('.js-pair-link').removeClass('active')
+      $('.js-pair-drop').hide()
+      $('.js-wrapper-pair').hide()
+      $('.index .left-panel').css({
+        overflowY: 'auto'
+      })
+      $('body').css({
+        overflow: 'initial'
+      })
+  })
 });

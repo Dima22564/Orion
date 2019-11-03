@@ -1,0 +1,181 @@
+.index
+  .wrapper-pair
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(20, 16, 41, 0.06)
+    display: none
+    z-index: 777
+  .left-panel
+    .pair-select
+      // position: relative
+      
+      .link
+        font-size: 16px
+        line-height: 24px
+        color: $black
+        cursor: pointer
+        display: flex
+        align-items: center
+        font-weight: 600
+        &.active
+          img
+            transform: rotate(270deg)
+        img
+          transform: rotate(90deg)
+          opacity: 0.4
+          transition: all 0.3s
+      .pair-drop
+        background: $white
+        padding: 8px
+        border-radius: 4px
+        box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 32px 48px 0 rgba(20, 16, 41, 0.12), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+        position: absolute
+        left: 0
+        bottom: 0
+        transform: translateY(99.5%)
+        width: 472px
+        display: none
+        // width: 100%
+        z-index: 50
+        +media-b(690)
+          left: -30%
+        +media-b(576)
+          left: 0
+          width: 100%
+        .titles
+          display: flex
+          align-items: center
+          margin-bottom: 8px
+          flex-wrap: wrap
+          span
+            padding: 16px
+            font-size: 16px
+            line-height: 20px
+            color: $d-gray
+            font-weight: 600
+            cursor: pointer
+            transition:  all 0.3s
+            &:hover
+              background: rgba(20, 16, 41, 0.04)
+            &:not(:last-child)
+              margin-right: 8px
+            &.active
+              color: $blue
+              background: rgba(0, 187, 255, 0.03)
+        .search
+          display: flex
+          align-items: center
+          justify-content: space-between
+          margin-bottom: 20px
+          +media-b(500)
+            flex-direction: column
+          .input
+            position: relative
+            width: 77%
+            margin-right: 8px
+            +media-b(500)
+              width: 100% 
+              margin: 0
+            img
+              position: absolute
+              top: 17px
+              left: 12px
+            input
+              background-color: rgba(20, 16, 41, 0.02)
+              border-radius: 2px
+              padding: 12px 15px 12px 48px
+              color: $h-d-gray
+              font-size: 16px
+              line-height: 24px
+              border: none
+              width: 100%
+              &::placeholder
+                font-size: 16px
+                line-height: 24px
+                color: $d-gray
+          .favourite
+            display: flex
+            align-items: center
+            cursor: pointer
+            font-size: 16px
+            line-height: 24px
+            font-weight: 600
+            padding: 12px 16px
+            background-color: rgba(20, 16, 41, 0.02)
+            +media-b(500)
+              width: 100%
+              margin-top: 8px
+            img
+              margin-right: 12px
+              width: 16px
+              height: 16px
+        .pair-table
+          .titles-p
+            display: flex
+            align-items: center
+            padding: 12px
+            margin-bottom: 20px
+            .title
+              display: flex
+              align-items: center
+              font-size: 14px
+              line-height: 24px
+              color: $black
+              cursor: pointer
+              width: 25%
+              &.short
+                width: 20%
+              &.chg
+                width: 35%
+              img
+                transform: rotate(90deg)
+                opacity: 0.4
+          .lines
+            max-height: 37vh
+            overflow-y: auto
+            +media-b(1130)
+              max-height: 300px
+            .part
+              margin-bottom: 64px
+            .line
+              display: flex
+              align-items: center
+              padding: 12px
+              .cell
+                display: flex
+                align-items: center
+                width: 25%
+                &.short
+                  width: 20%
+                &.chg
+                  width: 35%
+                  p
+                    margin: 0 8px 0 4px
+                    .emp
+                      font-size: 24px
+                      line-height: 24px
+                      font-weight: 600
+                      color: $black
+                  .star
+                    cursor: pointer
+                    width: 18px
+                    height: 18px
+                .img
+                  margin-right: 8px
+                  flex-shrink: 0
+                .text
+                  display: flex
+                  flex-direction: column
+                  align-items: flex-start
+                  font-size: 14px
+                  line-height: 24px
+                  color: $black
+                  .small
+                    line-height: 16px
+                    color: $d-gray
+                  .emp
+                    font-weight: 600
+

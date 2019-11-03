@@ -11,8 +11,8 @@ html(lang="en")
   body
     include ./pug/top-menu.pug
     include ./pug/index-nav.pug
-
     .index
+      .wrapper-pair.js-wrapper-pair
       include ./pug/sidebar.pug
       .my-container
         .my-row
@@ -22,10 +22,221 @@ html(lang="en")
                 .star
                   img(src="./img/star.png", alt="")
                   span Pair
-                select(name="").currecy-select
-                  option(value="") ETH / BTC
-                  option(value="") ETH / BTC
-                  option(value="") ETH / BTC
+                .pair-select
+                  .link.js-pair-link
+                    span ETH / BTC
+                    img(src="./img/arrow-down.svg", alt="")
+                  .pair-drop.js-pair-drop
+                    .titles
+                      span BTC
+                      span USD
+                      span.active ETH
+                      span NEO
+                      span EOS
+                    .search
+                      .input
+                        input(type="text", placeholder="Search pair")
+                        img(src="./img/search.svg", alt="")
+                      .favourite
+                        img(src="./img/star.png", alt="")
+                        span Favourites
+                    .pair-table
+                      .titles-p
+                        .title
+                          span Pair
+                          img(src="./img/arrow-down.svg", alt="")
+                        .title.short
+                          span Last Pr.
+                          img(src="./img/arrow-down.svg", alt="")
+                        .title.short
+                          span 24h Vol
+                          img(src="./img/arrow-down.svg", alt="")
+                        .title.chg
+                          span 24h Change
+                          img(src="./img/arrow-down.svg", alt="")
+                      .lines
+                        .part
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+                          .line
+                            .cell
+                              img(src="./img/btc-color.png", alt="").img
+                              .text
+                                span.emp BTC
+                                span.small Bitcoin
+                            .cell.short
+                              .text
+                                span.emp 0.0174
+                                span.small $174.41
+                            .cell.short
+                              .text
+                                span.emp 0.001500
+                                span.small $53.41
+                            .cell.chg
+                              img(src="./img/growth.png", alt="")
+                              p #[span.emp +4,42] #[span %]
+                              img(src="./img/star.png", alt="").star
+
               .price
                 .last-price
                   span.title Last price
