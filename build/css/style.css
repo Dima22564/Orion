@@ -4105,6 +4105,7 @@ a:active {
   .index .left-panel .pair-select .pair-drop .pair-table .lines .line {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-bottom: 32px;
   }
 
   .index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell .title-m {
@@ -4126,6 +4127,12 @@ a:active {
 
   .index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell.chg .star {
     margin-left: auto;
+  }
+
+  .index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell .text {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
   }
 
   .popup-body .add-wallet-1 {
