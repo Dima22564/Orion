@@ -1,6 +1,9 @@
 .history
   h1
     margin-bottom: 23px
+    +sm
+      font-size: 24px
+      line-height: 24px
   .my-row
     +lg-one(justify-content, center)
   .history-table
@@ -9,9 +12,6 @@
     border-radius: 4px
     background: $white
     width: 49.5%
-    height: calc(84vh - 30px)
-    overflow-y: scroll
-    +lg-one(width, 100%)
     +lg
       width: 100%
       height: initial
@@ -19,11 +19,9 @@
     // +md-one(width, 100%)
     &:not(:last-child)
       margin-right: 8px
-      +lg-one(margin, 0 0 8px 0)
+      +lg-one(margin, 0 0 16px 0)
     .table-wrapper
       padding-bottom: 16px
-      +media-b(601)
-        overflow-x: scroll
     .heading
       margin-bottom: 16px
       font-weight: 600
@@ -34,16 +32,20 @@
       display: flex
       align-items: center
       margin-bottom: 16px
-      +media-b(1020)
-        justify-content: space-between
-      +lg-one(justify-content, initial)
+      flex-wrap: wrap
+      +media-b(535)
+        margin-bottom: 26px
       & > div
         &:not(:last-child)
           margin-right: 16px
-          +media-b(1020)
-            margin-right: 0
-          +lg-one(margin-right, 6px)
+      .all
+        +media-b(1130)
+          width: 30%
+        .drop-menu-currecy-select-1
+          width: 100% !important
       .status
+        +media-b(535)
+          width: 63%
         .drop-menu-currecy-select-1
           text-transform: initial
           color: $d-gray !important
@@ -73,8 +75,21 @@
       .date
         display: flex
         align-items: center
+        +media-b(535)
+          width: 100%
+          margin: 0 0 16px 0 !important
+          justify-content: space-between
+        .date-1
+          +media-b(535)
+            width: 48%
+        .date-2
+          +media-b(535)
+            width: 48%
         .hr
-          margin: 0 2px
+          margin: 0 4px
+          width: 15px
+          height: 1px
+          background: $l-gray
         input
           opacity: 0
           position: absolute
@@ -89,14 +104,22 @@
           color: $black
           font-size: 14px
           line-height: 16px
+          +media-b(1130)
+            font-size: 14px
+            line-height: 16px
+            padding: 6px 10px
           img
             margin-left: 12px
+            +media-b(535)
+              margin-left: auto
     .table-content
       .titles
         display: flex
         align-items: center
         padding: 0 12px
         margin-bottom: 26px
+        +media-b(535)
+          display: none
         .title
           width: 32.5%
           color: $black
@@ -105,17 +128,10 @@
           cursor: pointer
           font-size: 14px
           line-height: 24px
-          +media-b(601)
-            flex-shrink: 0
-            width: 46%
-          +media-b(400)
-            width: 71%
           &.status
             width: 15%
           &.short
             width: 20%
-            +media-b(601)
-              width: 40%
             
           img
             opacity: 0.4
@@ -126,6 +142,10 @@
         padding-bottom: 10px
         margin-right: -16px
         padding-right: 16px
+        max-height: calc(84vh - 30px)
+        overflow-y: auto
+        +media-b(1130)
+          max-height: 300px
         .line
           display: flex
           align-items: center
@@ -136,28 +156,46 @@
           line-height: 24px
           &:hover
             background: rgba(20, 16, 41, 0.02)
+          +media-b(535)
+            flex-wrap: wrap
+            justify-content: space-between
+            padding: 0
+            &:not(:last-child)
+              margin-bottom: 34px
           .cell
             width: 32.5%
-            +media-b(601)
-              flex-shrink: 0
-              width: 46%
-            +media-b(400)
-              width: 71%
+            display: flex
+            align-items: center
+            +media-b(535)
+              justify-content: space-between
+              width: initial 
+            .title-m
+              display: none
+              +media-b(535)
+                display: block
+            &.amount
+              +media-b(535)
+                width: 100% 
+                order: 4
+                margin-top: 18px
+            &.time
+              +media-b(535)
+                order: 3
+                justify-content: flex-end
             &.status
               width: 15%
+              +media-b(535)
+                order: 2
             &.btc
               display: flex
               align-items: center
+              +media-b(535)
+                order: 1
+                justify-content: flex-start
               img
                 margin-right: 12px
             &.short
               width: 20%
-              +media-b(601)
-                width: 40%
-              // +media-b(600)
-              //   width: 12%
-              // +media-b(420)
-              //   width: 20%
             &.emp
               color: $black
             &.filled

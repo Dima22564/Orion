@@ -9,6 +9,7 @@ html(lang="en")
     link(rel="stylesheet", href="./css/style.css")
     title Orion History
   body
+    include ./pug/top-menu.pug
     .history
       include ./pug/sidebar.pug
       .my-container
@@ -24,7 +25,7 @@ html(lang="en")
                     label(for="date-3")
                       span.js-out 25.03.2000
                       img(src="./img/calendar.png", alt="")
-                  span.hr -
+                  span.hr
                   .date-1.js-date-4
                     input#date-4(type="date", name="")
                     label(for="date-4")
@@ -55,61 +56,195 @@ html(lang="en")
 
                 .lines
                   .line
-                    span.cell 09.09.2019 12:42:41
+                    span.cell.time 09.09.2019 12:42:41
                     .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
                     span.cell.filled.status Filled
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.cancel.status Cancelled
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.open.status Open
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.open.status Opened
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.cancel.status Cancel
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.open.status Opened
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.open.status Opened
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.open.status Opened
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.open.status Opened
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.open.status Opened
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
 
         
           .history-table
@@ -122,7 +257,7 @@ html(lang="en")
                     label(for="date-5")
                       span.js-out 25.03.2000
                       img(src="./img/calendar.png", alt="")
-                  span.hr -
+                  span.hr
                   .date-1.js-date-6
                     input#date-6(type="date", name="")
                     label(for="date-6")
@@ -153,27 +288,174 @@ html(lang="en")
 
                 .lines
                   .line
-                    span.cell 09.09.2019 12:42:41
+                    span.cell.time 09.09.2019 12:42:41
                     .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
                     span.cell.filled.status Filled
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.cancel.status Cancelled
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
                   .line
-                    span.cell 09.09.2019 12:42:41
-                    .cell.short.emp.btc 
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
                       img(src="./img/btc-color.png" , alt="")
                       span BTC
-                    span.cell 0.00448236
-                    span.cell.open.status Opened
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
 
+                  .line
+                    span.cell.time 09.09.2019 12:42:41
+                    .cell.short.emp.btc
+                      img(src="./img/btc-color.png" , alt="")
+                      span BTC
+                    span.cell.amount #[span.title-m Amount] #[span 0.00448236]
+                    span.cell.filled.status Filled
         
 
 

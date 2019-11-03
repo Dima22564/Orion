@@ -1,0 +1,27 @@
+.toggler
+    position: relative
+    cursor: pointer
+    &.active
+        .toggler-way
+            background: rgba(0, 187, 255, 0.4)
+        .toggler-circle
+            box-shadow: 0 4px 8px -4px #ff00003d, 0 2px 4px -1px #1b0a523d, 0 0 1px 0 #ff00003d
+            background: $blue
+            left: 18px
+    &-way
+        width: 34px
+        height: 14px
+        background-color: #1410290f
+        border-radius: 7px
+        position: relative
+        transition: all 0.3s
+    &-circle
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        box-shadow: 0 4px 8px -4px #1410291e, 0 2px 4px -1px #1410291e, 0 0 1px 0 #1410291e
+        background: $white
+        position: absolute
+        top: -3px
+        left: -3px
+        transition: all 0.3s

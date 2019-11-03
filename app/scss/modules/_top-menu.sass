@@ -11,16 +11,19 @@
   +media-b(1130)
     display: flex
     justify-content: space-around
+  +sm
+    justify-content: space-between
   .links
     padding: 6px 0
     display: flex
     align-items: center
     width: 100%
     justify-content: space-around
-    +sm-one(justify-content, space-between)
+    +sm
+      justify-content: space-between
+      width: 70%
   .logo
     margin-right: 28px
-    padding-left: 12px  
     +sm-one(margin-right, 7px)
     img
       width: 19px
@@ -36,7 +39,7 @@
     color: $white
     font-size: 40px
     margin-left: 15px
-    +sm
+    +media-b(361)
       padding: 17px 20px
       margin-left: 0
   .nav-link
@@ -48,6 +51,7 @@
     justify-content: center
     font-size: 15px
     color: rgba(20, 16, 41, 0.4)
+    flex-shrink: 0
     &.active
       background: rgba(0, 187, 255, 0.03)
       color: $blue

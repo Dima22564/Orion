@@ -2,45 +2,79 @@
   .wrapper
     width: 75%
     margin-left: 8px
-    +media-b(1192)
+    +media-b(1090)
       width: 100%
-      margin: 8px 0 0 0
+      margin: 16px 0 0 0
     .wallets-table
       box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
       background: $white
       padding: 22px
-      +media-b(910)
-        overflow-x: scroll
-      +media-b(455)
-        padding: 16px
+      +media-b(1130)
+        padding: 18px
+      .search
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 40px
+        +media-b(645)
+          flex-direction: column
+        .toggler-wrap
+          display: flex
+          align-items: center
+          +media-b(645)
+            margin-top: 16px
+            width: 100%
+            justify-content: space-between
+          .text
+            margin-right: 18px
+            font-size: 16px
+            line-height: 24px
+            color: $h-d-gray
+        .input
+          position: relative
+          width: 77%
+          margin-right: 32px
+          +media-b(810)
+            width: 70%
+          +media-b(645)
+            width: 100%
+            margin-right: 0
+          img
+            position: absolute
+            top: 12px
+            left: 12px
+          input
+            background-color: rgba(20, 16, 41, 0.02)
+            border-radius: 2px
+            padding: 10px 15px 10px 36px
+            color: $h-d-gray
+            font-size: 14px
+            line-height: 16px
+            border: none
+            width: 100%
+            &::placeholder
+              font-size: 14px
+              line-height: 16px
+              color: $d-gray
       .titles
         display: flex
         align-items: center
         padding: 0 12px
         margin-bottom: 12px
+        +media-b(916)
+          display: none
         .title
-          width: 14.5%
+          width: 18.5%
           color: $black
           display: flex
           align-items: center
           cursor: pointer
           font-size: 14px
           line-height: 16px
-          +media-b(910)
-            flex-shrink: 0
-            width: 22.5%
-          +media-b(622)
-            width: 29.5%
-          +media-b(512)
-            width: 57%
           &.actions
-            width: 42%
+            width: 59%
             justify-content: flex-end
-            +media-b(622)
-              width: 67%
-            +media-b(512)
-              width: 93%
           img
             opacity: 0.4
             transform: rotate(90deg)
@@ -48,35 +82,47 @@
             height: 17px
       .lines
         padding-bottom: 10px
+        overflow-y: auto
+        height: calc(50vh - 10px)
+        +media-b(1130)
+          padding: 18px
+          height: initial
+          max-height: 980px
         .line
           display: flex
           align-items: center
           padding: 6px 12px
           cursor: pointer
           transition: all 0.3s
+          +media-b(916)
+            flex-direction: column
+            padding: 0
+            &:not(:last-child)
+              margin-bottom: 32px
           .cell
-            width: 14.5%
+            width: 18.5%
             font-size: 14px
             line-height: 24px
-            +media-b(910)
-              width: 22.5%
-              flex-shrink: 0
-            +media-b(622)
-              width: 29.5%
-            +media-b(512)
-              width: 57%
+            +media-b(916)
+              display: flex
+              width: 100%
+              align-items: center
+              justify-content: space-between
+              margin-bottom: 4px
+            .title-m
+              display: none
+              color: $h-d-gray
+              +media-b(916)
+                display: block
             &.actions
-              width: 42%
+              width: 59%
               display: flex
               align-items: center
               justify-content: flex-end
-              +media-b(910)
-                width: 50%
-                justify-content: flex-start
-              +media-b(622)
-                width: 85%
-              +media-b(512)
-                width: 170%
+              +media-b(916)
+                width: 100%
+                margin-top: 16px
+                flex-direction: column
               button
                 padding: 8px 16px
                 background: rgba(20, 16, 41, 0.02)
@@ -87,6 +133,8 @@
                 cursor: pointer
                 transition: all 0.3s
                 color: $black
+                +media-b(916)
+                  width: 100%
                 &:hover
                   background: rgba(20, 16, 41, 0.06)                  
                 span
@@ -96,11 +144,16 @@
                     transform: rotate(180deg)
                 &:not(:last-child)
                   margin-right: 6px
+                  +media-b(916)
+                    margin: 0 0 8px 0
             &.coins
               display: flex
               align-items: center
               color: $black
+              font-size: 16px
+              font-weight: 600
+              +media-b(916)
+                margin-bottom: 16px
+                justify-content: flex-start
               img
                 margin-right: 12px
-                width: 20px
-                height: 20px

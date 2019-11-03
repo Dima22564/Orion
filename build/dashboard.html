@@ -10,6 +10,10 @@
         <title>Orion Dashboard</title>
     </head>
     <body>
+        <div class="top-menu">
+            <div class="links"><a class="logo" href><img src="./img/logo.png" alt></a><a class="nav-link active" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-2 icon"></span></a><a class="nav-link" href><span class="icon-link-3 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a></div>
+            <div class="add">+</div>
+        </div>
         <div class="dashboard">
             <div class="sidebar-line js-sidebar-line">
                 <div class="line"></div>
@@ -51,7 +55,7 @@
                                 <h2>Wallets</h2>
                                 <button class="add js-add-wallet"><img src="./img/add.png" alt><span>Add Wallet</span></button>
                             </div>
-                            <div class="crypto-wallets">
+                            <div class="crypto-wallets js-crypto-wallets">
                                 <div class="wallet eth">
                                     <div class="title"><img src="./img/eth-wallet.png" alt><span>Details</span></div>
                                     <p class="money"><span class="num">12.008895</span> <span class="currency">ETH</span></p>
@@ -79,7 +83,7 @@
                             </div>
                             <div class="lines">
                                 <div class="line">
-                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell">1.46780990</span><span class="cell">1.46780990</span><span class="cell">0.26000000</span>
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
                                     <div class="cell actions">
                                         <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
                                         <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
@@ -87,7 +91,7 @@
                                     </div>
                                 </div>
                                 <div class="line">
-                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell">1.46780990</span><span class="cell">1.46780990</span><span class="cell">0.26000000</span>
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
                                     <div class="cell actions">
                                         <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
                                         <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
@@ -95,7 +99,55 @@
                                     </div>
                                 </div>
                                 <div class="line">
-                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell">1.46780990</span><span class="cell">1.46780990</span><span class="cell">0.26000000</span>
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
+                                    <div class="cell actions">
+                                        <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
+                                        <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
+                                        <button class="action"> <img src="./img/trade.png" alt><span>Trade</span></button>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
+                                    <div class="cell actions">
+                                        <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
+                                        <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
+                                        <button class="action"> <img src="./img/trade.png" alt><span>Trade</span></button>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
+                                    <div class="cell actions">
+                                        <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
+                                        <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
+                                        <button class="action"> <img src="./img/trade.png" alt><span>Trade</span></button>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
+                                    <div class="cell actions">
+                                        <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
+                                        <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
+                                        <button class="action"> <img src="./img/trade.png" alt><span>Trade</span></button>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
+                                    <div class="cell actions">
+                                        <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
+                                        <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
+                                        <button class="action"> <img src="./img/trade.png" alt><span>Trade</span></button>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
+                                    <div class="cell actions">
+                                        <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
+                                        <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>
+                                        <button class="action"> <img src="./img/trade.png" alt><span>Trade</span></button>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="cell emp coins"><img src="./img/btc-color.png" alt><span>BTC</span></div><span class="cell"><span class="title-m">Wallet</span> 1.46780990</span><span class="cell"><span class="title-m">Contract</span> 1.46780990</span><span class="cell"><span class="title-m">In open order</span> 0.26000000</span>
                                     <div class="cell actions">
                                         <button class="action"> <img src="./img/arrow.png" alt><span>Deposit</span></button>
                                         <button class="action withdraw"><img src="./img/arrow.png" alt><span>Withdraw</span></button>

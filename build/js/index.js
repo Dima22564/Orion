@@ -180,4 +180,31 @@ $(document).ready(function () {
     $('.js-panel').removeClass('active');
     $('.js-panel-item').show();
   }
+
+  $('.js-toggler').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  });
+  $('.js-crypto-wallets').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // variableWidth: true,
+    dots: false,
+    arrows: false,
+    infinite: false,
+    responsive: [{
+      breakpoint: 1130,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 850,
+      settings: {
+        arrows: false,
+        // centerMode: true,
+        slidesToShow: 1,
+        variableWidth: true
+      }
+    }]
+  });
 });

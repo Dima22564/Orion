@@ -9,6 +9,7 @@ html(lang="en")
     link(rel="stylesheet", href="./css/style.css")
     title Orion Dashboard
   body
+    include ./pug/top-menu.pug
     .wallet-page
       include ./pug/sidebar.pug
       .my-container
@@ -23,6 +24,15 @@ html(lang="en")
 
           .wrapper
             .wallets-table
+              .search
+                .input
+                  input(type="text", placeholder="Search")
+                  img(src="./img/search.svg", alt="")
+                .toggler-wrap
+                  span.text Show Zero
+                  .toggler.js-toggler
+                    .toggler-way
+                    .toggler-circle
               .titles
                 .title
                   span Token
@@ -44,9 +54,9 @@ html(lang="en")
                   .cell.emp.coins
                     img(src="./img/btc-color.png" , alt="")
                     span BTC
-                  span.cell 1.46780990
-                  span.cell 1.46780990
-                  span.cell 0.26000000
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
                   .cell.actions 
                     button.action 
                       img(src="./img/arrow.png", alt="")
@@ -61,9 +71,9 @@ html(lang="en")
                   .cell.emp.coins
                     img(src="./img/btc-color.png" , alt="")
                     span BTC
-                  span.cell 1.46780990
-                  span.cell 1.46780990
-                  span.cell 0.26000000
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
                   .cell.actions 
                     button.action 
                       img(src="./img/arrow.png", alt="")
@@ -78,9 +88,145 @@ html(lang="en")
                   .cell.emp.coins
                     img(src="./img/btc-color.png" , alt="")
                     span BTC
-                  span.cell 1.46780990
-                  span.cell 1.46780990
-                  span.cell 0.26000000
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
+                  .cell.actions 
+                    button.action 
+                      img(src="./img/arrow.png", alt="")
+                      span Deposit
+                    button.action.withdraw
+                      img(src="./img/arrow.png", alt="")
+                      span Withdraw
+                    button.action 
+                      img(src="./img/trade.png", alt="")
+                      span Trade
+                .line
+                  .cell.emp.coins
+                    img(src="./img/btc-color.png" , alt="")
+                    span BTC
+                  span.cell #[span.title-m Wallet] 1.46780990
+                  span.cell #[span.title-m Contract] 1.46780990
+                  span.cell #[span.title-m In open order] 0.26000000
                   .cell.actions 
                     button.action 
                       img(src="./img/arrow.png", alt="")

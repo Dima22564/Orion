@@ -1,13 +1,18 @@
 .dashboard
   .my-row
-    +media-b(1192)
+    +media-b(1130)
+      align-items: flex-start
+    +media-b(830)
       justify-content: center
   .wrapper
     width: 75%
     margin-left: 8px
-    +media-b(1192)
-      width: 100%
+    +media-b(1130)
+      width: 72%
       margin: 0 0 8px 0
+    +media-b(830)
+      width: 100%
+      margin: 0
     .wallets
       box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
@@ -15,12 +20,11 @@
       padding: 24px
       margin-bottom: 8px
       height: calc(50vh - 30px)
-      overflow-y: scroll
-      +media-b(455)
+      +media-b(1130)
         padding: 16px
-      +media-b(1200)
         height: initial
-        overflow-y: visible
+      +media-b(830)
+        margin-bottom: 16px
       .top
         display: flex
         align-items: center
@@ -43,24 +47,28 @@
           img
             margin-right: 12px
       .crypto-wallets
-        display: flex
-        justify-content: space-between
-        +media-b(910)
-          flex-wrap: wrap
-        +media-b(620)
-          justify-content: center
+        // display: flex
+        // justify-content: space-between
+        // +media-b(910)
+        //   flex-wrap: wrap
+        // +media-b(620)
+        //   justify-content: center
+        margin-bottom: 24px
+        +media-b(1130)
+          margin-bottom: 0
         .wallet
-          width: 32.5%
+          // width: 32.5%
+          // max-width: 300px
+          // width: 100%
+          
           padding: 16px
           border-radius: 2px
           transition: all 0.1s
-          +media-b(910)
-            width: 48%
-            margin: 0 4px 8px 4px
-          +media-b(620)
-            width: 70%
-          +media-b(455)
+          +media-b(850)
+            max-width: 260px
             width: 100%
+          &:not(:last-child)
+            margin-right: 16px
           &.btc
             background: rgba(247, 147, 26, 0.03)
             &:hover
@@ -84,10 +92,6 @@
             display: flex
             align-items: flex-end
             margin-bottom: 12px
-            +media-b(370)
-              flex-direction: column
-              align-items: flex-start
-              margin-bottom: 40px
             .num
               font-size: 36px
               line-height: 48px
@@ -99,8 +103,6 @@
               font-weight: 700
               color: $black
               text-transform: uppercase
-              +media-b(370)
-                line-height: 0
           .currency-2
             font-size: 14px
             line-height: 16px
