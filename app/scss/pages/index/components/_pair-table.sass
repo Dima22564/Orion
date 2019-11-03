@@ -118,6 +118,8 @@
             align-items: center
             padding: 12px
             margin-bottom: 20px
+            +media-b(500)
+              display: none
             .title
               display: flex
               align-items: center
@@ -144,14 +146,30 @@
               display: flex
               align-items: center
               padding: 12px
+              +media-b(500)
+                flex-wrap: wrap
               .cell
                 display: flex
                 align-items: center
                 width: 25%
+                .title-m
+                  display: none
+                  font-size: 16px
+                  line-height: 20px
+                  color: $d-gray
+                  +media-b(500)
+                    display: block
                 &.short
                   width: 20%
+                  +media-b(500)
+                    width: 100%
+                    margin: 5px 0 
+                    justify-content: space-between
                 &.chg
                   width: 35%
+                  +media-b(500)
+                    width: 100%
+                    margin-top: 15px
                   p
                     margin: 0 8px 0 4px
                     .emp
@@ -163,6 +181,11 @@
                     cursor: pointer
                     width: 18px
                     height: 18px
+                    +media-b(500)
+                      margin-left: auto
+                    img
+                      width: 18px
+                      height: 18px
                 .img
                   margin-right: 8px
                   flex-shrink: 0

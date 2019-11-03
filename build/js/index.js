@@ -242,4 +242,13 @@ $(document).ready(function () {
       overflow: 'initial'
     });
   });
+  $('.js-star').click(function (e) {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(this).find('img').replaceWith('<img src="./img/star.png" alt="">');
+    } else {
+      $(this).addClass('active');
+      $(this).find('img').replaceWith('<img src="./img/star-blue.svg" alt="">');
+    }
+  });
 });
