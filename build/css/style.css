@@ -606,7 +606,7 @@ a:active {
 }
 
 .index .center-panel {
-  max-width: 58%;
+  max-width: 57.6666%;
   width: 100%;
   margin: 0 8px;
   height: calc(100vh - 30px);
@@ -3210,6 +3210,7 @@ a:active {
   margin-left: 27px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  display: none;
 }
 
 .sidebar-content .aside-coins .coin img {
@@ -3277,6 +3278,18 @@ a:active {
     padding-left: 72px;
   }
 
+  .history {
+    padding-left: 72px;
+  }
+
+  .dashboard {
+    padding-left: 72px;
+  }
+
+  .wallet-page {
+    padding-left: 72px;
+  }
+
   .sidebar-line {
     display: none !important;
   }
@@ -3288,9 +3301,15 @@ a:active {
   }
 }
 
-@media (max-width: 1600px) {
-  .sidebar-content .aside-coins .coin .text {
-    display: none;
+@media (max-width: 1299px) {
+  .index .center-panel .table-content {
+    max-height: calc(42vh - 77px);
+  }
+}
+
+@media (max-width: 1248px) {
+  .index .center-panel .table-content {
+    max-height: 28vh;
   }
 }
 
