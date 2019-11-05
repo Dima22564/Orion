@@ -87,18 +87,24 @@ $(document).ready(function () {
     $('.tabs').find(".tab-".concat(attr)).show();
   });
   $('.js-sidebar-line').hover(function (e) {
-    $(this).css('transform', 'translateX(-300%)');
-    $('.js-sidebar-wrapper').css('transform', 'translateX(0)');
-    $('.js-sidebar-wrapper').css({
-      position: 'fixed'
-    });
+    if (screen.width < 1300) {
+      $(this).css('transform', 'translateX(-300%)');
+      $('.js-sidebar-wrapper').css('transform', 'translateX(0)');
+      $('.js-sidebar-wrapper').css({
+        position: 'fixed'
+      });
+    }
   });
   $('.js-sidebar-wrapper').hover(function () {
-    $(this).css('transform', 'translateX(0)');
-    $('.js-sidebar-line').css('transform', 'translateX(-300%)');
+    if (screen.width < 1300) {
+      $(this).css('transform', 'translateX(0)');
+      $('.js-sidebar-line').css('transform', 'translateX(-300%)');
+    }
   }, function () {
-    $(this).css('transform', 'translateX(-300%)');
-    $('.js-sidebar-line').css('transform', 'translateX(0)');
+    if (screen.width < 1300) {
+      $(this).css('transform', 'translateX(-300%)');
+      $('.js-sidebar-line').css('transform', 'translateX(0)');
+    }
   });
   $('.js-sidebar-line').click(function (e) {
     e.stopPropagation();

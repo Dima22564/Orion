@@ -12,6 +12,8 @@
     display: flex
     align-items: center
     justify-content: center
+    @media screen and ( min-width: 1300px )
+      display: none !important
     +media-b(1130)
       display: none
     .line
@@ -37,11 +39,12 @@
     left: 0
     transform: translateX(-300%)
     z-index: 5555
+    @media screen and ( min-width: 1300px )
+      transform: translateX(0) !important
     +media-b(1130)
       display: none
     &.open
      max-width: 310px
-     // position: absolute
      margin: 0
      top: 0
      left: 0
