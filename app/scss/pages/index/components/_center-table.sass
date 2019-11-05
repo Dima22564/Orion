@@ -152,16 +152,18 @@
             margin: 0 5px
             color: $l-gray
       &-content
-        max-height: calc(40vh - 77px)
+        max-height: calc(40vh - 110px)
         overflow-y: auto
         +media-b(1080)
           max-height: 300px
         +media-b(535)
           max-height: 55vh
         +media-b(1248)
-          max-height: 28vh
+          max-height: 25vh
         +media-b(1299)
-          max-height: calc(42vh - 77px)
+          max-height: calc(42vh - 89px)
+        @media screen and ( min-width: 1300px )
+          max-height: calc(40vh - 77px)
         .titles
           display: flex
           align-items: center

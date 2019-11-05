@@ -84,14 +84,6 @@
        justify-content: flex-start !important
        span
          display: block !important
-    +media-b(1200)
-      // transform: translateX(-300%)
-      // position: fixed
-      // margin: 0
-    +media-b(1600)
-      // max-height: 100vh
-      // overflow-x: hidden
-      // max-width: 72px
      
   &-content
     .logo
@@ -120,20 +112,10 @@
       justify-content: center
       margin-left: auto
       margin-right: auto
-      +media-b(1600)
-        // width: 48px
-        // height: 48px
-        // padding: 0
-        // justify-content: center
-        // margin-left: auto
-        // margin-right: auto
       .text
         margin-left: 27px
         flex-shrink: 0
-        // transition-delay: 0.3s
         display: none
-        +media-b(1600)
-          // display: none
       &:hover
         background: rgba(20, 16, 41, 0.02)
     nav
@@ -142,8 +124,6 @@
       flex-direction: column
       margin-bottom: 90px
       align-items: center
-      +media-b(1600)
-        // align-items: center
     .nav-link
       padding: 14px 30px
       position: relative
@@ -156,16 +136,9 @@
       height: 48px
       border-radius: 50%
       padding: 0
-      +media-b(1600)
-        // justify-content: center
-        // width: 48px
-        // height: 48px
-        // border-radius: 50%
-        // padding: 0
       &:not(:last-child)
         margin-bottom: 5px
       &:hover
-        // transition: all 0.3s
         background: rgba(20, 16, 41, 0.02)
       &.active
         color: $blue !important
@@ -179,15 +152,10 @@
           top: 0
           display: block
           position: absolute  
-          // transition: all 0.3s
           opacity: 0
-          +media-b(1600)
-            // opacity: 0
       .text
         margin-left: 27px
         display: none
-        +media-b(1600)
-          // display: none
 
     .aside-coins
       margin-bottom: 32px
@@ -199,20 +167,12 @@
         cursor: pointer
         display: flex
         align-items: center
-        // transition: all 0.3s
         width: 48px
         height: 48px
         padding: 0
         justify-content: center
         margin-left: auto
         margin-right: auto
-        +media-b(1600)
-          // width: 48px
-          // height: 48px
-          // padding: 0
-          // justify-content: center
-          // margin-left: auto
-          // margin-right: auto
         &:not(:last-child)
           margin-bottom: 5px
         &:hover
@@ -220,7 +180,6 @@
         .text
           margin-left: 27px
           flex-shrink: 0
-          // @media screen and ( min-width: 1300 )
           display: none
         img
           width: 20px
@@ -239,24 +198,14 @@
       display: flex
       align-items: center
       justify-content: flex-start
-      // justify-content: flex-start
-      // transition: all 0.3s
       width: 48px
       height: 48px
       padding: 0
       justify-content: center
       margin: auto
-      +media-b(1600)
-        // width: 48px
-        // height: 48px
-        // padding: 0
-        // justify-content: center
-        // margin: auto
       img
         transform: rotate(45deg)
       span
         margin-left: 27px
         flex-shrink: 0
         display: none
-        +media-b(1600)
-          // display: none

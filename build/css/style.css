@@ -779,7 +779,7 @@ a:active {
 }
 
 .index .center-panel .table-content {
-  max-height: calc(40vh - 77px);
+  max-height: calc(40vh - 110px);
   overflow-y: auto;
 }
 
@@ -3290,6 +3290,10 @@ a:active {
     padding-left: 72px;
   }
 
+  .index .center-panel .table-content {
+    max-height: calc(40vh - 77px);
+  }
+
   .sidebar-line {
     display: none !important;
   }
@@ -3303,13 +3307,13 @@ a:active {
 
 @media (max-width: 1299px) {
   .index .center-panel .table-content {
-    max-height: calc(42vh - 77px);
+    max-height: calc(42vh - 89px);
   }
 }
 
 @media (max-width: 1248px) {
   .index .center-panel .table-content {
-    max-height: 28vh;
+    max-height: 25vh;
   }
 }
 
