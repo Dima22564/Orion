@@ -1001,6 +1001,7 @@ a:active {
 .index .right-panel .order-book .titles .title.exch {
   width: 11%;
   text-align: left;
+  margin-right: 27px;
 }
 
 .index .right-panel .order-book .last-price {
