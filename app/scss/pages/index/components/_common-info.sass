@@ -21,6 +21,8 @@
       padding: 19px
       width: 50%
     +sm-one(width, 100%)
+    @media screen and ( min-width: 1635px )
+      padding: 20px
     .top
       display: flex
       justify-content: space-between
@@ -31,6 +33,8 @@
       padding: 8px
       margin: -8px
       border-radius: 4px
+      @media screen and ( min-width: 1500px )
+        margin-bottom: 32px
       .star
         display: flex
         align-items: center
@@ -39,6 +43,10 @@
         letter-spacing: 1px
         +media-b(1130)
           font-size: 14px
+        @media screen and ( min-width: 1500px )
+          font-size: 14px
+          letter-spacing: 1.08px
+          line-height: 24px
         img
           margin-right: 6px
       .drop-menu-currecy-select
@@ -63,12 +71,17 @@
       align-items: flex-start
       justify-content: space-between
       margin: 10px 0 23px 0
+      @media screen and ( min-width: 1500px )
+        margin-bottom: 37px
       .last-price
         display: flex
         flex-direction: column
         .title 
           color: $l-gray
           margin-bottom: 5px
+          @media screen and ( min-width: 1500px )
+            font-size: 14px
+            line-height: 16px
           +media-b(1130)
             font-size: 13px
         .value
@@ -80,11 +93,16 @@
             line-height: 24px
             font-weight: 700
             margin-right: 4px
+            @media screen and ( min-width: 1500px )
+              font-size: 24px
             +media-b(1130)
               font-size: 24px
           .dollars
             line-height: 21px
             font-weight: 600
+            @media screen and ( min-width: 1500px )
+              font-size: 14px
+              line-height: 17px
             +media-b(1130)
               line-height: 15px
       .change
@@ -93,6 +111,9 @@
         .title 
           color: $l-gray
           margin-bottom: 5px
+          @media screen and ( min-width: 1500px )
+            font-size: 14px
+            line-height: 16px
           +media-b(1130)
             font-size: 13px
         .value
@@ -106,6 +127,8 @@
             line-height: 24px
             font-weight: 700
             margin-left: 5px
+            @media screen and ( min-width: 1500px )
+              font-size: 24px
             +media-b(1130)
               margin-left: 8px
               font-size: 24px
@@ -116,6 +139,9 @@
           .dollars
             line-height: 17px
             font-weight: 600
+            @media screen and ( min-width: 1500px )
+              font-size: 14px
+              line-height: 17px
     .table
       +sm
         display: flex
@@ -136,6 +162,9 @@
         .title
           color: $l-gray
           line-height: 24px
+          @media screen and ( min-width: 1500px )
+            font-size: 13px
+            line-height: 16px
           +media-b(1130)
             font-size: 13px
             margin-bottom: 8px
@@ -148,10 +177,17 @@
             font-size: 16px
             display: flex
             flex-direction: column
+          @media screen and ( min-width: 1500px )
+            font-size: 16px
+            line-height: 24px
           .small
             font-size: 10px
             color: $d-gray
             +media-b(1130)
               font-size: 14px
               margin-top: 4px
+            @media screen and ( min-width: 1500px )
+              font-size: 14px
+              line-height: 16px
+              margin-left: 8px
           

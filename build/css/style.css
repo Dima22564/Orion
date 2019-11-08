@@ -12,6 +12,7 @@ body {
   line-height: 12px;
   color: rgba(20, 16, 41, 0.6);
   font-weight: 500;
+  background: rgba(20, 16, 41, 0.02);
 }
 
 .custom-icon {
@@ -3203,7 +3204,7 @@ a:active {
 }
 
 .sidebar-content .aside-coins .coin:hover {
-  background: rgba(20, 16, 41, 0.02);
+  background: rgba(30, 16, 41, 0.02);
 }
 
 .sidebar-content .aside-coins .coin .text {
@@ -3294,6 +3295,11 @@ a:active {
     max-height: calc(40vh - 77px);
   }
 
+  .index .left-panel .pair-select .link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
   .sidebar-line {
     display: none !important;
   }
@@ -3302,6 +3308,115 @@ a:active {
     -webkit-transform: translateX(0) !important;
     -ms-transform: translateX(0) !important;
     transform: translateX(0) !important;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .index .common-info .top {
+    margin-bottom: 32px;
+  }
+
+  .index .common-info .top .star {
+    font-size: 14px;
+    letter-spacing: 1.08px;
+    line-height: 24px;
+  }
+
+  .index .common-info .price {
+    margin-bottom: 37px;
+  }
+
+  .index .common-info .price .last-price .title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .index .common-info .price .last-price .value .emp {
+    font-size: 24px;
+  }
+
+  .index .common-info .price .last-price .value .dollars {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .index .common-info .price .change .title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .index .common-info .price .change .value .emp {
+    font-size: 24px;
+  }
+
+  .index .common-info .price .change .value .dollars {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .index .common-info .table .line .title {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .index .common-info .table .line .value {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .index .common-info .table .line .value .small {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 8px;
+  }
+
+  .index .left-panel .buy-sell .top {
+    margin-bottom: 24px;
+  }
+
+  .index .left-panel .buy-sell .top button {
+    padding: 8px 0;
+  }
+
+  .index .left-panel .buy-sell .main-content .big-toggler {
+    margin-bottom: 36px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount .placeholder {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount input {
+    padding: 12px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount .currency {
+    top: 30px;
+  }
+
+  .index .left-panel .buy-sell .main-content .amount .available {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .index .left-panel .buy-sell .main-content .btns button {
+    width: 24%;
+  }
+
+  .index .left-panel .buy-sell .main-content .buy {
+    padding: 12px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1635px) {
+  .index .common-info {
+    padding: 20px;
+  }
+
+  .index .left-panel .buy-sell .main-content {
+    padding: 0 24px 12px 24px;
   }
 }
 
