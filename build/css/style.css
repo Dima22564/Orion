@@ -398,6 +398,7 @@ a:active {
   padding: 1px;
   border-radius: 4px;
   margin-left: 5px;
+  background: #ffffff;
 }
 
 .index .left-panel .buy-sell {
@@ -963,6 +964,7 @@ a:active {
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   border-radius: 4px;
+  background: #ffffff;
 }
 
 .index .right-panel .order-book {
