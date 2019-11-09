@@ -35,6 +35,10 @@
         +media-b(1130)
           font-size: 14px
           padding: 16px
+        @media screen and ( min-width: 1500px )
+          font-size: 14px
+          line-height: 24px
+          padding: 24px 0 8px 24px
       .titles
         display: flex
         align-items: center
@@ -46,6 +50,9 @@
           width: 26.666%
           text-align: center
           color: $black
+          @media screen and ( min-width: 1500px )
+            font-size: 14px
+            line-height: 24px
           &.exch
             width: 11%
             text-align: left
@@ -73,11 +80,16 @@
           max-height: 41vh 
           overflow-y: auto
         +sm-one(max-height, 19.5vh)
+        @media screen and ( min-width: 1500px )
+          max-height: calc(50vh - 89px)
 
         .order
           display: flex
           align-items: center
           position: relative
+          @media screen and ( min-width: 1500px )
+            font-size: 14px
+            line-height: 24px
           .progress-light
             position: absolute
             width: 33%

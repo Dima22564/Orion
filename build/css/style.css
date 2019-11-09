@@ -621,7 +621,7 @@ a:active {
   border-radius: 4px;
   background: #ffffff;
   margin-bottom: 8px;
-  max-height: calc(60vh - 22px);
+  height: calc(60vh - 22px);
   overflow-y: auto;
   -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
@@ -3381,8 +3381,18 @@ a:active {
     padding: 8px 0;
   }
 
+  .index .left-panel .buy-sell .main-content {
+    padding-bottom: 14px;
+  }
+
   .index .left-panel .buy-sell .main-content .big-toggler {
     margin-bottom: 36px;
+  }
+
+  .index .left-panel .buy-sell .main-content .big-toggler span {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .index .left-panel .buy-sell .main-content .amount .placeholder {
@@ -3411,6 +3421,46 @@ a:active {
     padding: 12px;
     margin-top: 24px;
   }
+
+  .index .center-panel .table .top {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+
+  .index .center-panel .table .top .drop-menu-currecy-select-1 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .index .center-panel .table-content .titles {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .index .center-panel .table-content .lines .line {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .index .right-panel .order-book .heading {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 24px 0 8px 24px;
+  }
+
+  .index .right-panel .order-book .titles .title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .index .right-panel .order-book .orders {
+    max-height: calc(50vh - 89px);
+  }
+
+  .index .right-panel .order-book .orders .order {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (min-width: 1635px) {
@@ -3423,15 +3473,9 @@ a:active {
   }
 }
 
-@media (max-width: 1299px) {
+@media (max-width: 1256px) {
   .index .center-panel .table-content {
-    max-height: calc(42vh - 89px);
-  }
-}
-
-@media (max-width: 1248px) {
-  .index .center-panel .table-content {
-    max-height: 25vh;
+    max-height: calc(40vh - 114px);
   }
 }
 
@@ -3578,7 +3622,6 @@ a:active {
   }
 
   .index .center-panel .image {
-    max-height: initial;
     display: none;
     height: 472px;
   }
@@ -3602,6 +3645,10 @@ a:active {
     font-size: 14px;
     line-height: 16px;
     padding: 6px 10px;
+  }
+
+  .index .center-panel .table-content {
+    max-height: calc(70vh - 110px);
   }
 
   .index .right-panel {
@@ -3811,10 +3858,6 @@ a:active {
 }
 
 @media (max-width: 1080px) {
-  .index .center-panel .table-content {
-    max-height: 300px;
-  }
-
   .index .my-row {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -4133,10 +4176,6 @@ a:active {
 
   .index .center-panel .table .top .date label img {
     margin-left: auto;
-  }
-
-  .index .center-panel .table-content {
-    max-height: 55vh;
   }
 
   .index .center-panel .table-content .titles {

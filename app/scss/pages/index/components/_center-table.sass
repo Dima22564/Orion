@@ -14,12 +14,11 @@
       border-radius: 4px
       background: $white
       margin-bottom: 8px
-      max-height: calc(60vh - 22px)
+      height: calc(60vh - 22px)
       overflow-y: auto
       box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
 
       +media-b(1130)
-        max-height: initial
         display: none
         height: 472px
       img
@@ -63,11 +62,18 @@
         +media-b(535)
           flex-direction: column
           align-items: flex-start
+        @media screen and ( min-width: 1500px )
+          font-size: 14px !important
+          line-height: 24px !important
         & > div
           margin-bottom: 16px
           margin-right: 10px
           +media-b(535)
             width: 100%
+        .drop-menu-currecy-select-1
+          @media screen and ( min-width: 1500px )
+            font-size: 14px
+            line-height: 24px
         .big-toggler
           background-color: rgba(20, 16, 41, 0.02)
           padding: 2px
@@ -154,14 +160,10 @@
       &-content
         max-height: calc(40vh - 110px)
         overflow-y: auto
-        +media-b(1080)
-          max-height: 300px
-        +media-b(535)
-          max-height: 55vh
-        +media-b(1248)
-          max-height: 25vh
-        +media-b(1299)
-          max-height: calc(42vh - 89px)
+        +media-b(1130)
+          max-height: calc(70vh - 110px)
+        +media-b(1256)
+          max-height: calc(40vh - 114px)
         @media screen and ( min-width: 1300px )
           max-height: calc(40vh - 77px)
         .titles
@@ -171,6 +173,9 @@
           margin-bottom: 12px
           +media-b(535)
             display: none
+          @media screen and ( min-width: 1500px )
+            font-size: 14px
+            line-height: 24px
           .title
             width: 15.3%
             color: $black
@@ -191,6 +196,9 @@
         .lines
           padding-bottom: 10px
           .line
+            @media screen and ( min-width: 1500px )
+              font-size: 14px
+              line-height: 24px
             &:not(:last-child)
               .line-small
                 margin-bottom: 32px
