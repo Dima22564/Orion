@@ -649,7 +649,7 @@ a:active {
   background-color: rgba(20, 16, 41, 0.02) !important;
   text-transform: uppercase;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 24px;
   color: rgba(20, 16, 41, 0.8) !important;
   width: initial !important;
   font-family: 'Montserrat', sans-serif;
@@ -1612,6 +1612,30 @@ a:active {
 }
 
 .index.dark-mode .center-panel .table .cell.cancel {
+  color: #ff00aa !important;
+}
+
+.index.dark-mode .center-panel .table .line-small .data {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .center-panel .table .line-small .data-eth {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .center-panel .table .line-small .sub-title {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .center-panel .table .line-small .cell-top span.filled {
+  color: #eeff00 !important;
+}
+
+.index.dark-mode .center-panel .table .line-small .cell-top span.open {
+  color: #00ffaa !important;
+}
+
+.index.dark-mode .center-panel .table .line-small .cell-top span.cancel {
   color: #ff00aa !important;
 }
 
