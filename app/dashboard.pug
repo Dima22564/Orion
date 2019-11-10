@@ -8,9 +8,9 @@ html(lang="en")
     link(rel="stylesheet", href="./libs/css/vendor.min.css")
     link(rel="stylesheet", href="./css/style.css")
     title Orion Dashboard
-  body
+  body.dark
     include ./pug/top-menu.pug
-    .dashboard
+    .dashboard.dark-mode
       include ./pug/sidebar.pug
       .my-container
         .my-row
@@ -242,68 +242,68 @@ html(lang="en")
                 
                 
 
-    .popup-wrapper.js-add-wallet-1
-      .popup-body
-        .add-wallet-1
-          .popup-top
-            p.title Add Wallet
-            .steps
-              span.active 1
-              span 2
-            img(src="./img/close.png", alt="").close.js-close
-          .choose-wallet
-            .item.js-next-step
-              img(src="./img/big-eth.png", alt="").icon
-              .text
-                p.name Ethereum
-                p.desc Ethereum is the solution
-              img(src="./img/arrow-down.svg", alt="").next
-            .item.js-next-step
-              img(src="./img/wanchain.png", alt="").icon
-              .text
-                p.name Wanchain
-                p.desc Wanchain team has attended
-              img(src="./img/arrow-down.svg", alt="").next
-            .item.js-next-step
-              img(src="./img/waves.png", alt="").icon
-              .text
-                p.name Waves
-                p.desc Revolutionizing the world
-              img(src="./img/arrow-down.svg", alt="").next
-
-        
-    .popup-wrapper.js-add-wallet-2
-      .popup-body
-        .add-wallet-2
-          .popup-top
-            p.title Add Wallet
-            .steps
-              span 1
-              span.active 2
-            img(src="./img/close.png", alt="").close.js-close
-          .methods
-            .tab-titles
-              button(data-tab='metamask').active.js-tab-btn Metamask
-              button(data-tab='key').js-tab-btn Private Key
-              button(data-tab='seed').js-tab-btn Seed
-            .tabs
-              .tab-metamask.tab
-                p.desc Trade tokens on the Ethereum blockchain using the MetaMask browser extension.
-                .connect
-                  p.subtitle Connect to MetaMask
-                  p.allow Allow Orion to connect to MetaMask to begin.
-                p.recommend This is a recommended trading method. All transaction signing is done within the MetaMask extension, and private keys are never sent to the browser.
-              .tab-key.tab
-                .private-key
-                  span Enter private key
-                  input(type="password", name="")
-          .btns
-            button.back.js-go-back-to-1
-              img(src="./img/arrow-down.svg", alt="")
-              span Go back
-            button.connect
-              img(src="./img/fox.png", alt="")
-              span Connect
+      .popup-wrapper.js-add-wallet-1
+        .popup-body
+          .add-wallet-1
+            .popup-top
+              p.title Add Wallet
+              .steps
+                span.active 1
+                span 2
+              img(src="./img/close.png", alt="").close.js-close
+            .choose-wallet
+              .item.js-next-step
+                img(src="./img/big-eth.png", alt="").icon
+                .text
+                  p.name Ethereum
+                  p.desc Ethereum is the solution
+                img(src="./img/arrow-down.svg", alt="").next
+              .item.js-next-step
+                img(src="./img/wanchain.png", alt="").icon
+                .text
+                  p.name Wanchain
+                  p.desc Wanchain team has attended
+                img(src="./img/arrow-down.svg", alt="").next
+              .item.js-next-step
+                img(src="./img/waves.png", alt="").icon
+                .text
+                  p.name Waves
+                  p.desc Revolutionizing the world
+                img(src="./img/arrow-down.svg", alt="").next
+  
+          
+      .popup-wrapper.js-add-wallet-2
+        .popup-body
+          .add-wallet-2
+            .popup-top
+              p.title Add Wallet
+              .steps
+                span 1
+                span.active 2
+              img(src="./img/close.png", alt="").close.js-close
+            .methods
+              .tab-titles
+                button(data-tab='metamask').active.js-tab-btn Metamask
+                button(data-tab='key').js-tab-btn Private Key
+                button(data-tab='seed').js-tab-btn Seed
+              .tabs
+                .tab-metamask.tab
+                  p.desc Trade tokens on the Ethereum blockchain using the MetaMask browser extension.
+                  .connect
+                    p.subtitle Connect to MetaMask
+                    p.allow Allow Orion to connect to MetaMask to begin.
+                  p.recommend This is a recommended trading method. All transaction signing is done within the MetaMask extension, and private keys are never sent to the browser.
+                .tab-key.tab
+                  .private-key
+                    span Enter private key
+                    input(type="password", name="")
+            .btns
+              button.back.js-go-back-to-1
+                img(src="./img/arrow-down.svg", alt="")
+                span Go back
+              button.connect
+                img(src="./img/fox.png", alt="")
+                span Connect
         
 
 

@@ -8,10 +8,10 @@ html(lang="en")
     link(rel="stylesheet", href="./libs/css/vendor.min.css")
     link(rel="stylesheet", href="./css/style.css")
     title Orion
-  body
+  body.dark
     include ./pug/top-menu.pug
     include ./pug/index-nav.pug
-    .index
+    .index.dark-mode
       .wrapper-pair.js-wrapper-pair
       include ./pug/sidebar.pug
       .my-container
@@ -20,12 +20,12 @@ html(lang="en")
             .common-info.js-panel-item.js-pair
               .top
                 .star
-                  img(src="./img/star.png", alt="")
+                  i.fa.fa-star-o(aria-hidden="true")
                   span Pair
                 .pair-select
                   .link.js-pair-link
                     span ETH / BTC
-                    img(src="./img/arrow-down.svg", alt="")
+                    span.icon-arrow-d
                   .pair-drop.js-pair-drop
                     .titles
                       span BTC
@@ -36,9 +36,9 @@ html(lang="en")
                     .search
                       .input
                         input(type="text", placeholder="Search pair")
-                        img(src="./img/search.svg", alt="")
+                        i.fa.fa-search(aria-hidden="true")
                       .favourite
-                        img(src="./img/star.png", alt="")
+                        i.fa.fa-star-o(aria-hidden="true")
                         span Favourites
                     .pair-table
                       .titles-p
@@ -76,7 +76,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -97,7 +97,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -118,7 +118,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -139,7 +139,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -160,7 +160,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -181,7 +181,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -202,7 +202,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -223,7 +223,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -244,7 +244,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -265,7 +265,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -286,7 +286,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -307,7 +307,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.fa-star-o(aria-hidden="true")
                           .line
                             .cell
                               img(src="./img/btc-color.png", alt="").img
@@ -328,7 +328,7 @@ html(lang="en")
                               img(src="./img/growth.png", alt="")
                               p #[span.emp +4,42] #[span %]
                               .star.js-star
-                                img(src="./img/star.png", alt="")
+                                i.fa.ffa-star-o(aria-hidden="true")
 
 
               .price
@@ -392,13 +392,13 @@ html(lang="en")
                     input#date-1(type="date", name="")
                     label(for="date-1")
                       span.js-out 25.03.2000
-                      img(src="./img/calendar.png", alt="")
+                      i.fa.fa-calendar-o(aria-hidden="true")
                   span.hr
                   .date-1.js-date-2
                     input#date-2(type="date", name="")
                     label(for="date-2")
                       span.js-out 25.03.2000
-                      img(src="./img/calendar.png", alt="")
+                      i.fa.fa-calendar-o(aria-hidden="true")
                 .currency-all
                   .currency
                     select(name="").currency-select-1
@@ -416,25 +416,25 @@ html(lang="en")
                 .titles
                   .title.short
                     span Type
-                    img(src="./img/arrow-down.svg", alt="")
+                    i.fa.fa-angle-down(aria-hidden="true")
                   .title
                     span Pair
-                    img(src="./img/arrow-down.svg", alt="")
+                    i.fa.fa-angle-down(aria-hidden="true")                    
                   .title.time
                     span Time
-                    img(src="./img/arrow-down.svg", alt="")
+                    i.fa.fa-angle-down(aria-hidden="true")
                   .title
                     span Amount
-                    img(src="./img/arrow-down.svg", alt="")
+                    i.fa.fa-angle-down(aria-hidden="true")
                   .title
                     span Price
-                    img(src="./img/arrow-down.svg", alt="")
+                    i.fa.fa-angle-down(aria-hidden="true")
                   .title.status
                     span Status
-                    img(src="./img/arrow-down.svg", alt="")
+                    i.fa.fa-angle-down(aria-hidden="true")
                   .title
                     span Total
-                    img(src="./img/arrow-down.svg", alt="")
+                    i.fa.fa-angle-down(aria-hidden="true")
                 .lines
                   .line
                     .line-big

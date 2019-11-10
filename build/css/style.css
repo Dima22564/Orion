@@ -15,6 +15,10 @@ body {
   background: rgba(20, 16, 41, 0.02);
 }
 
+body.dark {
+  background: #202036;
+}
+
 .custom-icon {
   width: 24px;
   height: 24px;
@@ -237,7 +241,7 @@ a:active {
   letter-spacing: 1px;
 }
 
-.index .common-info .top .star img {
+.index .common-info .top .star i {
   margin-right: 6px;
 }
 
@@ -657,6 +661,7 @@ a:active {
 
 .index .center-panel .table .drop-menu-currecy-select-1 .custom-icon {
   right: 3px;
+  top: 6px;
 }
 
 .index .center-panel .table .drop-menu-currecy-select-1.ui-selectmenu-button-open .custom-icon {
@@ -763,7 +768,8 @@ a:active {
   color: rgba(20, 16, 41, 0.8);
 }
 
-.index .center-panel .table .top .date label img {
+.index .center-panel .table .top .date label i {
+  color: rgba(20, 16, 41, 0.4);
   margin-left: 12px;
 }
 
@@ -782,7 +788,7 @@ a:active {
 }
 
 .index .center-panel .table-content {
-  max-height: calc(40vh - 110px);
+  height: calc(40vh - 110px);
   overflow-y: auto;
 }
 
@@ -821,13 +827,11 @@ a:active {
   width: 19.5%;
 }
 
-.index .center-panel .table-content .titles .title img {
+.index .center-panel .table-content .titles .title i {
   opacity: 0.4;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
   width: 13px;
   height: 13px;
+  margin-left: 3px;
 }
 
 .index .center-panel .table-content .lines {
@@ -1144,16 +1148,18 @@ a:active {
   font-weight: 600;
 }
 
-.index .left-panel .pair-select .link.active img {
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+.index .left-panel .pair-select .link.active .icon-arrow-d {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
-.index .left-panel .pair-select .link img {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+.index .left-panel .pair-select .link .icon-arrow-d {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.index .left-panel .pair-select .link .icon-arrow-d {
   opacity: 0.4;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1233,10 +1239,11 @@ a:active {
   margin-right: 8px;
 }
 
-.index .left-panel .pair-select .pair-drop .search .input img {
+.index .left-panel .pair-select .pair-drop .search .input i {
   position: absolute;
   top: 17px;
   left: 12px;
+  font-size: 15px;
 }
 
 .index .left-panel .pair-select .pair-drop .search .input input {
@@ -1295,7 +1302,7 @@ a:active {
   background-color: rgba(20, 16, 41, 0.02);
 }
 
-.index .left-panel .pair-select .pair-drop .search .favourite img {
+.index .left-panel .pair-select .pair-drop .search .favourite i {
   margin-right: 12px;
   width: 16px;
   height: 16px;
@@ -1402,9 +1409,14 @@ a:active {
   height: 18px;
 }
 
-.index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell.chg .star img {
+.index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell.chg .star.active i {
+  color: #00bbff;
+}
+
+.index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell.chg .star i {
   width: 18px;
   height: 18px;
+  font-size: 19px;
 }
 
 .index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell .img {
@@ -1436,6 +1448,358 @@ a:active {
 
 .index .left-panel .pair-select .pair-drop .pair-table .lines .line .cell .text .emp {
   font-weight: 600;
+}
+
+.dark .index-nav {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important;
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important;
+  background-color: #2a2a41 !important;
+}
+
+.dark .index-nav .text {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark .index-nav .icon span {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.dark .index-nav-item.active .icon span {
+  color: #00bbff !important;
+}
+
+.index.dark-mode {
+  background: #202036;
+}
+
+.index.dark-mode .common-info {
+  background: #2a2a41;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+}
+
+.index.dark-mode .common-info .top {
+  background: #2a2a41;
+}
+
+.index.dark-mode .common-info .table .title {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .common-info .table .value {
+  color: #ffffff;
+}
+
+.index.dark-mode .common-info .table .value .small {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .common-info .last-price .title {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .common-info .last-price .value {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .common-info .last-price .value .emp {
+  color: #ffffff;
+}
+
+.index.dark-mode .common-info .change .title {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .common-info .change .value {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .common-info .change .value .emp {
+  color: #ffffff;
+}
+
+.index.dark-mode .common-info .change .value .emp span {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .common-info .link {
+  color: #ffffff;
+}
+
+.index.dark-mode .common-info .link .icon-arrow-d {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .common-info .star {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .buy-sell {
+  background: #2a2a41;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+}
+
+.index.dark-mode .buy-sell .top button {
+  background: transparent;
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .buy-sell .big-toggler {
+  background: rgba(224, 224, 255, 0.02);
+}
+
+.index.dark-mode .buy-sell .big-toggler span {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .buy-sell .big-toggler span.active {
+  background: #33334b !important;
+}
+
+.index.dark-mode .buy-sell .amount .placeholder {
+  color: rgba(224, 224, 255, 0.4) !important;
+}
+
+.index.dark-mode .buy-sell .amount input {
+  background: rgba(224, 224, 255, 0.02) !important;
+  color: #ffffff !important;
+}
+
+.index.dark-mode .buy-sell .amount .currency {
+  color: rgba(224, 224, 255, 0.4) !important;
+}
+
+.index.dark-mode .buy-sell .amount .available {
+  color: rgba(224, 224, 255, 0.4) !important;
+}
+
+.index.dark-mode .buy-sell .btns button {
+  background: rgba(224, 224, 255, 0.02) !important;
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .image {
+  background: #2a2a41;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+}
+
+.index.dark-mode .center-panel .table {
+  background: #2a2a41;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+}
+
+.index.dark-mode .center-panel .table .title {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .center-panel .table .cell {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .center-panel .table .cell.emp {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .center-panel .table .cell.filled {
+  color: #eeff00 !important;
+}
+
+.index.dark-mode .center-panel .table .cell.open {
+  color: #00ffaa !important;
+}
+
+.index.dark-mode .center-panel .table .cell.cancel {
+  color: #ff00aa !important;
+}
+
+.index.dark-mode .center-panel .table .currency-all .sep {
+  color: rgba(224, 224, 255, 0.4) !important;
+}
+
+.index.dark-mode .center-panel .table .currency-all .drop-menu-currecy-select-1 {
+  color: #ffffff !important;
+  background: rgba(224, 224, 255, 0.02) !important;
+}
+
+.index.dark-mode .center-panel .table .currency-all .drop-menu-currecy-select-1 .custom-icon {
+  background-image: url("../img/arrow-down-l.svg") !important;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.index.dark-mode .center-panel .table .currency-all .drop-menu-currecy-select-1.ui-selectmenu-button-open .custom-icon {
+  -webkit-transform: rotate(180deg) !important;
+  -ms-transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
+}
+
+.index.dark-mode .center-panel .table .big-toggler {
+  background: rgba(224, 224, 255, 0.02);
+}
+
+.index.dark-mode .center-panel .table .big-toggler span {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .center-panel .table .big-toggler span.active {
+  background: #33334b !important;
+}
+
+.index.dark-mode .center-panel .table .date .hr {
+  background: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .center-panel .table .date .date-1 {
+  background: rgba(224, 224, 255, 0.02);
+}
+
+.index.dark-mode .center-panel .table .date .date-2 {
+  background: rgba(224, 224, 255, 0.02);
+}
+
+.index.dark-mode .center-panel .table .date label {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .center-panel .table .date label i {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .right-panel {
+  background: #2a2a41;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+}
+
+.index.dark-mode .right-panel .order-book {
+  background: #2a2a41;
+}
+
+.index.dark-mode .right-panel .order-book .heading {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.index.dark-mode .right-panel .order-book .titles .title {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .right-panel .order-book .last-price .cell {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .right-panel .order-book .last-price .last {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .right-panel .order-book .order .cell.green {
+  color: #00ffaa !important;
+  background: rgba(0, 255, 170, 0.12) !important;
+}
+
+.index.dark-mode .right-panel .order-book .order .cell.red {
+  color: #ff00aa !important;
+  background: rgba(255, 0, 170, 0.12) !important;
+}
+
+.index.dark-mode .right-panel .order-book .order .progress-light.l-green {
+  background: rgba(0, 255, 170, 0.03);
+}
+
+.index.dark-mode .right-panel .order-book .order .progress-light.d-green {
+  background: rgba(0, 255, 170, 0.4);
+}
+
+.index.dark-mode .right-panel .order-book .order .progress-light.l-red {
+  background: rgba(255, 0, 170, 0.03);
+}
+
+.index.dark-mode .right-panel .order-book .order .progress-light.d-red {
+  background: rgba(255, 0, 170, 0.4);
+}
+
+.index.dark-mode .right-panel .order-book .cell {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .right-panel .order-book .cell.emp {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .right-panel .order-book .cell.exch img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.index.dark-mode .pair-drop {
+  -webkit-box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important;
+  box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important;
+  background-color: #2a2a41 !important;
+}
+
+.index.dark-mode .pair-drop .titles span {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .titles span.active {
+  color: #00bbff !important;
+}
+
+.index.dark-mode .pair-drop .search {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .search input {
+  background: rgba(224, 224, 255, 0.02) !important;
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .search input::-webkit-input-placeholder {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .search input::-moz-placeholder {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .search input:-ms-input-placeholder {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .search input::-ms-input-placeholder {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .search input::placeholder {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .search .favourite {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.index.dark-mode .pair-drop .pair-table .titles-p .title {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .pair-drop .pair-table .titles-p img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.index.dark-mode .pair-drop .pair-table .cell.chg {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .pair-drop .pair-table .cell .emp {
+  color: #ffffff !important;
+}
+
+.index.dark-mode .pair-drop .pair-table .cell .small {
+  color: rgba(224, 224, 255, 0.6) !important;
 }
 
 .history h1 {
@@ -1752,6 +2116,7 @@ a:active {
   padding: 24px;
   margin-bottom: 8px;
   height: calc(50vh - 30px);
+  overflow-y: auto;
 }
 
 .dashboard .wrapper .wallets .top {
@@ -1920,6 +2285,7 @@ a:active {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .dashboard .wrapper .wallets-table .titles .title img {
@@ -2094,6 +2460,214 @@ a:active {
   font-size: 14px;
   line-height: 24px;
   color: rgba(20, 16, 41, 0.8);
+}
+
+.dashboard.dark-mode {
+  background: #202036;
+}
+
+.dashboard.dark-mode h2 {
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .graph {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #2a2a41;
+}
+
+.dashboard.dark-mode .graph tspan {
+  fill: #ffffff !important;
+}
+
+.dashboard.dark-mode .graph .coin .name {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .graph .coin .num {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .wallets {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #2a2a41;
+}
+
+.dashboard.dark-mode .wallets .add {
+  background: rgba(224, 224, 255, 0.02) !important;
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .wallets .add img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dashboard.dark-mode .wallets .wallet .title span {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.dashboard.dark-mode .wallets .wallet .currency-2 {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.dashboard.dark-mode .wallets .wallet .money .num,
+.dashboard.dark-mode .wallets .wallet .money .currency {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .wallets-table {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #2a2a41;
+}
+
+.dashboard.dark-mode .wallets-table .titles .title {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .wallets-table .titles img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dashboard.dark-mode .wallets-table .cell {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.dashboard.dark-mode .wallets-table .cell.emp {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .wallets-table .action {
+  background: rgba(224, 224, 255, 0.02) !important;
+}
+
+.dashboard.dark-mode .wallets-table .action span {
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .wallets-table .action img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dashboard.dark-mode .add-wallet-1 {
+  -webkit-box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #2a2a41;
+}
+
+.dashboard.dark-mode .add-wallet-1 .title {
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .add-wallet-1 .steps span {
+  background: rgba(224, 224, 255, 0.02);
+  color: rgba(224, 224, 255, 0.24);
+}
+
+.dashboard.dark-mode .add-wallet-1 .close {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dashboard.dark-mode .add-wallet-1 .item .icon,
+.dashboard.dark-mode .add-wallet-1 .item .next {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dashboard.dark-mode .add-wallet-1 .item .name {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .add-wallet-1 .item .desc {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dashboard.dark-mode .add-wallet-2 {
+  -webkit-box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #2a2a41;
+}
+
+.dashboard.dark-mode .add-wallet-2 .title {
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .add-wallet-2 .steps span {
+  background: rgba(224, 224, 255, 0.02);
+  color: rgba(224, 224, 255, 0.24);
+}
+
+.dashboard.dark-mode .add-wallet-2 .close {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dashboard.dark-mode .add-wallet-2 .tab-titles button {
+  background: rgba(224, 224, 255, 0.02);
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dashboard.dark-mode .add-wallet-2 .desc {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .tab-metamask .connect {
+  background: rgba(224, 224, 255, 0.02) !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .tab-metamask .connect .subtitle {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .tab-metamask .connect .allow {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .tab-metamask .recommend {
+  background: rgba(0, 255, 170, 0.03) !important;
+  color: #00ffaa !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .btns .back,
+.dashboard.dark-mode .add-wallet-2 .btns .connect {
+  background: rgba(224, 224, 255, 0.02) !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .btns .back span,
+.dashboard.dark-mode .add-wallet-2 .btns .connect span {
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .btns .back img,
+.dashboard.dark-mode .add-wallet-2 .btns .connect img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dashboard.dark-mode .add-wallet-2 .btns .connect {
+  background-image: -o-linear-gradient(315deg, #00ffaa 0%, #00bbff 53%, #4579f5 100%) !important;
+  background-image: linear-gradient(135deg, #00ffaa 0%, #00bbff 53%, #4579f5 100%) !important;
+  -webkit-box-shadow: 0 8px 12px rgba(0, 187, 255, 0.24), 0 2px 4px -1px rgba(10, 70, 82, 0.12), 0 0 1px rgba(0, 187, 255, 0.24) !important;
+  box-shadow: 0 8px 12px rgba(0, 187, 255, 0.24), 0 2px 4px -1px rgba(10, 70, 82, 0.12), 0 0 1px rgba(0, 187, 255, 0.24) !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .btns .connect img {
+  -webkit-filter: invert(0);
+  filter: invert(0);
+}
+
+.dashboard.dark-mode .add-wallet-2 .private-key input {
+  background: rgba(224, 224, 255, 0.02) !important;
+  color: #ffffff !important;
+}
+
+.dashboard.dark-mode .add-wallet-2 .private-key span {
+  color: rgba(224, 224, 255, 0.4) !important;
 }
 
 .wallet-page .wrapper {
@@ -2493,6 +3067,7 @@ a:active {
   -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 32px 48px rgba(20, 16, 41, 0.12), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 32px 48px rgba(20, 16, 41, 0.12), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   width: 100%;
+  border-radius: 4px;
 }
 
 .popup-body .add-wallet-1 .choose-wallet .item {
@@ -2549,6 +3124,7 @@ a:active {
   -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 32px 48px rgba(20, 16, 41, 0.12), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 32px 48px rgba(20, 16, 41, 0.12), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12);
   width: 100%;
+  border-radius: 4px;
 }
 
 .add-wallet-2 .methods .tab-titles {
@@ -2736,6 +3312,20 @@ a:active {
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
+}
+
+.dark .top-menu {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #2a2a41;
+}
+
+.dark .top-menu .nav-link .icon {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.dark .top-menu .nav-link.active .icon {
+  color: #00bbff !important;
 }
 
 .top-menu {
@@ -3020,6 +3610,9 @@ a:active {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  width: 90%;
 }
 
 .sidebar-wrapper.open .nav-link.active::before {
@@ -3129,7 +3722,6 @@ a:active {
 .sidebar-content .nav-link {
   padding: 14px 30px;
   position: relative;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3155,8 +3747,11 @@ a:active {
 }
 
 .sidebar-content .nav-link.active {
-  color: #00bbff !important;
   background: rgba(0, 187, 255, 0.03);
+}
+
+.sidebar-content .nav-link.active span {
+  color: #00bbff !important;
 }
 
 .sidebar-content .nav-link.active::before {
@@ -3265,6 +3860,53 @@ a:active {
   display: none;
 }
 
+.dark-mode .sidebar-line {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(32, 32, 54, 0.06), 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(32, 32, 54, 0.06), 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #2a2a41;
+}
+
+.dark-mode .sidebar-line .line {
+  background: rgba(224, 224, 255, 0.12);
+}
+
+.dark-mode .sidebar-wrapper {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(32, 32, 54, 0.06), 0 16px 24px 0 rgba(32, 32, 54, 0.12), 0 2px 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 8px 8px -4px rgba(32, 32, 54, 0.06), 0 16px 24px 0 rgba(32, 32, 54, 0.12), 0 2px 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #33334b;
+}
+
+.dark-mode .sidebar-wrapper .nav-link span {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode .sidebar-wrapper .coin {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode .sidebar-wrapper .coin img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dark-mode .sidebar-wrapper .dark-mode {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode .sidebar-wrapper .dark-mode img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dark-mode .sidebar-wrapper .add-wallet {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode .sidebar-wrapper .add-wallet img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 @media (min-width: 576px) {
   .my-container {
     max-width: 100%;
@@ -3295,7 +3937,7 @@ a:active {
   }
 
   .index .center-panel .table-content {
-    max-height: calc(40vh - 77px);
+    height: calc(40vh - 87px);
   }
 
   .index .left-panel .pair-select .link {
@@ -3473,9 +4115,27 @@ a:active {
   }
 }
 
-@media (max-width: 1256px) {
+@media (max-width: 1325px) {
   .index .center-panel .table-content {
-    max-height: calc(40vh - 114px);
+    height: calc(40vh - 116px);
+  }
+}
+
+@media (max-width: 1301px) {
+  .index .center-panel .table-content {
+    height: calc(40vh - 77px);
+  }
+}
+
+@media (max-width: 1265px) {
+  .index .center-panel .table-content {
+    height: calc(40vh - 77px);
+  }
+}
+
+@media (max-width: 1253px) {
+  .index .center-panel .table-content {
+    height: calc(40vh - 116px);
   }
 }
 
@@ -3648,7 +4308,7 @@ a:active {
   }
 
   .index .center-panel .table-content {
-    max-height: calc(70vh - 110px);
+    height: calc(70vh - 110px);
   }
 
   .index .right-panel {
@@ -4174,7 +4834,7 @@ a:active {
     width: 48%;
   }
 
-  .index .center-panel .table .top .date label img {
+  .index .center-panel .table .top .date label i {
     margin-left: auto;
   }
 

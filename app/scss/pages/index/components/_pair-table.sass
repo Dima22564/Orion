@@ -24,10 +24,13 @@
           font-size: 24px
           line-height: 24px
         &.active
-          img
-            transform: rotate(270deg)
-        img
-          transform: rotate(90deg)
+          .icon-arrow-d
+            transform: rotate(180deg)
+        .icon-arrow-d
+          font-size: 12px
+          margin-left: 3px
+          color: 
+        .icon-arrow-d
           opacity: 0.4
           transition: all 0.3s
       .pair-drop
@@ -82,10 +85,11 @@
             +media-b(500)
               width: 100% 
               margin: 0
-            img
+            i
               position: absolute
               top: 17px
               left: 12px
+              font-size: 15px
             input
               background-color: rgba(20, 16, 41, 0.02)
               border-radius: 2px
@@ -111,7 +115,7 @@
             +media-b(500)
               width: 100%
               margin-top: 8px
-            img
+            i
               margin-right: 12px
               width: 16px
               height: 16px
@@ -187,9 +191,13 @@
                     height: 18px
                     +media-b(500)
                       margin-left: auto
-                    img
+                    &.active
+                      i
+                        color: $blue
+                    i
                       width: 18px
                       height: 18px
+                      font-size: 19px
                 .img
                   margin-right: 8px
                   flex-shrink: 0

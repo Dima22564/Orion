@@ -110,15 +110,14 @@ $(document).ready(function () {
     e.stopPropagation();
     $(this).css('transform', 'translateX(-300%)');
     $('.js-sidebar-wrapper').css('transform', 'translateX(0)');
-  });
-  $('body').click(function (e) {
-    e.stopPropagation();
+  }); // $('body').click(function(e){
+  //   e.stopPropagation()
+  //   if($(e.target).hasClass('js-sidebar-wrapper') == false){
+  //     $('.js-sidebar-wrapper').css('transform', 'translateX(-300%)')
+  //     $('.js-sidebar-line').css('transform', 'translateX(0)')
+  //   }
+  // })
 
-    if ($(e.target).hasClass('js-sidebar-wrapper') == false) {
-      $('.js-sidebar-wrapper').css('transform', 'translateX(-300%)');
-      $('.js-sidebar-line').css('transform', 'translateX(0)');
-    }
-  });
   $(window).on('resize', function (e) {// if(screen.width > 1200){
     //   $('.js-sidebar-wrapper').css({
     //     transform: 'translateX(0)'
@@ -251,10 +250,10 @@ $(document).ready(function () {
   $('.js-star').click(function (e) {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
-      $(this).find('img').replaceWith('<img src="./img/star.png" alt="">');
+      $(this).find('i').replaceWith('<i class="fa fa-star-o">');
     } else {
       $(this).addClass('active');
-      $(this).find('img').replaceWith('<img src="./img/star-blue.svg" alt="">');
+      $(this).find('i').replaceWith('<i class="fa fa-star">');
     }
   });
 });

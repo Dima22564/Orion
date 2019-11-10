@@ -9,12 +9,12 @@
         <link href="./css/style.css" rel="stylesheet">
         <title>Orion Dashboard</title>
     </head>
-    <body>
+    <body class="dark">
         <div class="top-menu">
             <div class="links"><a class="logo" href><img src="./img/logo.png" alt></a><a class="nav-link active" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-2 icon"></span></a><a class="nav-link" href><span class="icon-link-3 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a></div>
             <div class="add">+</div>
         </div>
-        <div class="dashboard">
+        <div class="dashboard dark-mode">
             <div class="sidebar-line js-sidebar-line">
                 <div class="line"></div>
             </div>
@@ -159,69 +159,69 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="popup-wrapper js-add-wallet-1">
-            <div class="popup-body">
-                <div class="add-wallet-1">
-                    <div class="popup-top">
-                        <p class="title">Add Wallet</p>
-                        <div class="steps"><span class="active">1</span><span>2</span></div><img class="close js-close" src="./img/close.png" alt>
-                    </div>
-                    <div class="choose-wallet">
-                        <div class="item js-next-step"><img class="icon" src="./img/big-eth.png" alt>
-                            <div class="text">
-                                <p class="name">Ethereum</p>
-                                <p class="desc">Ethereum is the solution</p>
-                            </div><img class="next" src="./img/arrow-down.svg" alt>
+            <div class="popup-wrapper js-add-wallet-1">
+                <div class="popup-body">
+                    <div class="add-wallet-1">
+                        <div class="popup-top">
+                            <p class="title">Add Wallet</p>
+                            <div class="steps"><span class="active">1</span><span>2</span></div><img class="close js-close" src="./img/close.png" alt>
                         </div>
-                        <div class="item js-next-step"><img class="icon" src="./img/wanchain.png" alt>
-                            <div class="text">
-                                <p class="name">Wanchain</p>
-                                <p class="desc">Wanchain team has attended</p>
-                            </div><img class="next" src="./img/arrow-down.svg" alt>
-                        </div>
-                        <div class="item js-next-step"><img class="icon" src="./img/waves.png" alt>
-                            <div class="text">
-                                <p class="name">Waves</p>
-                                <p class="desc">Revolutionizing the world</p>
-                            </div><img class="next" src="./img/arrow-down.svg" alt>
+                        <div class="choose-wallet">
+                            <div class="item js-next-step"><img class="icon" src="./img/big-eth.png" alt>
+                                <div class="text">
+                                    <p class="name">Ethereum</p>
+                                    <p class="desc">Ethereum is the solution</p>
+                                </div><img class="next" src="./img/arrow-down.svg" alt>
+                            </div>
+                            <div class="item js-next-step"><img class="icon" src="./img/wanchain.png" alt>
+                                <div class="text">
+                                    <p class="name">Wanchain</p>
+                                    <p class="desc">Wanchain team has attended</p>
+                                </div><img class="next" src="./img/arrow-down.svg" alt>
+                            </div>
+                            <div class="item js-next-step"><img class="icon" src="./img/waves.png" alt>
+                                <div class="text">
+                                    <p class="name">Waves</p>
+                                    <p class="desc">Revolutionizing the world</p>
+                                </div><img class="next" src="./img/arrow-down.svg" alt>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="popup-wrapper js-add-wallet-2">
-            <div class="popup-body">
-                <div class="add-wallet-2">
-                    <div class="popup-top">
-                        <p class="title">Add Wallet</p>
-                        <div class="steps"><span>1</span><span class="active">2</span></div><img class="close js-close" src="./img/close.png" alt>
-                    </div>
-                    <div class="methods">
-                        <div class="tab-titles">
-                            <button class="active js-tab-btn" data-tab="metamask">Metamask</button>
-                            <button class="js-tab-btn" data-tab="key">Private Key</button>
-                            <button class="js-tab-btn" data-tab="seed">Seed</button>
+            <div class="popup-wrapper js-add-wallet-2">
+                <div class="popup-body">
+                    <div class="add-wallet-2">
+                        <div class="popup-top">
+                            <p class="title">Add Wallet</p>
+                            <div class="steps"><span>1</span><span class="active">2</span></div><img class="close js-close" src="./img/close.png" alt>
                         </div>
-                        <div class="tabs">
-                            <div class="tab-metamask tab">
-                                <p class="desc">Trade tokens on the Ethereum blockchain using the MetaMask browser extension.</p>
-                                <div class="connect">
-                                    <p class="subtitle">Connect to MetaMask</p>
-                                    <p class="allow">Allow Orion to connect to MetaMask to begin.</p>
-                                </div>
-                                <p class="recommend">This is a recommended trading method. All transaction signing is done within the MetaMask extension, and private keys are never sent to the browser.</p>
+                        <div class="methods">
+                            <div class="tab-titles">
+                                <button class="active js-tab-btn" data-tab="metamask">Metamask</button>
+                                <button class="js-tab-btn" data-tab="key">Private Key</button>
+                                <button class="js-tab-btn" data-tab="seed">Seed</button>
                             </div>
-                            <div class="tab-key tab">
-                                <div class="private-key"><span>Enter private key</span>
-                                    <input name type="password">
+                            <div class="tabs">
+                                <div class="tab-metamask tab">
+                                    <p class="desc">Trade tokens on the Ethereum blockchain using the MetaMask browser extension.</p>
+                                    <div class="connect">
+                                        <p class="subtitle">Connect to MetaMask</p>
+                                        <p class="allow">Allow Orion to connect to MetaMask to begin.</p>
+                                    </div>
+                                    <p class="recommend">This is a recommended trading method. All transaction signing is done within the MetaMask extension, and private keys are never sent to the browser.</p>
+                                </div>
+                                <div class="tab-key tab">
+                                    <div class="private-key"><span>Enter private key</span>
+                                        <input name type="password">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btns">
-                        <button class="back js-go-back-to-1"><img src="./img/arrow-down.svg" alt><span>Go back</span></button>
-                        <button class="connect"><img src="./img/fox.png" alt><span>Connect</span></button>
+                        <div class="btns">
+                            <button class="back js-go-back-to-1"><img src="./img/arrow-down.svg" alt><span>Go back</span></button>
+                            <button class="connect"><img src="./img/fox.png" alt><span>Connect</span></button>
+                        </div>
                     </div>
                 </div>
             </div>

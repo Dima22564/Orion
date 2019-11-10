@@ -1,0 +1,201 @@
+.dark
+  .index-nav
+    box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important
+    background-color: #2a2a41 !important
+    .text
+      color: rgba(224, 224, 255, 0.6)
+    .icon
+      span 
+        color: rgba(224, 224, 255, 0.4)
+    &-item
+      &.active
+        .icon
+          span 
+            color: $blue !important
+.index
+  &.dark-mode
+    background: $dark
+    .common-info
+      background: $dark-l
+      box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12)
+      .top
+        background: $dark-l
+      .table
+        .title
+          color: $white-l
+        .value
+          color: $white
+          .small
+            color: $white-l
+      .last-price
+        .title
+          color: $white-l
+        .value
+          color: $white-l
+          .emp
+            color: $white
+      .change
+        .title
+          color: $white-l
+        .value
+          color: $white-l
+          .emp
+            color: $white
+            span
+              color: rgba(224, 224, 255, 0.6) !important
+      .link
+        color: $white
+        .icon-arrow-d
+          color: $white-l
+      .star
+        color: $white-l
+    .buy-sell
+      background: $dark-l
+      box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12)
+      .top
+        button
+          background: transparent
+          color: $white-l
+      .big-toggler
+        background: rgba(224, 224, 255, 0.02)
+        span
+          color: $white !important
+          &.active
+            background: #33334b !important
+      .amount
+        .placeholder
+          color: $white-l !important
+        input
+          background: rgba(224, 224, 255, 0.02) !important
+          color: $white !important
+        .currency
+          color: $white-l !important
+        .available
+          color: $white-l !important
+      .btns
+        button
+          background: rgba(224, 224, 255, 0.02) !important
+          color: rgba(224, 224, 255, 0.6) !important
+    .image
+      background: $dark-l
+      box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12)
+    .center-panel
+      .table
+        background: $dark-l
+        box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12)
+        .title
+          color: $white !important
+        .cell
+          color: rgba(224, 224, 255, 0.6) !important
+          &.emp
+            color: $white !important
+          &.filled
+            color: #eeff00 !important
+          &.open
+            color: #00ffaa !important
+          &.cancel
+            color: #ff00aa !important
+        .currency-all
+          .sep
+            color: rgba(224, 224, 255, 0.4) !important
+          .drop-menu-currecy-select-1
+            color: $white !important
+            background: rgba(224, 224, 255, 0.02) !important
+            .custom-icon
+              background-image: url('../img/arrow-down-l.svg') !important
+              transform: rotate(0)
+            &.ui-selectmenu-button-open
+              .custom-icon
+                transform: rotate(180deg) !important
+        .big-toggler
+          background: rgba(224, 224, 255, 0.02)
+          span
+            color: $white !important
+            &.active
+              background: #33334b !important
+        .date
+          .hr
+            background: rgba(224, 224, 255, 0.4)
+          .date-1
+            background: rgba(224, 224, 255, 0.02)
+          .date-2
+            background: rgba(224, 224, 255, 0.02)
+          label
+            color: $white !important
+            i
+              color: $white !important
+    .right-panel
+      background: $dark-l
+      box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12)
+      .order-book
+        background: $dark-l
+        .heading
+          color: rgba(224, 224, 255, 0.6)
+        .titles
+          .title
+            color: $white !important
+        .last-price
+          .cell
+            color: $white !important
+          .last
+            color: rgba(224, 224, 255, 0.6) !important
+        .order
+          .cell
+            &.green
+              color: #00ffaa !important
+              background: rgba(0, 255, 170, 0.12) !important
+            &.red
+              color: #ff00aa !important
+              background: rgba(255, 0, 170, 0.12) !important
+          .progress-light
+            &.l-green
+              background: rgba(0, 255, 170, 0.03)
+            &.d-green
+              background: rgba(0, 255, 170, 0.4)
+            &.l-red
+              background: rgba(255, 0, 170, 0.03)
+            &.d-red
+              background: rgba(255, 0, 170, 0.4)
+        .cell
+          color: rgba(224, 224, 255, 0.6) !important
+          &.emp
+            color: $white !important
+          &.exch
+            img
+              filter: invert(100%)
+    .pair-drop
+      box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important
+      background-color: #2a2a41 !important
+      .titles
+        span
+          color: rgba(224, 224, 255, 0.6) !important
+          &.active
+            color: $blue !important
+      .search
+        color: rgba(224, 224, 255, 0.6) !important
+        input
+          background: rgba(224, 224, 255, 0.02) !important
+          color: rgba(224, 224, 255, 0.6) !important
+          &::placeholder
+            color: rgba(224, 224, 255, 0.6) !important
+        .favourite
+          color: rgba(224, 224, 255, 0.6)
+      .pair-table
+        .titles-p
+          .title
+            color: $white !important
+          img
+            filter: invert(100%)
+        .cell
+          &.chg
+            color: rgba(224, 224, 255, 0.6) !important
+          .emp
+            color: $white !important
+          .small
+            color: rgba(224, 224, 255, 0.6) !important
+
+
+
+
+
+
