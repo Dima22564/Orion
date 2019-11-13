@@ -9,7 +9,7 @@
       box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
       border-radius: 4px
       background: $white
-      padding: 22px
+      padding: 22px 0 22px 22px
       +media-b(1130)
         padding: 18px
       .search
@@ -17,6 +17,7 @@
         align-items: center
         justify-content: space-between
         margin-bottom: 40px
+        padding-right: 22px
         +media-b(645)
           flex-direction: column
         .toggler-wrap
@@ -60,7 +61,7 @@
       .titles
         display: flex
         align-items: center
-        padding: 0 12px
+        padding: 0 22px 12px 0
         margin-bottom: 12px
         +media-b(916)
           display: none
@@ -75,11 +76,10 @@
           &.actions
             width: 59%
             justify-content: flex-end
-          img
-            opacity: 0.4
-            transform: rotate(90deg)
-            width: 17px
-            height: 17px
+            padding-right: 19px
+          i
+            margin-left: 3px
+            font-size: 17px
       .lines
         padding-bottom: 10px
         overflow-y: auto
@@ -91,7 +91,7 @@
         .line
           display: flex
           align-items: center
-          padding: 6px 12px
+          padding: 6px 22px 6px 12px
           cursor: pointer
           transition: all 0.3s
           +media-b(916)

@@ -123,20 +123,31 @@ button, input, textarea, span, div, a
   &:active
     outline: none !important
 
+.drop-menu-currecy-select-1
+  &.ui-selectmenu-button-open
+    background: $white !important
+
 .ui-selectmenu-menu
+  background: $white
+  .ui-menu-item
+    background: $white
   ul
     border-radius: 4px
-  .ui-menu-item
-    &:not(:last-child)
-      border-bottom: 1px solid rgba(20, 16, 41, 0.2) !important
+  .ui-menu
+    border: none
+    background: $white
+      
   .ui-menu-item-wrapper
-    background: rgba(20, 16, 41, 0.02) !important
+    background: $white !important
     color: $black !important
-    border: 1px solid transparent !important
+    box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
     padding: 7px 15px !important
     font-weight: 400 !important
+    border: none !important
     margin: 0 !important
     transition: all 0.3s
+    font-size: 10px
+    line-height: 12px
     &:hover
-      background: rgba(20, 16, 41, 0.06) !important
+      background: rgba(20, 16, 41, 0.02) !important
 

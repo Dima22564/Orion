@@ -6,8 +6,13 @@
       img(src="./img/logo.png", alt="")
     .links
       .dark-mode
-        img(src="./img/night.png", alt="")
-        span.text Dark Mode
+        .night
+          img(src="./img/night.png", alt="")
+        .text.mode-toggler
+          span Dark Mode
+          .toggler.js-toggler-dark-mode
+            .toggler-way
+            .toggler-circle
       nav
         a(href="").nav-link.active
           span.icon-link-1.icon

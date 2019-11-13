@@ -21,7 +21,15 @@
             <div class="sidebar-wrapper js-sidebar-wrapper">
                 <div class="sidebar-content"><a class="logo" href><img src="./img/logo.png" alt></a>
                     <div class="links">
-                        <div class="dark-mode"><img src="./img/night.png" alt><span class="text">Dark Mode</span></div>
+                        <div class="dark-mode">
+                            <div class="night"><img src="./img/night.png" alt></div>
+                            <div class="text mode-toggler"><span>Dark Mode</span>
+                                <div class="toggler js-toggler-dark-mode">
+                                    <div class="toggler-way"></div>
+                                    <div class="toggler-circle"></div>
+                                </div>
+                            </div>
+                        </div>
                         <nav><a class="nav-link active" href><span class="icon-link-1 icon"></span><span class="text">Home</span></a><a class="nav-link" href><span class="icon-link-2 icon"></span><span class="text">Dashboard</span></a><a class="nav-link" href><span class="icon-link-3 icon"></span><span class="text">History</span></a></nav>
                         <div class="aside-coins">
                             <div class="coin"><img src="./img/bit-aside.svg" alt><span class="text">Bitcoin</span></div>
@@ -42,11 +50,11 @@
                                 <div class="date">
                                     <div class="date-1 js-date-3">
                                         <input id="date-3" name type="date">
-                                        <label for="date-3"><span class="js-out">25.03.2000</span><img src="./img/calendar.png" alt></label>
+                                        <label for="date-3"><span class="js-out">25.03.2000</span><i class="fa fa-calendar-o" aria-hidden="true"></i></label>
                                     </div><span class="hr"></span>
                                     <div class="date-1 js-date-4">
                                         <input id="date-4" name type="date">
-                                        <label for="date-4"><span class="js-out">25.03.2000</span><img src="./img/calendar.png" alt></label>
+                                        <label for="date-4"><span class="js-out">25.03.2000</span><i class="fa fa-calendar-o" aria-hidden="true"></i></label>
                                     </div>
                                 </div>
                                 <div class="all">
@@ -64,10 +72,10 @@
                             </div>
                             <div class="table-content">
                                 <div class="titles">
-                                    <div class="title"><span>Date</span><img src="./img/arrow-down.svg" alt></div>
-                                    <div class="title short"><span class="short">Asset</span><img src="./img/arrow-down.svg" alt></div>
-                                    <div class="title"><span>Amount</span><img src="./img/arrow-down.svg" alt></div>
-                                    <div class="title status"><span>Status</span><img src="./img/arrow-down.svg" alt></div>
+                                    <div class="title"><span>Date</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title short"><span class="short">Asset</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title status"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
                                 </div>
                                 <div class="lines">
                                     <div class="line"><span class="cell time">09.09.2019 12:42:41</span>
@@ -153,7 +161,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pagination"><img class="arrow-prev" src="./img/arrow-down.svg" alt><span class="num">1</span><span class="num active">2</span><span class="num">3</span><span class="num">...</span><span class="num">8</span><img class="arrow-next" src="./img/arrow-down.svg" alt></div>
+                            <div class="pagination"><i class="fa fa-angle-left arrow-prev" aria-hidden="true"></i><span class="num">1</span><span class="num active">2</span><span class="num">3</span><span class="num">...</span><span class="num">8</span><i class="fa fa-angle-right arrow-next" aria-hidden="true"></i></div>
                         </div>
                     </div>
                     <div class="history-table">
@@ -163,11 +171,11 @@
                                 <div class="date">
                                     <div class="date-1 js-date-5">
                                         <input id="date-5" name type="date">
-                                        <label for="date-5"><span class="js-out">25.03.2000</span><img src="./img/calendar.png" alt></label>
+                                        <label for="date-5"><span class="js-out">25.03.2000</span><i class="fa fa-calendar-o" aria-hidden="true"></i></label>
                                     </div><span class="hr"></span>
                                     <div class="date-1 js-date-6">
                                         <input id="date-6" name type="date">
-                                        <label for="date-6"><span class="js-out">25.03.2000</span><img src="./img/calendar.png" alt></label>
+                                        <label for="date-6"><span class="js-out">25.03.2000</span><i class="fa fa-calendar-o" aria-hidden="true"></i></label>
                                     </div>
                                 </div>
                                 <div class="all">
@@ -185,10 +193,10 @@
                             </div>
                             <div class="table-content">
                                 <div class="titles">
-                                    <div class="title"><span>Date</span><img src="./img/arrow-down.svg" alt></div>
-                                    <div class="title short"><span class="short">Asset</span><img src="./img/arrow-down.svg" alt></div>
-                                    <div class="title"><span>Amount</span><img src="./img/arrow-down.svg" alt></div>
-                                    <div class="title status"><span>Status</span><img src="./img/arrow-down.svg" alt></div>
+                                    <div class="title"><span>Date</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title short"><span class="short">Asset</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    <div class="title status"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
                                 </div>
                                 <div class="lines">
                                     <div class="line"><span class="cell time">09.09.2019 12:42:41</span>
@@ -265,7 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pagination"><img class="arrow-prev" src="./img/arrow-down.svg" alt><span class="num">1</span><span class="num active">2</span><span class="num">3</span><span class="num">...</span><span class="num">8</span><img class="arrow-next" src="./img/arrow-down.svg" alt></div>
+                            <div class="pagination"><i class="fa fa-angle-left arrow-prev" aria-hidden="true"></i><span class="num">1</span><span class="num active">2</span><span class="num">3</span><span class="num">...</span><span class="num">8</span><i class="fa fa-angle-right arrow-next" aria-hidden="true"></i></div>
                         </div>
                     </div>
                 </div>

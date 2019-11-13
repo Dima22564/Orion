@@ -3,16 +3,17 @@
     cursor: pointer
     &.active
         .toggler-way
-            background: rgba(0, 187, 255, 0.4)
+            box-shadow: 0 8px 12px 0 rgba(0, 187, 255, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(0, 187, 255, 0.24)
+            background-image: linear-gradient(121deg, #00ffaa, #00bbff 51%, #4579f5)
         .toggler-circle
             box-shadow: 0 4px 8px -4px #ff00003d, 0 2px 4px -1px #1b0a523d, 0 0 1px 0 #ff00003d
-            background: $blue
+            background: $white
             left: 18px
     &-way
-        width: 34px
-        height: 14px
+        width: 40px
+        height: 24px
         background-color: #1410290f
-        border-radius: 7px
+        border-radius: 12px
         position: relative
         transition: all 0.3s
     &-circle
@@ -22,6 +23,6 @@
         box-shadow: 0 4px 8px -4px #1410291e, 0 2px 4px -1px #1410291e, 0 0 1px 0 #1410291e
         background: $white
         position: absolute
-        top: -3px
-        left: -3px
+        top: 2px
+        left: 3px
         transition: all 0.3s

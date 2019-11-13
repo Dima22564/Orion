@@ -8,10 +8,10 @@ html(lang="en")
     link(rel="stylesheet", href="./libs/css/vendor.min.css")
     link(rel="stylesheet", href="./css/style.css")
     title Orion
-  body.dark
+  body
     include ./pug/top-menu.pug
     include ./pug/index-nav.pug
-    .index.dark-mode
+    .index
       .wrapper-pair.js-wrapper-pair
       include ./pug/sidebar.pug
       .my-container
@@ -359,8 +359,8 @@ html(lang="en")
                 button Sell
               .main-content
                 .big-toggler
-                  span.active Market
-                  span Limit order
+                  button.active Market
+                  button Limit order
                 .amount
                   span.placeholder Amount
                   input(type="text")

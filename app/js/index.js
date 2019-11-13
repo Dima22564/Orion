@@ -219,6 +219,16 @@ $(document).ready(function () {
     $(this).toggleClass('active')
   })
 
+  $('.js-toggler-dark-mode').click(function(e){
+    $(this).toggleClass('active')
+    $('.dark-mode').toggleClass('active')
+    $('body').toggleClass('dark')
+    $('.index').toggleClass('dark-mode')
+    $('.history').toggleClass('dark-mode')
+    $('.wallet-page').toggleClass('dark-mode')
+    $('.dashboard').toggleClass('dark-mode')
+  })
+
   $('.js-crypto-wallets').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
