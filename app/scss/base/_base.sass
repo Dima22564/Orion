@@ -9,10 +9,51 @@ body
     background: $dark
     .ui-menu
       background: #2a2a41 !important
-      border: 1px solid rgba(224, 224, 255, 0.3) !important
+      border: 1px solid rgba(224, 224, 255, 0.08) !important
       .ui-menu-item-wrapper
         color: rgba(224, 224, 255, 0.8) !important
+    .ui-selectmenu-menu
+      background: #2a2a41
+      .ui-menu-item
+        background: #2a2a41 !important
+      ul
+        border-radius: 4px
 
+      .ui-menu-item-wrapper
+        background: rgba(224, 224, 255, 0.02) !important
+        color: $white !important
+        box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+        &:hover
+          background: rgba(20, 16, 41, 0.02) !important
+.datepicker 
+  border-radius: 4px
+  background: $white
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+.datepicker--day-name
+  color: rgba(20, 16, 41, 0.6)
+  font-weight: 500
+.datepicker--nav-title, .datepicker--cell
+  color: rgba(20, 16, 41, 0.8)
+  font-weight: 500
+.datepicker--cell
+  &:hover
+    background: rgba(20, 16, 41, 0.02)
+  &.-selected-
+    // color: #00bbff
+    background: #00bbff
+    color: $white
+  &.-current-
+    color: #00bbff
+  &.-other-month-
+    color: rgba(20, 16, 41, 0.24)
+  &.-weekend-
+    color: rgba(20, 16, 41, 0.24)
+.datepicker--nav-action
+  &:hover
+    background: rgba(20, 16, 41, 0.02)
+.datepicker--nav-title
+  &:hover
+    background: rgba(20, 16, 41, 0.02)
 
 .custom-icon
   width: 24px
@@ -129,6 +170,7 @@ button, input, textarea, span, div, a
 
 .ui-selectmenu-menu
   background: $white
+  border-radius: 4PX
   .ui-menu-item
     background: $white
   ul

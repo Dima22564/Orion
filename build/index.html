@@ -313,28 +313,54 @@
                         </div>
                         <div class="buy-sell js-panel-item js-exchange">
                             <div class="top">
-                                <button class="active">Buy</button>
-                                <button>Sell</button>
+                                <button class="js-buy-sell active" data-content="buy-content">Buy</button>
+                                <button class="js-buy-sell sell-btn" data-content="sell-content">Sell</button>
                             </div>
                             <div class="main-content">
-                                <div class="big-toggler">
-                                    <button class="active">Market</button>
-                                    <button>Limit order</button>
+                                <div class="buy-content js-buy-sell-content">
+                                    <div class="big-toggler">
+                                        <button class="active">Market</button>
+                                        <button>Limit order</button>
+                                    </div>
+                                    <div class="amount"><span class="placeholder">Amount</span>
+                                        <input type="text"><span class="currency">ETH</span>
+                                        <div class="available"><span>Available</span><span>0.10099921 BTC</span></div>
+                                    </div>
+                                    <div class="btns">
+                                        <button>25%</button>
+                                        <button>50%</button>
+                                        <button>75%</button>
+                                        <button>100%</button>
+                                    </div>
+                                    <div class="amount total"><span class="placeholder">Total</span>
+                                        <input type="text" readonly="true"><span class="currency">BTC</span>
+                                    </div>
+                                    <div class="buy-btn">
+                                        <button class="buy">Buy ETH</button>
+                                    </div>
                                 </div>
-                                <div class="amount"><span class="placeholder">Amount</span>
-                                    <input type="text"><span class="currency">ETH</span>
-                                    <div class="available"><span>Available</span><span>0.10099921 BTC</span></div>
+                                <div class="sell-content js-buy-sell-content">
+                                    <div class="big-toggler">
+                                        <button class="active">Market</button>
+                                        <button>Limit order</button>
+                                    </div>
+                                    <div class="amount"><span class="placeholder">Amount</span>
+                                        <input type="text"><span class="currency">ETH</span>
+                                        <div class="available"><span>Available</span><span>0.10099921 BTC</span></div>
+                                    </div>
+                                    <div class="btns">
+                                        <button>25%</button>
+                                        <button>50%</button>
+                                        <button>75%</button>
+                                        <button>100%</button>
+                                    </div>
+                                    <div class="amount total"><span class="placeholder">Total</span>
+                                        <input type="text" readonly="true"><span class="currency">BTC</span>
+                                    </div>
+                                    <div class="buy-btn">
+                                        <button class="buy">Buy ETH</button>
+                                    </div>
                                 </div>
-                                <div class="btns">
-                                    <button>25%</button>
-                                    <button>50%</button>
-                                    <button>75%</button>
-                                    <button>100%</button>
-                                </div>
-                                <div class="amount total"><span class="placeholder">Total</span>
-                                    <input type="text" readonly="true"><span class="currency">BTC</span>
-                                </div>
-                                <button class="buy">Buy ETH</button>
                             </div>
                         </div>
                     </div>
@@ -344,13 +370,11 @@
                             <div class="top">
                                 <div class="big-toggler"><span class="active">Orders</span><span>History</span></div>
                                 <div class="date">
-                                    <div class="date-1 js-date-1">
-                                        <input id="date-1" name type="date">
-                                        <label for="date-1"><span class="js-out">25.03.2000</span><i class="fa fa-calendar-o" aria-hidden="true"></i></label>
+                                    <div class="date-1">
+                                        <input class="datepicker-here pick" type="text"><i class="fa fa-calendar-o" aria-hidden="true"></i>
                                     </div><span class="hr"></span>
-                                    <div class="date-1 js-date-2">
-                                        <input id="date-2" name type="date">
-                                        <label for="date-2"><span class="js-out">25.03.2000</span><i class="fa fa-calendar-o" aria-hidden="true"></i></label>
+                                    <div class="date-1">
+                                        <input class="datepicker-here pick" type="text"><i class="fa fa-calendar-o" aria-hidden="true"></i>
                                     </div>
                                 </div>
                                 <div class="currency-all">
@@ -384,7 +408,25 @@
                                 </div>
                                 <div class="lines">
                                     <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
+                                        <div class="line-big">
+                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
+                                            <div class="subtable">
+                                                <div class="subline">
+                                                    <div class="subtitles">
+                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="subcontent">
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="line-small">
                                             <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
                                             <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
@@ -393,28 +435,25 @@
                                         </div>
                                     </div>
                                     <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell open status">Open</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="open status">Open</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
+                                        <div class="line-big">
+                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
+                                            <div class="subtable">
+                                                <div class="subline">
+                                                    <div class="subtitles">
+                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="subcontent">
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="cancel status">Cancel</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell sell short emp">Sell</span><span class="cell eth">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
                                         <div class="line-small">
                                             <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
                                             <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
@@ -423,28 +462,25 @@
                                         </div>
                                     </div>
                                     <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell open status">Open</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="open status">Open</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
+                                        <div class="line-big">
+                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
+                                            <div class="subtable">
+                                                <div class="subline">
+                                                    <div class="subtitles">
+                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="subcontent">
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="cancel status">Cancel</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell sell short emp">Sell</span><span class="cell eth">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
                                         <div class="line-small">
                                             <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
                                             <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
@@ -453,28 +489,25 @@
                                         </div>
                                     </div>
                                     <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell open status">Open</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="open status">Open</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
+                                        <div class="line-big">
+                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
+                                            <div class="subtable">
+                                                <div class="subline">
+                                                    <div class="subtitles">
+                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="subcontent">
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="cancel status">Cancel</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell sell short emp">Sell</span><span class="cell eth">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
                                         <div class="line-small">
                                             <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
                                             <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
@@ -483,85 +516,31 @@
                                         </div>
                                     </div>
                                     <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell open status">Open</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="open status">Open</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
+                                        <div class="line-big">
+                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
+                                            <div class="subtable">
+                                                <div class="subline">
+                                                    <div class="subtitles">
+                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                                    </div>
+                                                    <div class="subcontent">
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
+                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="cancel status">Cancel</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell sell short emp">Sell</span><span class="cell eth">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
                                         <div class="line-small">
                                             <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
                                             <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
                                             <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
                                             <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
                                         </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell open status">Open</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="open status">Open</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="cancel status">Cancel</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell sell short emp">Sell</span><span class="cell eth">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell open status">Open</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="open status">Open</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="cancel status">Cancel</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big"><span class="cell sell short emp">Sell</span><span class="cell eth">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span>12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell cancel status">Cancel</span><span class="cell">1,4422124</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -574,7 +553,14 @@
                                 <div class="titles"><span class="title">Price</span><span class="title">Amount</span><span class="title">Total</span><span class="title exch">Exch</span></div>
                                 <div class="orders">
                                     <div class="order"><span class="progress-light l-green" style="width:41%;"></span><span class="progress-light d-green" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell green">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                        <div class="cell exch">
+                                            <div class="exch-content js-exch-content"><img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                            <div class="exch-drop js-exch-drop">
+                                                <div class="drop"><img src="./img/bitcoin.png" alt><span>Exchange 1</span></div>
+                                                <div class="drop"><img src="./img/eth.png" alt><span>Exchange 2</span></div>
+                                                <div class="drop"><img src="./img/bitcoin.png" alt><span>Exchange 3</span></div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="order"><span class="progress-light l-green" style="width:20%;"></span><span class="progress-light d-green" style="width:2%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
                                         <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>

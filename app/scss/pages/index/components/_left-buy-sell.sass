@@ -1,6 +1,6 @@
 .index
   .left-panel
-    height: calc(100vh)
+    height: calc(100vh - 27px)
     overflow-y: auto
     margin: -1px
     padding: 1px
@@ -18,6 +18,11 @@
         display: none
         width: 50%
       +sm-one(width, 100%)
+      .sell-content
+        display: none
+        .buy
+          box-shadow: 0 8px 8px -4px rgba(245, 92, 69, 0.12), 0 16px 24px 0 rgba(245, 92, 69, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(245, 92, 69, 0.24) !important
+          background-image: linear-gradient(to right, #ff8800, #f55c45 51%, #e12d81) !important
       .top
         display: flex
         align-items: center
@@ -45,6 +50,11 @@
             color: $blue
             &::after
               background: $blue
+          &.sell-btn.active
+            background: rgba(245, 92, 69, 0.03)
+            color: #f55c45
+            &::after
+              background: #f55c45
           &::after
             content: ''
             display: inline-block
@@ -181,6 +191,9 @@
               background: rgba(20, 16, 41, 0.15)
         .total
           margin-bottom: 8px
+        .buy-btn
+          display: flex
+          justify-content: flex-end
         .buy
           padding: 6px 0
           width: 100%
@@ -192,9 +205,14 @@
           border-radius: 2px
           border: none
           cursor: pointer 
-          margin-bottom: 26px
+          margin-bottom: 14px
           // font-weight: 600
           transition: all 0.2s
+          @media screen and ( min-width: 1500px )
+            padding: 12px 24px
+            width: initial
+          @media screen and ( min-width: 1635px )
+            margin: 15px 0 0 0
           &:hover
             box-shadow: 0 12px 12px -4px rgba(0, 187, 255, 0.12), 0 24px 32px 0 rgba(0, 187, 255, 0.24), 0 4px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(0, 187, 255, 0.24)
             background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), linear-gradient(114deg, #00ffaa, #00bbff 53%, #4579f5 100%)

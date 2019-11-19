@@ -355,29 +355,53 @@ html(lang="en")
             
             .buy-sell.js-panel-item.js-exchange
               .top
-                button.active Buy
-                button Sell
+                button.js-buy-sell.active(data-content="buy-content") Buy
+                button.js-buy-sell.sell-btn(data-content="sell-content") Sell
               .main-content
-                .big-toggler
-                  button.active Market
-                  button Limit order
-                .amount
-                  span.placeholder Amount
-                  input(type="text")
-                  span.currency ETH
-                  .available
-                    span Available
-                    span 0.10099921 BTC
-                .btns
-                  button 25%
-                  button 50%
-                  button 75%
-                  button 100%
-                .amount.total
-                  span.placeholder Total
-                  input(type="text", readonly="true")
-                  span.currency BTC
-                button.buy Buy ETH
+                .buy-content.js-buy-sell-content
+                  .big-toggler
+                    button.active Market
+                    button Limit order
+                  .amount
+                    span.placeholder Amount
+                    input(type="text")
+                    span.currency ETH
+                    .available
+                      span Available
+                      span 0.10099921 BTC
+                  .btns
+                    button 25%
+                    button 50%
+                    button 75%
+                    button 100%
+                  .amount.total
+                    span.placeholder Total
+                    input(type="text", readonly="true")
+                    span.currency BTC
+                  .buy-btn
+                    button.buy Buy ETH
+                .sell-content.js-buy-sell-content
+                  .big-toggler
+                    button.active Market
+                    button Limit order
+                  .amount
+                    span.placeholder Amount
+                    input(type="text")
+                    span.currency ETH
+                    .available
+                      span Available
+                      span 0.10099921 BTC
+                  .btns
+                    button 25%
+                    button 50%
+                    button 75%
+                    button 100%
+                  .amount.total
+                    span.placeholder Total
+                    input(type="text", readonly="true")
+                    span.currency BTC
+                  .buy-btn
+                    button.buy Buy ETH
 
           .center-panel.js-panel    
             .image.js-chart.js-panel-item
@@ -388,17 +412,13 @@ html(lang="en")
                   span.active Orders
                   span History
                 .date
-                  .date-1.js-date-1
-                    input#date-1(type="date", name="")
-                    label(for="date-1")
-                      span.js-out 25.03.2000
-                      i.fa.fa-calendar-o(aria-hidden="true")
+                  .date-1
+                    input(type="text").datepicker-here.pick
+                    i.fa.fa-calendar-o(aria-hidden="true")
                   span.hr
-                  .date-1.js-date-2
-                    input#date-2(type="date", name="")
-                    label(for="date-2")
-                      span.js-out 25.03.2000
-                      i.fa.fa-calendar-o(aria-hidden="true")
+                  .date-1
+                    input(type="text").datepicker-here.pick
+                    i.fa.fa-calendar-o(aria-hidden="true")
                 .currency-all
                   .currency
                     select(name="").currency-select-1
@@ -438,14 +458,307 @@ html(lang="en")
                 .lines
                   .line
                     .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.filled.status Filled
-                      span.cell 1,4422124
-
+                      .line-big-main.js-line-big-main
+                        span.cell.short.emp Sell
+                        span.cell ETH / BTC
+                        span.cell.time #[span 09.09.2019] #[span  12:42:4]
+                        span.cell 0,004422124
+                        span.cell 0,000042142
+                        span.cell.filled.status Filled
+                        span.cell 1,4422124
+                      .subtable
+                        .subline
+                          .subtitles
+                            .subtitle
+                              span Exchange
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span ID
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Amount
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Price
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Status
+                              i.fa.fa-angle-down(aria-hidden="true")
+                          .subcontent
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.filled Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.open Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.cancel Filled
+                    //- Mobile
+                    .line-small
+                      .cell.cell-top
+                        span.data Sell
+                        span.data-eth ETH / BTC
+                        span.filled.status Filled
+                      .cell
+                        span.sub-title Amount
+                        span.data-text 0.004422124
+                        span.data-text.date 09.09.2019
+                      .cell
+                        span.sub-title Price
+                        span.data-text 0.004422124
+                        span.data-text.date 12:42:09
+                      .cell
+                        span.sub-title Total
+                        span.data-text 0.004422124
+                  .line
+                    .line-big
+                      .line-big-main.js-line-big-main
+                        span.cell.short.emp Sell
+                        span.cell ETH / BTC
+                        span.cell.time #[span 09.09.2019] #[span  12:42:4]
+                        span.cell 0,004422124
+                        span.cell 0,000042142
+                        span.cell.filled.status Filled
+                        span.cell 1,4422124
+                      .subtable
+                        .subline
+                          .subtitles
+                            .subtitle
+                              span Exchange
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span ID
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Amount
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Price
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Status
+                              i.fa.fa-angle-down(aria-hidden="true")
+                          .subcontent
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.filled Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.open Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.cancel Filled
+                    //- Mobile
+                    .line-small
+                      .cell.cell-top
+                        span.data Sell
+                        span.data-eth ETH / BTC
+                        span.filled.status Filled
+                      .cell
+                        span.sub-title Amount
+                        span.data-text 0.004422124
+                        span.data-text.date 09.09.2019
+                      .cell
+                        span.sub-title Price
+                        span.data-text 0.004422124
+                        span.data-text.date 12:42:09
+                      .cell
+                        span.sub-title Total
+                        span.data-text 0.004422124
+                  .line
+                    .line-big
+                      .line-big-main.js-line-big-main
+                        span.cell.short.emp Sell
+                        span.cell ETH / BTC
+                        span.cell.time #[span 09.09.2019] #[span  12:42:4]
+                        span.cell 0,004422124
+                        span.cell 0,000042142
+                        span.cell.filled.status Filled
+                        span.cell 1,4422124
+                      .subtable
+                        .subline
+                          .subtitles
+                            .subtitle
+                              span Exchange
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span ID
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Amount
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Price
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Status
+                              i.fa.fa-angle-down(aria-hidden="true")
+                          .subcontent
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.filled Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.open Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.cancel Filled
+                    //- Mobile
+                    .line-small
+                      .cell.cell-top
+                        span.data Sell
+                        span.data-eth ETH / BTC
+                        span.filled.status Filled
+                      .cell
+                        span.sub-title Amount
+                        span.data-text 0.004422124
+                        span.data-text.date 09.09.2019
+                      .cell
+                        span.sub-title Price
+                        span.data-text 0.004422124
+                        span.data-text.date 12:42:09
+                      .cell
+                        span.sub-title Total
+                        span.data-text 0.004422124
+                  .line
+                    .line-big
+                      .line-big-main.js-line-big-main
+                        span.cell.short.emp Sell
+                        span.cell ETH / BTC
+                        span.cell.time #[span 09.09.2019] #[span  12:42:4]
+                        span.cell 0,004422124
+                        span.cell 0,000042142
+                        span.cell.filled.status Filled
+                        span.cell 1,4422124
+                      .subtable
+                        .subline
+                          .subtitles
+                            .subtitle
+                              span Exchange
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span ID
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Amount
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Price
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Status
+                              i.fa.fa-angle-down(aria-hidden="true")
+                          .subcontent
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.filled Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.open Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.cancel Filled
+                    //- Mobile
+                    .line-small
+                      .cell.cell-top
+                        span.data Sell
+                        span.data-eth ETH / BTC
+                        span.filled.status Filled
+                      .cell
+                        span.sub-title Amount
+                        span.data-text 0.004422124
+                        span.data-text.date 09.09.2019
+                      .cell
+                        span.sub-title Price
+                        span.data-text 0.004422124
+                        span.data-text.date 12:42:09
+                      .cell
+                        span.sub-title Total
+                        span.data-text 0.004422124
+                  .line
+                    .line-big
+                      .line-big-main.js-line-big-main
+                        span.cell.short.emp Sell
+                        span.cell ETH / BTC
+                        span.cell.time #[span 09.09.2019] #[span  12:42:4]
+                        span.cell 0,004422124
+                        span.cell 0,000042142
+                        span.cell.filled.status Filled
+                        span.cell 1,4422124
+                      .subtable
+                        .subline
+                          .subtitles
+                            .subtitle
+                              span Exchange
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span ID
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Amount
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Price
+                              i.fa.fa-angle-down(aria-hidden="true")
+                            .subtitle.right
+                              span Status
+                              i.fa.fa-angle-down(aria-hidden="true")
+                          .subcontent
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.filled Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.open Filled
+                            .subline-d
+                              span BINANCE
+                              span.right 241
+                              span.right 24214,41
+                              span.right 0,0000421421
+                              span.right.cancel Filled
                     //- Mobile
                     .line-small
                       .cell.cell-top
@@ -465,557 +778,7 @@ html(lang="en")
                         span.data-text 0.004422124
 
 
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.open.status Open
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.open.status Open
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                        
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.cancel.status Cancel
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-                  .line
-                    .line-big
-                      span.cell.sell.short.emp Sell
-                      span.cell.eth ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.filled.status Filled
-                      span.cell 1,4422124
-
-                    //- Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.filled.status Filled
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.open.status Open
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.open.status Open
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                        
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.cancel.status Cancel
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-                  .line
-                    .line-big
-                      span.cell.sell.short.emp Sell
-                      span.cell.eth ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.filled.status Filled
-                      span.cell 1,4422124
-
-                    //- Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.filled.status Filled
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.open.status Open
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.open.status Open
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                        
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.cancel.status Cancel
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-                  .line
-                    .line-big
-                      span.cell.sell.short.emp Sell
-                      span.cell.eth ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.filled.status Filled
-                      span.cell 1,4422124
-
-                    //- Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.filled.status Filled
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.open.status Open
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.open.status Open
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                        
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.cancel.status Cancel
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-                  .line
-                    .line-big
-                      span.cell.sell.short.emp Sell
-                      span.cell.eth ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.filled.status Filled
-                      span.cell 1,4422124
-
-                    //- Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.filled.status Filled
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.open.status Open
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.open.status Open
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                        
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.cancel.status Cancel
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-                  .line
-                    .line-big
-                      span.cell.sell.short.emp Sell
-                      span.cell.eth ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.filled.status Filled
-                      span.cell 1,4422124
-
-                    //- Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.filled.status Filled
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.open.status Open
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.open.status Open
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-
-
-                        
-                  .line
-                    .line-big
-                      span.cell.short.emp Sell
-                      span.cell ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
-
-                    //-  Mobile
-                    .line-small
-                      .cell.cell-top
-                        span.data Sell
-                        span.data-eth ETH / BTC
-                        span.cancel.status Cancel
-                      .cell
-                        span.sub-title Amount
-                        span.data-text 0.004422124
-                        span.data-text.date 09.09.2019
-                      .cell
-                        span.sub-title Price
-                        span.data-text 0.004422124
-                        span.data-text.date 12:42:09
-                      .cell
-                        span.sub-title Total
-                        span.data-text 0.004422124
-                  .line
-                    .line-big
-                      span.cell.sell.short.emp Sell
-                      span.cell.eth ETH / BTC
-                      span.cell.time #[span 09.09.2019] #[span 12:42:4]
-                      span.cell 0,004422124
-                      span.cell 0,000042142
-                      span.cell.cancel.status Cancel
-                      span.cell 1,4422124
+                  
 
 
 
@@ -1039,9 +802,20 @@ html(lang="en")
                     span.cell.green 0,5125
                     span.cell 20.4124
                     .cell.exch 
-                      img(src="./img/bitcoin.png", alt="")
-                      img(src="./img/eth.png", alt="")
-                      img(src="./img/arrow-down.svg", alt="").arrow
+                      .exch-content.js-exch-content
+                        img(src="./img/bitcoin.png", alt="")
+                        img(src="./img/eth.png", alt="")
+                        img(src="./img/arrow-down.svg", alt="").arrow
+                      .exch-drop.js-exch-drop
+                        .drop
+                          img(src="./img/bitcoin.png", alt="")
+                          span Exchange 1
+                        .drop
+                          img(src="./img/eth.png", alt="")
+                          span Exchange 2
+                        .drop
+                          img(src="./img/bitcoin.png", alt="")
+                          span Exchange 3
                   .order
                     span.progress-light.l-green(style={width: '20%'})
                     span.progress-light.d-green(style={width: '2%'})
