@@ -25,6 +25,24 @@ body
         box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
         &:hover
           background: rgba(20, 16, 41, 0.02) !important
+    .datepicker 
+      background: #2a2a41 !important
+      border: 1px solid rgba(224, 224, 255, 0.08) !important
+      .datepicker--pointer
+        background: #2a2a41 !important
+        border: 1px solid rgba(224, 224, 255, 0.08) !important
+      .datepicker--nav-title, .datepicker--cell
+        color: $white 
+      .datepicker--cell
+        &:hover
+          background: rgba(224, 224, 255, 0.02)
+        &.-current-
+          color: #00bbff
+        &.-weekend-
+          color: rgba(224, 224, 255, 0.8) 
+      .datepicker--day-name
+        color: rgba(224, 224, 255, 0.8)
+
 .datepicker 
   border-radius: 4px
   background: $white
