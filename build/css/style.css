@@ -272,6 +272,8 @@ a:active {
 .ui-selectmenu-menu {
   background: #ffffff;
   border-radius: 4PX;
+  -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
 }
 
 .ui-selectmenu-menu .ui-menu-item {
@@ -3015,6 +3017,12 @@ a:active {
   color: rgba(20, 16, 41, 0.8);
 }
 
+.ui-selectmenu-menu {
+  -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
+  background-color: #2a2a41;
+}
+
 .dashboard.dark-mode {
   background: #202036;
 }
@@ -3107,8 +3115,8 @@ a:active {
 }
 
 .dashboard.dark-mode .add-wallet-1 {
-  -webkit-box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
-  box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 32px 48px 0 rgba(20, 16, 41, 0.4), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 32px 48px 0 rgba(20, 16, 41, 0.4), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
   background-color: #2a2a41;
 }
 
@@ -3141,8 +3149,8 @@ a:active {
 }
 
 .dashboard.dark-mode .add-wallet-2 {
-  -webkit-box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
-  box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 32px 48px 0 rgba(32, 32, 54, 0.12), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 32px 48px 0 rgba(20, 16, 41, 0.4), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 32px 48px 0 rgba(20, 16, 41, 0.4), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
   background-color: #2a2a41;
 }
 
