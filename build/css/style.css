@@ -558,6 +558,22 @@ a:active {
   background-image: linear-gradient(to right, #ff8800, #f55c45 51%, #e12d81) !important;
 }
 
+.index .left-panel .buy-sell .sell-content .buy:hover {
+  -webkit-box-shadow: 0 12px 12px -4px rgba(245, 92, 69, 0.12), 0 24px 32px 0 rgba(245, 92, 69, 0.24), 0 4px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24) !important;
+  box-shadow: 0 12px 12px -4px rgba(245, 92, 69, 0.12), 0 24px 32px 0 rgba(245, 92, 69, 0.24), 0 4px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.06)), to(rgba(255, 255, 255, 0.06))), -webkit-gradient(linear, left top, right top, from(#ff8800), color-stop(51%, #f55c45), to(#e12d81)) !important;
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), -o-linear-gradient(left, #ff8800, #f55c45 51%, #e12d81) !important;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), linear-gradient(to right, #ff8800, #f55c45 51%, #e12d81) !important;
+}
+
+.index .left-panel .buy-sell .sell-content .buy:active {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(245, 92, 69, 0.12), 0 8px 16px 0 rgba(245, 92, 69, 0.24), 0 1px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24) !important;
+  box-shadow: 0 8px 8px -4px rgba(245, 92, 69, 0.12), 0 8px 16px 0 rgba(245, 92, 69, 0.24), 0 1px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8800), color-stop(51%, #f55c45), to(#e12d81)) !important;
+  background-image: -o-linear-gradient(left, #ff8800, #f55c45 51%, #e12d81) !important;
+  background-image: linear-gradient(to right, #ff8800, #f55c45 51%, #e12d81) !important;
+}
+
 .index .left-panel .buy-sell .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,6 +604,11 @@ a:active {
 
 .index .left-panel .buy-sell .top button.active::after {
   background: #00bbff;
+}
+
+.index .left-panel .buy-sell .top button:hover {
+  background: rgba(0, 187, 255, 0.06);
+  color: #00bbff;
 }
 
 .index .left-panel .buy-sell .top button.sell-btn.active {
@@ -1915,6 +1936,11 @@ a:active {
 .index.dark-mode .buy-sell .top button {
   background: transparent;
   color: rgba(224, 224, 255, 0.4);
+}
+
+.index.dark-mode .buy-sell .top:hover {
+  background: rgba(0, 187, 255, 0.06);
+  color: #00bbff;
 }
 
 .index.dark-mode .buy-sell .big-toggler {

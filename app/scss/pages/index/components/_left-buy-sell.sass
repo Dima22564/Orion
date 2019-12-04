@@ -23,6 +23,12 @@
         .buy
           box-shadow: 0 8px 8px -4px rgba(245, 92, 69, 0.12), 0 16px 24px 0 rgba(245, 92, 69, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(245, 92, 69, 0.24) !important
           background-image: linear-gradient(to right, #ff8800, #f55c45 51%, #e12d81) !important
+          &:hover
+            box-shadow: 0 12px 12px -4px rgba(245, 92, 69, 0.12), 0 24px 32px 0 rgba(245, 92, 69, 0.24), 0 4px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24) !important
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), linear-gradient(to right, #ff8800, #f55c45 51%, #e12d81) !important
+          &:active
+            box-shadow: 0 8px 8px -4px rgba(245, 92, 69, 0.12), 0 8px 16px 0 rgba(245, 92, 69, 0.24), 0 1px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(245, 92, 69, 0.24) !important
+            background-image: linear-gradient(to right, #ff8800, #f55c45 51%, #e12d81) !important
       .top
         display: flex
         align-items: center
@@ -50,6 +56,9 @@
             color: $blue
             &::after
               background: $blue
+          &:hover
+            background: rgba(0, 187, 255, 0.06)
+            color: $blue
           &.sell-btn.active
             background: rgba(245, 92, 69, 0.03)
             color: #f55c45
