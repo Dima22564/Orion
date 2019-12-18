@@ -456,6 +456,8 @@ a:active {
   line-height: 24px;
   font-weight: 700;
   margin-right: 4px;
+  max-width: 77px;
+  overflow: hidden;
 }
 
 .index .common-info .price .last-price .value .dollars {
