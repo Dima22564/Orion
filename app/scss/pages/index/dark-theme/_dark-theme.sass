@@ -12,6 +12,9 @@
         .icon
           span 
             color: $blue !important
+.dark-mode
+  .wrapper-pair
+    background: rgba(20, 16, 41, 0.2) !important
 .index
   &.dark-mode
     background: $dark
@@ -171,6 +174,17 @@
     .right-panel
       background: $dark-l
       box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12)
+      .exch-drop
+        box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important
+        background: #2a2a41 !important
+        .drop
+          background: #2a2a41 !important
+          &:hover
+            background: rgba(224, 224, 255, 0.02) !important
+        span
+          color: rgba(224, 224, 255, 0.6) !important
+        img
+          filter: invert(100%) !important
       .order-book
         background: $dark-l
         .heading
@@ -184,6 +198,8 @@
           .last
             color: rgba(224, 224, 255, 0.6) !important
         .order
+          &:hover
+            background: rgba(224, 224, 255, 0.02)
           .cell
             &.green
               color: #00ffaa !important
@@ -191,6 +207,8 @@
             &.red
               color: #ff00aa !important
               background: rgba(255, 0, 170, 0.12) !important
+            .cell-img
+              opacity: 1 !important
           .progress-light
             &.l-green
               background: rgba(0, 255, 170, 0.03)

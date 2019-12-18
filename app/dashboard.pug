@@ -11,6 +11,7 @@ html(lang="en")
   body
     include ./pug/top-menu.pug
     .dashboard
+      .wrapper-pair.js-wrapper-pair
       include ./pug/sidebar.pug
       .my-container
         .my-row
@@ -20,17 +21,17 @@ html(lang="en")
             .coins
               .coin
                 .left
-                  img(src="./img/dash-wallet.png", alt="")
+                  img(src="./img/dash-wallet.svg", alt="")
                   span.name DASH
                 span.num 178.23960
               .coin
                 .left
-                  img(src="./img/btc-wallet.png", alt="")
+                  img(src="./img/btc-wallet.svg", alt="")
                   span.name BTC
                 span.num 178.23960
               .coin
                 .left
-                  img(src="./img/eth-wallet.png", alt="")
+                  img(src="./img/eth-wallet.svg", alt="")
                   span.name eth
                 span.num 178.23960
 
@@ -44,19 +45,19 @@ html(lang="en")
               .crypto-wallets.js-crypto-wallets
                 .wallet.eth
                   .title
-                    img(src="./img/eth-wallet.png", alt="")
+                    img(src="./img/eth-wallet.svg", alt="")
                     span Details
                   p.money #[span.num 12.008895] #[span.currency ETH]
                   p.currency-2 0.260000 btc
                 .wallet.btc
                   .title
-                    img(src="./img/btc-wallet.png", alt="")
+                    img(src="./img/btc-wallet.svg", alt="")
                     span Details
                   p.money #[span.num 12.008895] #[span.currency ETH]
                   p.currency-2 0.260000 btc
                 .wallet.dash
                   .title
-                    img(src="./img/dash-wallet.png", alt="")
+                    img(src="./img/dash-wallet.svg", alt="")
                     span Details
                   p.money #[span.num 12.008895] #[span.currency dash]
                   p.currency-2 0.260000 btc
@@ -80,7 +81,7 @@ html(lang="en")
               .lines
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -98,7 +99,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -116,7 +117,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -134,7 +135,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -152,7 +153,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -170,7 +171,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -188,7 +189,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -206,7 +207,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -224,7 +225,7 @@ html(lang="en")
                 
                 .line
                   .cell.emp.coins
-                    img(src="./img/btc-color.png" , alt="")
+                    img(src="./img/btc-color.svg" , alt="")
                     span BTC
                   span.cell #[span.title-m Wallet] 1.46780990
                   span.cell #[span.title-m Contract] 1.46780990
@@ -253,19 +254,19 @@ html(lang="en")
               img(src="./img/close.png", alt="").close.js-close
             .choose-wallet
               .item.js-next-step
-                img(src="./img/big-eth.png", alt="").icon
+                img(src="./img/eth-black.svg", alt="").icon
                 .text
                   p.name Ethereum
                   p.desc Ethereum is the solution
                 img(src="./img/arrow-down.svg", alt="").next
               .item.js-next-step
-                img(src="./img/wanchain.png", alt="").icon
+                img(src="./img/dash-black.svg", alt="").icon
                 .text
                   p.name Wanchain
                   p.desc Wanchain team has attended
                 img(src="./img/arrow-down.svg", alt="").next
               .item.js-next-step
-                img(src="./img/waves.png", alt="").icon
+                img(src="./img/btc-black.svg", alt="").icon
                 .text
                   p.name Waves
                   p.desc Revolutionizing the world

@@ -150,8 +150,11 @@ $(document).ready(function () {
 
   $('.js-sidebar-wrapper').hover(function(e){
     $('.js-sidebar-wrapper').addClass('open')
+    $('.js-wrapper-pair').show()
   }, function(e){
     $(this).removeClass('open')
+    $('.js-wrapper-pair').hide()
+
   })
 
   $(window).on('resize', function(e){

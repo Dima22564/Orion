@@ -87,6 +87,9 @@
           display: flex
           align-items: center
           position: relative
+          cursor: pointer
+          &:hover
+            background: rgba(20, 16, 41, 0.02)
           @media screen and ( min-width: 1500px )
             font-size: 14px
             line-height: 24px
@@ -122,7 +125,8 @@
               align-items: center
               justify-content: flex-start
               position: relative
-              
+              .cell-img
+                opacity: 0.4
               .exch-content
                 display: flex
                 align-items: center

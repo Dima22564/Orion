@@ -19,13 +19,22 @@ body.dark {
   background: #202036;
 }
 
+body.dark .custom-icon {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+}
+
 body.dark .ui-menu {
   background: #2a2a41 !important;
-  border: 1px solid rgba(224, 224, 255, 0.08) !important;
+  border: none !important;
 }
 
 body.dark .ui-menu .ui-menu-item-wrapper {
   color: rgba(224, 224, 255, 0.8) !important;
+}
+
+body.dark .ui-menu .ui-menu-item-wrapper:hover {
+  background: rgba(224, 224, 255, 0.02) !important;
 }
 
 body.dark .ui-selectmenu-menu {
@@ -41,14 +50,10 @@ body.dark .ui-selectmenu-menu ul {
 }
 
 body.dark .ui-selectmenu-menu .ui-menu-item-wrapper {
-  background: rgba(224, 224, 255, 0.02) !important;
+  background: transparent !important;
   color: #ffffff !important;
   -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
   box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
-}
-
-body.dark .ui-selectmenu-menu .ui-menu-item-wrapper:hover {
-  background: rgba(20, 16, 41, 0.02) !important;
 }
 
 body.dark .datepicker {
@@ -80,6 +85,17 @@ body.dark .datepicker .datepicker--cell.-weekend- {
 
 body.dark .datepicker .datepicker--day-name {
   color: rgba(224, 224, 255, 0.8);
+}
+
+.wrapper-pair {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 16, 41, 0.06);
+  display: none;
+  z-index: 777;
 }
 
 .datepicker {
@@ -301,8 +317,8 @@ a:active {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .ui-selectmenu-menu .ui-menu-item-wrapper:hover {
@@ -1362,6 +1378,11 @@ a:active {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
+}
+
+.index .right-panel .order-book .orders .order:hover {
+  background: rgba(20, 16, 41, 0.02);
 }
 
 .index .right-panel .order-book .orders .order .progress-light {
@@ -1410,6 +1431,10 @@ a:active {
   -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
+}
+
+.index .right-panel .order-book .orders .order .cell.exch .cell-img {
+  opacity: 0.4;
 }
 
 .index .right-panel .order-book .orders .order .cell.exch .exch-content {
@@ -1863,6 +1888,10 @@ a:active {
   color: #00bbff !important;
 }
 
+.dark-mode .wrapper-pair {
+  background: rgba(20, 16, 41, 0.2) !important;
+}
+
 .index.dark-mode {
   background: #202036;
 }
@@ -2145,6 +2174,29 @@ a:active {
   box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
 }
 
+.index.dark-mode .right-panel .exch-drop {
+  -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
+  background: #2a2a41 !important;
+}
+
+.index.dark-mode .right-panel .exch-drop .drop {
+  background: #2a2a41 !important;
+}
+
+.index.dark-mode .right-panel .exch-drop .drop:hover {
+  background: rgba(224, 224, 255, 0.02) !important;
+}
+
+.index.dark-mode .right-panel .exch-drop span {
+  color: rgba(224, 224, 255, 0.6) !important;
+}
+
+.index.dark-mode .right-panel .exch-drop img {
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+}
+
 .index.dark-mode .right-panel .order-book {
   background: #2a2a41;
 }
@@ -2165,6 +2217,10 @@ a:active {
   color: rgba(224, 224, 255, 0.6) !important;
 }
 
+.index.dark-mode .right-panel .order-book .order:hover {
+  background: rgba(224, 224, 255, 0.02);
+}
+
 .index.dark-mode .right-panel .order-book .order .cell.green {
   color: #00ffaa !important;
   background: rgba(0, 255, 170, 0.12) !important;
@@ -2173,6 +2229,10 @@ a:active {
 .index.dark-mode .right-panel .order-book .order .cell.red {
   color: #ff00aa !important;
   background: rgba(255, 0, 170, 0.12) !important;
+}
+
+.index.dark-mode .right-panel .order-book .order .cell .cell-img {
+  opacity: 1 !important;
 }
 
 .index.dark-mode .right-panel .order-book .order .progress-light.l-green {
@@ -2632,13 +2692,14 @@ a:active {
   color: #ff00aa !important;
 }
 
-.history.dark-mode .history-table .date label {
-  color: #ffffff;
+.history.dark-mode .history-table .date-1 input {
+  color: #ffffff !important;
+  background: rgba(224, 224, 255, 0.02) !important;
   background: rgba(224, 224, 255, 0.02);
 }
 
-.history.dark-mode .history-table .date label i {
-  color: rgba(224, 224, 255, 0.4);
+.history.dark-mode .history-table .date-1 i {
+  color: rgba(224, 224, 255, 0.4) !important;
 }
 
 .history.dark-mode .history-table .drop-menu-currecy-select-1 {
@@ -4381,6 +4442,10 @@ a:active {
   align-items: center;
 }
 
+.sidebar-content .dark-mode .night img {
+  opacity: 0.4;
+}
+
 .sidebar-content .dark-mode.active .night {
   border-radius: 50%;
   -webkit-box-shadow: 0 8px 12px 0 rgba(0, 187, 255, 0.24), 0 2px 4px -1px rgba(10, 70, 82, 0.12), 0 0 1px 0 rgba(0, 187, 255, 0.24);
@@ -4525,6 +4590,7 @@ a:active {
 .sidebar-content .aside-coins .coin img {
   width: 20px;
   height: 20px;
+  opacity: 0.4;
 }
 
 .sidebar-content .add-wallet {
@@ -4597,6 +4663,7 @@ a:active {
 .dark-mode .sidebar-wrapper .coin img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  opacity: 1 !important;
 }
 
 .dark-mode .sidebar-wrapper .dark-mode {
@@ -4606,6 +4673,7 @@ a:active {
 .dark-mode .sidebar-wrapper .dark-mode img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+  opacity: 1 !important;
 }
 
 .dark-mode .sidebar-wrapper .add-wallet {
@@ -4771,7 +4839,6 @@ a:active {
 
   .index .left-panel .buy-sell .main-content .buy {
     padding: 12px 24px;
-    width: initial;
   }
 
   .index .left-panel .buy-sell .main-content .buy {
