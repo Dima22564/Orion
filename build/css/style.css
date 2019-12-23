@@ -19,6 +19,19 @@ body.dark {
   background: #202036;
 }
 
+body.dark ::-webkit-scrollbar-track {
+  background-color: #2a2a41;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: rgba(224, 224, 255, 0.8);
+}
+
+body.dark .currency-all .custom-icon {
+  -webkit-filter: invert(0) !important;
+  filter: invert(0) !important;
+}
+
 body.dark .custom-icon {
   -webkit-filter: invert(100%) !important;
   filter: invert(100%) !important;
@@ -323,6 +336,30 @@ a:active {
 
 .ui-selectmenu-menu .ui-menu-item-wrapper:hover {
   background: rgba(20, 16, 41, 0.02) !important;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+::-webkit-resizer {
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
 }
 
 .my-container {
@@ -1989,13 +2026,13 @@ a:active {
 }
 
 .index.dark-mode .buy-sell .big-toggler button {
-  -webkit-box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important;
-  box-shadow: 0 2px 4px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12) !important;
   color: #ffffff !important;
 }
 
 .index.dark-mode .buy-sell .big-toggler button.active {
   background-color: #33334b !important;
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4) !important;
 }
 
 .index.dark-mode .buy-sell .amount .placeholder {
@@ -3696,7 +3733,7 @@ a:active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(20, 16, 41, 0.06);
+  background: rgba(20, 16, 41, 0.6);
   z-index: 55555;
 }
 
