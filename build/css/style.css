@@ -4754,7 +4754,7 @@ a:active {
   }
 
   .index .center-panel .table-content {
-    height: calc(40vh - 84px);
+    height: calc(40vh - 83px);
   }
 
   .index .left-panel .pair-select .link {
@@ -4932,6 +4932,11 @@ a:active {
     line-height: 24px;
   }
 
+  .index .right-panel .order-book .last-price {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
   .index .right-panel .order-book .orders {
     max-height: calc(50vh - 89px);
   }
@@ -4985,25 +4990,7 @@ a:active {
   }
 
   .index .center-panel .table-content {
-    height: calc(40vh - 127px);
-  }
-}
-
-@media (max-width: 1300.99px) {
-  .index .center-panel .table-content {
-    height: calc(40vh - 77px);
-  }
-}
-
-@media (max-width: 1265px) {
-  .index .center-panel .table-content {
-    height: calc(40vh - 77px);
-  }
-}
-
-@media (max-width: 1243.99px) {
-  .index .center-panel .table-content {
-    height: calc(40vh - 127px);
+    height: calc(40vh - 123px);
   }
 }
 
