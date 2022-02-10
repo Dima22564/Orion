@@ -31,7 +31,7 @@
     "gulp-useref": "^3.1.6",
     "gulp-wait": "0.0.2",
     "gulp-watch": "^5.0.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "posthtml-attrs-sorter": "^1.1.0",
     "pug": "^2.0.4",
     "useref": "^1.4.1"
